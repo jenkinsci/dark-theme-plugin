@@ -15,6 +15,7 @@
 
   /* Breadcrumbs */
   --breadcrumbs-bg: var(--background-black);
+  --breadcrumbs-background-color--hover: var(--background-dark);
   --breadcrumbs-text-color: var(--text-color);
   --breadcrumbs-border: var(--background-333);
 
@@ -64,4 +65,7 @@
   --menu-text-color: var(--primary);
   --menu-selected-color: var(--background-dark);
   --menu-box-shadow: none;
+
+  /* Manage component */
+  --manage-option-background-color--hover: var(--background-333);
 }
