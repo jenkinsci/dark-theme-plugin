@@ -3,9 +3,14 @@
   --background-dark: #222;
   --background-333: #333;
   --background: var(--background-dark);
+  --grey: #9a9a9a;
 
   /* Text */
   --text-color: #c0c0c0;
+
+  /* Buttons */
+  --btn-secondary-bg: var(--background-dark);
+  --btn-secondary-color: var(--btn-primary-color);
 
   /* Header */
   --header-link-color: var(--primary);
@@ -15,6 +20,7 @@
 
   /* Breadcrumbs */
   --breadcrumbs-bg: var(--background-black);
+  --breadcrumbs-background-color--hover: var(--background-dark);
   --breadcrumbs-text-color: var(--text-color);
   --breadcrumbs-border: var(--background-333);
 
@@ -64,4 +70,7 @@
   --menu-text-color: var(--primary);
   --menu-selected-color: var(--background-dark);
   --menu-box-shadow: none;
+
+  /* Manage component */
+  --manage-option-background-color--hover: var(--background-333);
 }
