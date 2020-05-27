@@ -4,34 +4,34 @@ body.theme-dark {
   --background-333: #333;
   --background: var(--background-dark);
 
-  // Text
+  /* Text */
   --text-color: #c0c0c0;
 
-  // Header
+  /* Header */
   --header-link-color: var(--primary);
   --header-link-color-active: var(--primary-active);
   --search-background: #4d545d;
 
-  // Breadcrumbs
+  /* Breadcrumbs */
   --breadcrumbs-bg: var(--background-black);
   --breadcrumbs-text-color: var(--text-color);
 
-  // Links
+  /* Links */
   --link-color: var(--primary);
   --link-visited-color: var(--primary);
 
-  // Table
+  /* Table */
   --bigtable-header-color: var(--background-black);
   --even-row-color: #020202;
   --project-status-border-bottom-color: var(--background-333);
 
-  // Pane widget
+  /* Pane widget */
   --pane-border-color: var(--background-333);
   --pane-header-border-color: var(--background-333);
   --pane-header-color: var(--background-black);
   --pane-text-color: var(--primary);
-  
-  // Tab bar widget
+
+  /* Tab bar widget */
   --tab-bar-border-color: var(--background-333);
   --tab-bar-text-color: #999;
   --tab-bar-background--checked: var(--background-black);
@@ -42,10 +42,10 @@ body.theme-dark {
   --tab-bar-add-background-color--hover: #d8efff;
   --tab-bar-add-border-color: var(--background-333);
 
-  // Side panel
+  /* Side panel */
   --side-panel-border-color: var(--background-333);
 
-  // Form 
+  /* Form */ 
   --input-color: #3a3a3a;
   --input-border: var(--background-dark);
   --header-search-border: var(--background-333);
