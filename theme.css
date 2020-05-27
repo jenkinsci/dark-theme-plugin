@@ -3,9 +3,14 @@
   --background-dark: #222;
   --background-333: #333;
   --background: var(--background-dark);
+  --grey: #9a9a9a;
 
   /* Text */
   --text-color: #c0c0c0;
+
+  /* Buttons */
+  --btn-secondary-bg: var(--background-dark);
+  --btn-secondary-color: var(--btn-primary-color);
 
   /* Header */
   --header-link-color: var(--primary);
