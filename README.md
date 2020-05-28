@@ -28,6 +28,13 @@ Coming soon!
 
 We will appreciate testing of the theme and any contributions to the theme.
 
+### Quick start
+
+We have a demo with a pre-configured Docker image you can use for trying out the Dark theme.
+You can find it [here](./demo/README.md).
+
+### Manual setup
+
 1. Run Jenkins from a pull request
   *  ```docker run --rm -ti -p 8080:8080 -e ID=4752 jenkins/core-pr-tester```
 2. Install the Simple Theme Plugin
