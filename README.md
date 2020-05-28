@@ -19,7 +19,7 @@ Main screen:
 
 Build console:
 
-![Build console log](./docs/images/screenshot_build_console.png)
+![Build console log](./docs/images/screenshot_build_console.PNG)
 
 ## References
 
