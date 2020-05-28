@@ -7,7 +7,6 @@
 
   /* Text */
   --text-color: #c0c0c0;
-  --link-dark-color: var(--primary);
 
   /* Buttons */
   --btn-secondary-bg: var(--background-dark);
@@ -28,6 +27,7 @@
   /* Links */
   --link-color: var(--primary);
   --link-visited-color: var(--primary);
+  --link-dark-color: var(--primary);
 
   /* Table */
   --bigtable-header-color: var(--background-black);
@@ -60,11 +60,11 @@
   --panel-border-color--hover: var(--background-black);
   --task-link-bg-color--hover: var(--background-black);
 
-  /* Form */ 
+  /* Form */
   --input-color: #3a3a3a;
   --input-border: var(--background-dark);
   --header-search-border: var(--background-333);
-  --input-hidden-password-background-color: var(--input-color);
+  --input-hidden-password-bg-color: var(--input-color);
 
   /* Pop out menus */
   --menu-bg-color: var(--background-333);
