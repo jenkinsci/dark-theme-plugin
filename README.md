@@ -42,3 +42,8 @@ You can find it [here](./demo/README.md).
   * You can use the jsdeliver CDN to pull it directly from GitHub: https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@master/theme.css
 
 More detailed testing guidelines are coming soon!
+
+### Development
+
+The pre-configured Docker image can be also used for development purposes.
+You can find the guide [here](./demo/README.md#development).
