@@ -48,7 +48,12 @@ You can find it [here](./demo/README.md).
 
 More detailed testing guidelines are coming soon!
 
-### References
+### Development
+
+The pre-configured Docker image can be also used for development purposes.
+You can find the guide [here](./demo/README.md#development).
+
+## References
 
 * The theme was created as a part of the [Jenkins UI/UX Hackfest](https://github.com/jenkinsci/ui-ux-hackfest-2020) on May 25-29, 2020.
 * The theme is inspired by the [camalot/jenkins-dark-stylish](https://github.com/camalot/jenkins-dark-stylish) theme, but it is a new theme created by scratch.
