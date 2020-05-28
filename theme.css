@@ -55,8 +55,8 @@
   --tab-bar-add-border-color: var(--background-333);
 
   /* Side panel */
-  --side-panel-border-color: var(--background-333);
-  --side-panel-border-color--hover: var(--background-black);
+  --panel-border-color: var(--background-333);
+  --panel-border-color--hover: var(--background-black);
   --task-link-background-color--hover: var(--background-black);
 
   /* Form */ 
