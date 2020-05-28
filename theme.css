@@ -7,6 +7,7 @@
 
   /* Text */
   --text-color: #c0c0c0;
+  --link-dark-color: var(--primary);
 
   /* Buttons */
   --btn-secondary-bg: var(--background-dark);
@@ -15,12 +16,12 @@
   /* Header */
   --header-link-color: var(--primary);
   --header-link-color-active: var(--primary-active);
-  --search-background: #4d545d;
+  --search-bg: #4d545d;
   --search-input-color: var(--primary);
 
   /* Breadcrumbs */
   --breadcrumbs-bg: var(--background-black);
-  --breadcrumbs-background-color--hover: var(--background-dark);
+  --breadcrumbs-bg-color--hover: var(--background-dark);
   --breadcrumbs-text-color: var(--text-color);
   --breadcrumbs-border: var(--background-333);
 
@@ -32,8 +33,8 @@
   --bigtable-header-color: var(--background-black);
   --even-row-color: #020202;
   --project-status-border-bottom-color: var(--background-333);
-  --table-parameters-background-color--hover: var(--background-333);
-  --table-stripped-background-color--hover: var(--background-333);
+  --table-parameters-bg-color--hover: var(--background-333);
+  --table-stripped-bg-color--hover: var(--background-333);
 
   /* Pane widget */
   --pane-border-color: var(--background-333);
@@ -46,18 +47,18 @@
   /* Tab bar widget */
   --tab-bar-border-color: var(--background-333);
   --tab-bar-text-color: #999;
-  --tab-bar-background--checked: var(--background-black);
+  --tab-bar-bg--checked: var(--background-black);
   --tab-bar-border-color--checked: var(--background-333);
   --tab-bar-text-color--checked: var(--primary);
-  --tab-bar-background-color--hover: var(--background-333);
-  --tab-bar-add-background-color--hover: var(--background-333);
+  --tab-bar-bg-color--hover: var(--background-333);
+  --tab-bar-add-bg-color--hover: var(--background-333);
   --tab-bar-add-text-color: var(--primary);
   --tab-bar-add-border-color: var(--background-333);
 
   /* Side panel */
   --panel-border-color: var(--background-333);
   --panel-border-color--hover: var(--background-black);
-  --task-link-background-color--hover: var(--background-black);
+  --task-link-bg-color--hover: var(--background-black);
 
   /* Form */ 
   --input-color: #3a3a3a;
@@ -66,11 +67,11 @@
   --input-hidden-password-background-color: var(--input-color);
 
   /* Pop out menus */
-  --menu-background-color: var(--background-333);
+  --menu-bg-color: var(--background-333);
   --menu-text-color: var(--primary);
   --menu-selected-color: var(--background-dark);
   --menu-box-shadow: none;
 
   /* Manage component */
-  --manage-option-background-color--hover: var(--background-333);
+  --manage-option-bg-color--hover: var(--background-333);
 }
