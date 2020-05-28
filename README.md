@@ -31,27 +31,9 @@ Build console:
 
 ## Contributing
 
-We will appreciate testing of the theme and any contributions to the theme.
-
-### Quick start
-
-We have a demo with a pre-configured Docker image you can use for trying out the Dark theme.
-You can find it [here](./demo/README.md).
-
-### Manual setup
-
-1. Run Jenkins from a pull request
-  *  ```docker run --rm -ti -p 8080:8080 -e ID=4752 jenkins/core-pr-tester```
-2. Install the Simple Theme Plugin
-3. Add the theme CSS from this repository to the instance
-  * You can use the jsdeliver CDN to pull it directly from GitHub: https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@master/theme.css
-
-More detailed testing guidelines are coming soon!
-
-### Development
-
-The pre-configured Docker image can be also used for development purposes.
-You can find the guide [here](./demo/README.md#development).
+Any contributions to the dark theme and compatibility are welcome!
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for the contribution guidelines.
+And thanks to all [contrhibutors](./CONTRIBUTORS.md)!
 
 ## References
 
