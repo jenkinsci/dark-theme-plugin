@@ -4,6 +4,7 @@ import jenkins.model.Jenkins
 import hudson.model.PageDecorator
 import org.jenkinsci.plugins.simpletheme.CssUrlThemeElement;
 
+//TODO(oleg_nenashev): Use a theme served from a volume
 Jenkins.instance.getExtensionList(PageDecorator.class)
     .get(SimpleThemeDecorator.class).getElements()
-        .add(new CssUrlThemeElement("http://localhost:8080/userContent/theme.css"))
+        .add(new CssUrlThemeElement("https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@master/theme.css"))
