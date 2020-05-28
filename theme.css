@@ -1,9 +1,9 @@
 :root {
   --background-black: #111;
   --background-dark: #222;
+  --background-medium: #2d2b2b;
   --background-333: #333;
   --background: var(--background-dark);
-  --grey: #9a9a9a;
 
   /* Text */
   --text-color: #c0c0c0;
@@ -74,4 +74,11 @@
 
   /* Manage component */
   --manage-option-bg-color--hover: var(--background-333);
+
+  /* Add form widget */
+  --add-item-categories-bg-color: var(--background-medium);
+  --add-item-categories-main-bg-color: var(--background-333);
+  --add-item-btn-decorator-border-color: var(--background-333);
+  --add-item-categories-bg-color--hover: var(--background-333);
+  --add-item-btn-decorator-color: var(--background-333);
 }
