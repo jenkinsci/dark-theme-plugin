@@ -7,6 +7,11 @@
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/timja"><img src="https://avatars3.githubusercontent.com/u/21194782?v=4" width="100px;" alt=""/><br /><sub><b>Tim Jacomb</b></sub></a></td>
+  </tr>
+</table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->

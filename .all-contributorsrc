@@ -1,10 +1,26 @@
 {
-  "files": ["CONTRIBUTORS.md"],
+  "files": [
+    "CONTRIBUTORS.md"
+  ],
   "imageSize": 100,
   "contributorsPerLine": 7,
   "contributorsSortAlphabetically": true,
   "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square)](#contributors)",
   "contributorTemplate": "<a href=\"<%= contributor.profile %>\"><img src=\"<%= contributor.avatar_url %>\" width=\"<%= options.imageSize %>px;\" alt=\"\"/><br /><sub><b><%= contributor.name %></b></sub></a>",
-  "skipCi": "true",
-  "contributors": []
+  "skipCi": true,
+  "contributors": [
+    {
+      "login": "timja",
+      "name": "Tim Jacomb",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/21194782?v=4",
+      "profile": "https://github.com/timja",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "projectName": "dark-theme",
+  "projectOwner": "jenkinsci",
+  "repoType": "github",
+  "repoHost": "https://github.com"
 }
