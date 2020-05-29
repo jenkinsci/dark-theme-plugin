@@ -82,6 +82,7 @@
 
   /* Add form widget */
   --light-bg-color: var(--background-medium);
+  --light-bg-color--hover: var(--background-dark);
   --bright-bg-color: var(--background-333);
   --brightest-bg-color: var(--input-color);
   --add-item-btn-decorator-border-color: var(--background-333);
@@ -92,6 +93,9 @@
 
   /* Plugin manager */
   --plugin-manager-bg-color-already-upgraded: var(--background-medium);
+
+  /* Auto complete */
+  --auto-complete-bg-color--prehighlight: var(--primary);
 }
 
 /**
