@@ -21,7 +21,7 @@
   --header-link-color: var(--primary);
   --header-link-color-active: var(--primary-active);
   --search-bg: #4d545d;
-  --search-input-color: var(--primary);
+  --search-input-color: var(--text-color);
 
   /* Breadcrumbs */
   --breadcrumbs-bg: var(--background-black);
@@ -89,6 +89,9 @@
   --add-item-btn-decorator-bg-color: var(--background-333);
   --configure-job-bottom-sticker-bg-color: var(--background-333);
   --configure-job-bottom-sticker-border-color: var(--background-333);
+
+  /* Plugin manager */
+  --plugin-manager-bg-color-already-upgraded: var(--background-medium);
 }
 
 /**
