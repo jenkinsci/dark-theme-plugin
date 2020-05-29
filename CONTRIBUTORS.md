@@ -1,7 +1,7 @@
 # Contributors
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
@@ -14,6 +14,7 @@
     <td align="center"><a href="https://peterjonsson.se"><img src="https://avatars2.githubusercontent.com/u/4572231?v=4" width="100px;" alt=""/><br /><sub><b>Peter Jonsson</b></sub></a></td>
     <td align="center"><a href="https://github.com/oleg-nenashev"><img src="https://avatars0.githubusercontent.com/u/3000480?v=4" width="100px;" alt=""/><br /><sub><b>Oleg Nenashev</b></sub></a></td>
     <td align="center"><a href="https://github.com/res0nance"><img src="https://avatars3.githubusercontent.com/u/31362124?v=4" width="100px;" alt=""/><br /><sub><b>Raihaan Shouhell</b></sub></a></td>
+    <td align="center"><a href="https://github.com/EstherAF"><img src="https://avatars2.githubusercontent.com/u/5547479?v=4" width="100px;" alt=""/><br /><sub><b>Esther Álvarez Feijoo</b></sub></a></td>
   </tr>
 </table>
 
