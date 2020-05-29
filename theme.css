@@ -1,4 +1,4 @@
-:root {
+.blah {
   --background-black: #111;
   --background-dark: #222;
   --background-medium: #2d2b2b;
@@ -93,6 +93,11 @@
 
   /* Plugin manager */
   --plugin-manager-bg-color-already-upgraded: var(--background-medium);
+  --plugin-manager-category-link-bg-color: #5d5b5b;
+  --plugin-manager-category-link-bg-color--hover: var(--background-333);
+  --plugin-manager-category-link-border-color--hover: var(--background-black);
+  --plugin-manager-category-text-color: var(--background-black);
+  --plugin-manager-category-link-color--hover: #a5a3a3;
 
   /* Auto complete */
   --auto-complete-bg-color--prehighlight: var(--primary);
