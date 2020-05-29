@@ -17,6 +17,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "fqueiruga",
+      "name": "Félix Queiruga",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/5738588?v=4",
+      "profile": "https://github.com/fqueiruga",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "projectName": "dark-theme",
