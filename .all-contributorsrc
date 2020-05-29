@@ -26,6 +26,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "95jonpet",
+      "name": "Peter Jonsson",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/4572231?v=4",
+      "profile": "https://peterjonsson.se",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "projectName": "dark-theme",
