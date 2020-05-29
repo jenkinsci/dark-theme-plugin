@@ -4,6 +4,7 @@
   --background-medium: #2d2b2b;
   --background-333: #333;
   --background: var(--background-dark);
+  --very-light-grey: var(--background-dark);
 
   /* Text */
   --text-color: #c0c0c0;
@@ -11,6 +12,10 @@
   /* Buttons */
   --btn-secondary-bg: var(--background-dark);
   --btn-secondary-color: var(--btn-primary-color);
+
+  /* Help area */
+  --help-area-bg-color: var(--background-333);
+  --configure-job-help-area-bg-color: var(--background-dark);
 
   /* Header */
   --header-link-color: var(--primary);
@@ -76,9 +81,12 @@
   --manage-option-bg-color--hover: var(--background-333);
 
   /* Add form widget */
-  --add-item-categories-bg-color: var(--background-medium);
-  --add-item-categories-main-bg-color: var(--background-333);
+  --light-bg-color: var(--background-medium);
+  --bright-bg-color: var(--background-333);
+  --brightest-bg-color: var(--input-color);
   --add-item-btn-decorator-border-color: var(--background-333);
   --add-item-categories-bg-color--hover: var(--background-333);
-  --add-item-btn-decorator-color: var(--background-333);
+  --add-item-btn-decorator-bg-color: var(--background-333);
+  --configure-job-bottom-sticker-bg-color: var(--background-333);
+  --configure-job-bottom-sticker-border-color: var(--background-333);
 }
