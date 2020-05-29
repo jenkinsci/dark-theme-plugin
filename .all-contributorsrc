@@ -62,6 +62,15 @@
       "contributions": [
         "test"
       ]
+    },
+    {
+      "login": "nimishbongale",
+      "name": "Nimish Bongale",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/43414361?v=4",
+      "profile": "https://nimishbongale.github.io",
+      "contributions": [
+        "test"
+      ]
     }
   ],
   "projectName": "dark-theme",
