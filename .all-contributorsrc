@@ -44,6 +44,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "res0nance",
+      "name": "Raihaan Shouhell",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/31362124?v=4",
+      "profile": "https://github.com/res0nance",
+      "contributions": [
+        "test"
+      ]
     }
   ],
   "projectName": "dark-theme",
