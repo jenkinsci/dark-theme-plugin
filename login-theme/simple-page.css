@@ -21,6 +21,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+@import "./simple-page-variables.less";
+
 html {
   height: 100vh;
   font-family: "LatoLatinWeb", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -51,6 +53,7 @@ html {
   -webkit-justify-content: center;
   justify-content: center;
   min-height: 90vh;
+  background: var(--background-black);
 }
 
 .simple-page form {

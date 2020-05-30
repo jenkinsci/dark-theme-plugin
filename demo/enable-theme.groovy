@@ -1,4 +1,4 @@
-// TODO: It should be in JCasC, but a demo patch is needed. We will use Groovy for now
+//TODO: cleanup oleg-nenashev/dark-theme references for JSDELIVR
 import org.codefirst.SimpleThemeDecorator
 import jenkins.model.Jenkins
 import hudson.model.PageDecorator
@@ -12,7 +12,7 @@ boolean developerMode = Boolean.getBoolean("io.jenkins.themes.dark.developerMode
 // Simple Theme
 if (!disabled) {
     String themeUrl = developerMode
-        ? "http://localhost:8080/userContent/theme.css"
+        ? "https://cdn.jsdelivr.net/gh/oleg-nenashev/dark-theme@dark-login/theme.css"
         : "https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@master/theme.css"
     def simpleThemeConfig = Jenkins.instance.getExtensionList(PageDecorator.class).get(SimpleThemeDecorator.class)
     simpleThemeConfig.getElements().add(new CssUrlThemeElement(themeUrl))
@@ -49,7 +49,7 @@ if (developerMode) {
 
 if (!disabled) {
     if (developerMode) {
-        loginThemeConfig.head += '<link rel="stylesheet" href="http://localhost:8080/userContent/theme.css" type="text/css" />'
+        loginThemeConfig.head += '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/oleg-nenashev/dark-theme@dark-login/theme.css" type="text/css" />'
     } else {
         loginThemeConfig.head += '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@master/theme.css" type="text/css" />'
     }

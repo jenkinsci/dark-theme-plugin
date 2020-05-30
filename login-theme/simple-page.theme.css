@@ -25,6 +25,8 @@
  * IE11 prevents of the usage of variable,
  * but to show the color theme we left it here
  */
+@import "./simple-page-variables.less";
+
 :root {
   --main-bg-color-focus: #2171ce;
   --main-bg-color: #4A90E2;
