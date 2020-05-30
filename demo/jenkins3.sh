@@ -3,6 +3,12 @@
 
 extra_java_opts=( )
 
+if [[ "$LIGHT" ]] ; then
+  extra_java_opts+=( \
+    '-Dio.jenkins.themes.dark.disable=true' \
+  )
+fi
+
 if [[ "$DEVEL" ]] ; then
   extra_java_opts+=( \
     '-Dio.jenkins.themes.dark.developerMode=true' \

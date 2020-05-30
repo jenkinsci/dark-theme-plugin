@@ -15,7 +15,7 @@ RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 
 # Inject configuration
 COPY enable-theme.groovy /usr/share/jenkins/ref/init.groovy.d/enable-theme.groovy
-RUN mkdir /usr/share/jenkins/ref/userContent
+RUN mkdir -p /usr/share/jenkins/ref/userContent/login-theme
 
 COPY jenkins3.sh /usr/local/bin/jenkins3.sh
 ENTRYPOINT ["tini", "--", "/usr/local/bin/jenkins3.sh"]
