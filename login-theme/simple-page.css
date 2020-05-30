@@ -53,7 +53,7 @@ html {
   -webkit-justify-content: center;
   justify-content: center;
   min-height: 90vh;
-  background: var(--background-black);
+  background: var(--background);
 }
 
 .simple-page form {
