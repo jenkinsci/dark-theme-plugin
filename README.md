@@ -1,15 +1,36 @@
 # Dark Theme for Jenkins (Incubated project)
 
-[![Gitter](https://badges.gitter.im/jenkinsci/hackfest.svg)](https://gitter.im/jenkinsci/hackfest?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://badges.gitter.im/jenkinsci/ux-sig.svg)](https://gitter.im/jenkinsci/ux-sig?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-This repository contains a new dark theme for Jenkins which is currently **under development**.
-It requires changes in the Jenkins core, and it is not ready for production use.
-Visualization is also not perfect, contributions are welcome!
+This repository contains a dark theme for Jenkins.
+
+*Requires Jenkins >= 2.239*
 
 ## Usage
 
-The theme is designed to be used with the [Simple Theme Plugin](https://plugins.jenkins.io/simple-theme-plugin/).
+To install this theme use the [Simple Theme Plugin](https://plugins.jenkins.io/simple-theme-plugin/).
+
 See the plugin documentation for theme installation guidelines.
+
+_Note: replace 'tag-name' with the latest released version:_
+
+[![GitHub release](https://img.shields.io/github/release/jenkinsci/dark-theme.svg?label=latest)](https://github.com/jenkinsci/dark-theme/releases/latest)
+
+The CSS URL is:
+
+```text
+https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/theme.css
+```
+
+or with the [configuration-as-code](https://github.com/jenkinsci/configuration-as-code-plugin) plugin:
+
+```yaml
+unclassified:
+  simple-theme-plugin:
+    elements:
+      - cssUrl:
+          url: "https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/theme.css"
+```
 
 ## Screenshots
 
@@ -20,6 +41,20 @@ Main screen:
 Build console:
 
 ![Build console log](./docs/images/screenshot_build_console.PNG)
+
+## Browser compatibility
+
+The theme should be compatible with all modern browsers.
+
+No version of IE will be supported.
+
+## Jenkins compatibility
+
+This project is in active development and needs a recent version of Jenkins, at least v2.239.
+
+We will do our best to not break new versions of the theme against older supported versions of Jenkins.
+
+To be safe you should use our published releases instead of relying on the master branch
 
 ## References
 
