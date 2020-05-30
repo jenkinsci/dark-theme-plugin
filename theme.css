@@ -27,6 +27,7 @@
   --breadcrumbs-bg: var(--background-black);
   --breadcrumbs-bg-color--hover: var(--background-dark);
   --breadcrumbs-text-color: var(--text-color);
+  --breadcrumbs-item-bg-color--hover: var(--background-dark);
   --breadcrumbs-border: var(--background-333);
 
   /* Links */
