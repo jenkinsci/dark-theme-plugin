@@ -36,7 +36,7 @@ html {
 }
 
 .simple-page .logo {
-  background-image: url('../images/jenkins.svg');
+  background-image: url('/images/jenkins.svg');
   background-repeat: no-repeat;
   background-position: 50% 0;
   height: 130px;
