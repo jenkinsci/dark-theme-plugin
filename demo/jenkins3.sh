@@ -1,5 +1,6 @@
 #! /bin/bash -e
 # Additional wrapper, which adds custom environment options for the run
+# See the Makefile for option examples
 
 extra_java_opts=( )
 
