@@ -1,5 +1,5 @@
 DEMO_IMAGE=jenkins4eval/dark-theme
-DEVEL_VOLUMES=-v $(CURDIR)/../theme.css:/usr/share/jenkins/ref/userContent/theme.css
+DEVEL_VOLUMES=-v $(CURDIR)/../src/main/resources/io/jenkins/plugins/darktheme/theme.css:/usr/share/jenkins/ref/userContent/theme.css
 # TODO: Override by your local path if needed
 LOCAL_THEME=../../../core/jenkins/war/src/main/webapp/css
 LOGIN_THEME_VOLUME=-v $(CURDIR)/${LOCAL_THEME}:/usr/share/jenkins/ref/userContent/login-theme

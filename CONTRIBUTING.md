@@ -18,7 +18,7 @@ You can find it [here](./demo/README.md).
   *  ```docker run --rm -ti -p 8080:8080 -e ID=4752 jenkins/core-pr-tester```
 2. Install the Simple Theme Plugin
 3. Add the theme CSS from this repository to the instance
-  * You can use the jsdeliver CDN to pull it directly from GitHub: https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@master/theme.css
+  * You can use the jsdeliver CDN to pull it directly from GitHub: https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@master/src/main/resources/io/jenkins/plugins/darktheme/theme.css
 
 More detailed testing guidelines are coming soon!
 
