@@ -18,7 +18,8 @@ import org.kohsuke.stapler.WebMethod;
 public class DarkThemeManagerFactory extends ThemeManagerFactory {
 
     @DataBoundConstructor
-    public DarkThemeManagerFactory() {}
+    public DarkThemeManagerFactory() {
+    }
 
     @Override
     public Theme getTheme() {
@@ -26,23 +27,20 @@ public class DarkThemeManagerFactory extends ThemeManagerFactory {
                 .withCssUrl(getCssUrl())
                 .build();
     }
-    
+
     @Extension
     public static class DarkThemeManagerFactoryDescriptor extends ThemeManagerFactoryDescriptor {
 
         @WebMethod(name = "theme.css")
         public void doDarkThemeCss(StaplerRequest req, StaplerResponse res) throws IOException {
-            try(
-                    InputStream themeInputStream = DarkThemeManagerFactory.class.getClassLoader()
-                    .getResourceAsStream("/io/jenkins/plugins/darktheme/theme.css") // not sure why I need the full path?
-            ) {
+            try (InputStream themeInputStream = getClass().getResourceAsStream("theme.css")) {
                 res.setContentType("text/css");
                 Objects.requireNonNull(themeInputStream);
                 String s1 = IOUtils.toString(themeInputStream, StandardCharsets.UTF_8);
                 res.getWriter().print(s1);
             }
         }
-        
+
         @NonNull
         @Override
         public String getDisplayName() {
