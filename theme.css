@@ -8,6 +8,7 @@
 
   /* Text */
   --text-color: #c0c0c0;
+  --text-color-call-to-action: var(--background-medium);
 
   /* Buttons */
   --btn-secondary-bg: var(--background-dark);
