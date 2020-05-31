@@ -18,10 +18,10 @@ RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 COPY enable-theme.groovy /usr/share/jenkins/ref/init.groovy.d/enable-theme.groovy
 RUN mkdir -p /usr/share/jenkins/ref/userContent/login-theme
 
-## Dark theme development mode
+## Development mode
 COPY static-file-server.yml /usr/share/jenkins/ref/static-file-server.yml
 RUN mkdir /usr/share/jenkins/ref/userContent/images
-COPY images/jenkins.svg /usr/share/jenkins/ref/userContent/images/jenkins.svg
+RUN wget https://raw.githubusercontent.com/jenkinsci/jenkins/master/war/src/main/webapp/images/jenkins.svg -O /usr/share/jenkins/ref/userContent/images/jenkins.svg
 
 COPY jenkins3.sh /usr/local/bin/jenkins3.sh
 ENTRYPOINT ["tini", "--", "/usr/local/bin/jenkins3.sh"]

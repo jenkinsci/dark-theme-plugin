@@ -1,4 +1,3 @@
-//TODO: cleanup oleg-nenashev/dark-theme references for JSDELIVR
 import org.codefirst.SimpleThemeDecorator
 import jenkins.model.Jenkins
 import hudson.model.PageDecorator
@@ -8,6 +7,7 @@ import jenkins.model.SimplePageDecorator
 
 boolean disabled = Boolean.getBoolean("io.jenkins.themes.dark.disabled")
 boolean developerMode = Boolean.getBoolean("io.jenkins.themes.dark.developerMode")
+boolean darkLogin = Boolean.getBoolean("io.jenkins.themes.dark.login")
 
 // Simple Theme
 if (!disabled) {
@@ -16,6 +16,10 @@ if (!disabled) {
         : "https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@master/theme.css"
     def simpleThemeConfig = Jenkins.instance.getExtensionList(PageDecorator.class).get(SimpleThemeDecorator.class)
     simpleThemeConfig.getElements().add(new CssUrlThemeElement(themeUrl))
+}
+
+if (!darkLogin) {
+    return;
 }
 
 // Login Theme

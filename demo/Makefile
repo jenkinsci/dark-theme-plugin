@@ -1,5 +1,8 @@
 DEMO_IMAGE=jenkins4eval/dark-theme
-DEVEL_VOLUMES=-v $(CURDIR)/../theme.css:/usr/share/jenkins/ref/userContent/theme.css -v $(CURDIR)/../login-theme:/usr/share/jenkins/ref/userContent/login-theme
+DEVEL_VOLUMES=-v $(CURDIR)/../theme.css:/usr/share/jenkins/ref/userContent/theme.css
+# TODO: Override by your local path if needed
+LOCAL_THEME=../../../core/jenkins/war/src/main/webapp/css
+LOGIN_THEME_VOLUME=-v $(CURDIR)/${LOCAL_THEME}:/usr/share/jenkins/ref/userContent/login-theme
 
 build:
 	docker build -t ${DEMO_IMAGE} .
@@ -18,7 +21,10 @@ run-light-preview:
 	docker run --rm  -e LIGHT=true -p 8080:8080 -p 50000:50000 ${DEMO_IMAGE}
 
 devel:
-	docker run --rm  -e DEVEL=true  -p 8080:8080 -p 8081:8081 -p 50000:50000 ${DEVEL_VOLUMES} ${DEMO_IMAGE}
+	docker run --rm  -e DEVEL=true -p 8080:8080 -p 8081:8081 -p 50000:50000 ${DEVEL_VOLUMES} ${DEMO_IMAGE}
+
+devel-login:
+	docker run --rm  -e DEVEL=true -e DARK_LOGIN=true -p 8080:8080 -p 8081:8081 -p 50000:50000 ${DEVEL_VOLUMES} ${LOGIN_THEME_VOLUME} ${DEMO_IMAGE}
 
 devel-preview:
 	docker run --rm  -e EXPERIMENTAL_UI=true -e DEVEL=true -p 8080:8080 -p 8081:8081 -p 50000:50000 ${DEVEL_VOLUMES} ${DEMO_IMAGE}
