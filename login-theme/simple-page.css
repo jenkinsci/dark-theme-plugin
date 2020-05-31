@@ -21,13 +21,14 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-@import "./simple-page-variables.less";
+@import "./simple-page-variables.css";
 
 html {
   height: 100vh;
   font-family: "LatoLatinWeb", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  color: var(--text-color);
 }
 
 .simple-page h1 {
@@ -69,7 +70,10 @@ html {
   text-decoration: none;
   font-size: 18px;
   border-radius: 3px;
-  border: 1px solid rgba(74,74,74,0.25);
+  border-width: 1px;
+  border-color: var(--input-form-border);
+  background-color: var(--background-medium);
+  color: var(--text-color);
 }
 
 .simple-page input[type=text],
@@ -92,7 +96,8 @@ html {
 
 .simple-page form .submit input {
   border-radius: 3px;
-  color: #fff;
+  font-weight: bold;
+  color: var(--btn-text-color);
   cursor: pointer;
 }
 
