@@ -1,6 +1,6 @@
 # Dark Theme demo for Jenkins
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/jenkins4eval/dark-theme)](https://hub.docker.com/r/jenkins4eval/dark-theme)
+![Docker Pulls](https://img.shields.io/docker/pulls/jenkins4eval/dark-theme)
 
 Demo that can be used for evaluation and testing of the Dark theme.
 This demo is based on [oleg-nenashev/demo-jenkins-config-as-code](https://github.com/oleg-nenashev/demo-jenkins-config-as-code)
