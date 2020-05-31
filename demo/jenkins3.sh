@@ -13,6 +13,8 @@ if [[ "$DEVEL" ]] ; then
   extra_java_opts+=( \
     '-Dio.jenkins.themes.dark.developerMode=true' \
   )
+  echo "Will run a static server for themes on port 8079"
+  static-file-server --config /usr/share/jenkins/ref/static-file-server.yml &
 fi
 
 if [[ "$EXPERIMENTAL_UI" ]] ; then

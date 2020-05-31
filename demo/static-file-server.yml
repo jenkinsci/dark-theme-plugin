@@ -1,0 +1,11 @@
+# configuration for https://github.com/halverneus/static-file-server
+cors: false
+debug: false
+folder: /usr/share/jenkins/ref/userContent/
+host: ""
+port: 8081
+referrers: []
+show-listing: true
+tls-cert: ""
+tls-key: ""
+url-prefix: ""

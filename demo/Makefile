@@ -18,13 +18,13 @@ run-light-preview:
 	docker run --rm  -e LIGHT=true -p 8080:8080 -p 50000:50000 ${DEMO_IMAGE}
 
 devel:
-	docker run --rm  -e DEVEL=true  -p 8080:8080 -p 50000:50000 ${DEVEL_VOLUMES} ${DEMO_IMAGE}
+	docker run --rm  -e DEVEL=true  -p 8080:8080 -p 8081:8081 -p 50000:50000 ${DEVEL_VOLUMES} ${DEMO_IMAGE}
 
 devel-preview:
-	docker run --rm  -e EXPERIMENTAL_UI=true -e DEVEL=true -p 8080:8080 -p 50000:50000 ${DEVEL_VOLUMES} ${DEMO_IMAGE}
+	docker run --rm  -e EXPERIMENTAL_UI=true -e DEVEL=true -p 8080:8080 -p 8081:8081 -p 50000:50000 ${DEVEL_VOLUMES} ${DEMO_IMAGE}
 
 devel-light:
-	docker run --rm  -e DEVEL=true  -p 8080:8080 -p 50000:50000 ${DEVEL_VOLUMES} ${DEMO_IMAGE}
+	docker run --rm  -e DEVEL=true  -p 8080:8080 -p 8081:8081 -p 50000:50000 ${DEVEL_VOLUMES} ${DEMO_IMAGE}
 
 devel-light-preview:
-	docker run --rm  -e EXPERIMENTAL_UI=true -e DEVEL=true -p 8080:8080 -p 50000:50000 ${DEVEL_VOLUMES} ${DEMO_IMAGE}
+	docker run --rm  -e EXPERIMENTAL_UI=true -e DEVEL=true -p 8080:8080 -p 8081:8081 -p 50000:50000 ${DEVEL_VOLUMES} ${DEMO_IMAGE}
