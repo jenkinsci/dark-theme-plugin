@@ -18,5 +18,4 @@ COPY enable-theme.groovy /usr/share/jenkins/ref/init.groovy.d/enable-theme.groov
 RUN mkdir /usr/share/jenkins/ref/userContent
 
 COPY jenkins3.sh /usr/local/bin/jenkins3.sh
-RUN chmod +x /usr/local/bin/jenkins3.sh
 ENTRYPOINT ["tini", "--", "/usr/local/bin/jenkins3.sh"]
