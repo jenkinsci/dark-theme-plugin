@@ -18,6 +18,9 @@
   --configure-job-help-area-bg-color: var(--background-dark);
 
   /* Header */
+  --logo-bg: var(--background-dark);
+  --brand-link-color: var(--primary);
+  --header-bg-v2: var(--background-medium);
   --header-link-color: var(--primary);
   --header-link-color-active: var(--primary-active);
   --search-bg: #4d545d;
