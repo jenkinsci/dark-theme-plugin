@@ -53,6 +53,7 @@
   --pane-text-color: var(--primary);
   --pane-link-color: var(--primary);
   --pane-link-color--visited: var(--primary);
+  
 
   /* Tab bar widget */
   --tab-bar-border-color: var(--background-333);
@@ -66,6 +67,7 @@
   --tab-bar-add-border-color: var(--background-333);
 
   /* Side panel */
+  --panel-header-bg-color: var(--background-black);
   --panel-border-color: var(--background-333);
   --panel-border-color--hover: var(--background-black);
   --task-link-bg-color--hover: var(--background-black);
