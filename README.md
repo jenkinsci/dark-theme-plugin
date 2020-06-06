@@ -68,7 +68,7 @@ To be safe you should use our published releases instead of relying on the maste
 
 Any contributions to the dark theme and compatibility are welcome!
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for the contribution guidelines.
-And thanks to all [contrhibutors](./CONTRIBUTORS.md)!
+And thanks to all [contributors](./CONTRIBUTORS.md)!
 
 ## References
 
