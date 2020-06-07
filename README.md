@@ -16,11 +16,15 @@ _Note: replace 'tag-name' with the latest released version:_
 
 [![GitHub release](https://img.shields.io/github/release/jenkinsci/dark-theme.svg?label=latest)](https://github.com/jenkinsci/dark-theme/releases/latest)
 
-The CSS URL is:
+The CSS URLs are:
 
 ```text
 https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/theme.css
+https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/theme-system.css
 ```
+
+* theme.css - forces dark theme for all users
+* theme-system.css - respects users system setting for dark / light mode, in most cases this is the theme you should be using
 
 or with the [configuration-as-code](https://github.com/jenkinsci/configuration-as-code-plugin) plugin:
 
@@ -29,7 +33,8 @@ unclassified:
   simple-theme-plugin:
     elements:
       - cssUrl:
-          url: "https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/theme.css"
+          url: "https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/theme-system.css"
+          #url: "https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/theme.css"
 ```
 
 ## Screenshots
