@@ -1,5 +1,6 @@
 # Dark Theme for Jenkins (Incubated project)
 
+[![Changelog](https://img.shields.io/github/release/jenkinsci/dark-theme.svg?label=changelog)](https://github.com/jenkinsci/dark-theme/releases/)
 [![Gitter](https://badges.gitter.im/jenkinsci/ux-sig.svg)](https://gitter.im/jenkinsci/ux-sig?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 This repository contains a dark theme for Jenkins.
@@ -13,7 +14,6 @@ To install this theme use the [Simple Theme Plugin](https://plugins.jenkins.io/s
 See the plugin documentation for theme installation guidelines.
 
 _Note: replace 'tag-name' with the latest released version:_
-
 [![GitHub release](https://img.shields.io/github/release/jenkinsci/dark-theme.svg?label=latest)](https://github.com/jenkinsci/dark-theme/releases/latest)
 
 The CSS URLs are:
