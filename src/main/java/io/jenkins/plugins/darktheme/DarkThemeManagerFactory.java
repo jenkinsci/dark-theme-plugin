@@ -2,14 +2,14 @@ package io.jenkins.plugins.darktheme;
 
 import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.Extension;
+import io.jenkins.plugins.thememanager.Theme;
+import io.jenkins.plugins.thememanager.ThemeManagerFactory;
+import io.jenkins.plugins.thememanager.ThemeManagerFactoryDescriptor;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 import org.apache.commons.io.IOUtils;
-import org.jenkinsci.plugins.thememanager.Theme;
-import org.jenkinsci.plugins.thememanager.ThemeManagerFactory;
-import org.jenkinsci.plugins.thememanager.ThemeManagerFactoryDescriptor;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.StaplerResponse;
