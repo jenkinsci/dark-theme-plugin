@@ -12,6 +12,14 @@ We are also looking for early adopters and testers who are interested to try out
 We have a demo with a pre-configured Docker image you can use for trying out the Dark theme.
 You can find it [here](./demo/README.md).
 
+## Developing
+
+Start the theme plugin with `mvn hpi:run`
+
+You will get a development instance of Jenkins running on port 8080
+
+Any changes you make to the theme CSS file will be reflected after refreshing the page, no need to restart Jenkins.
+
 ### Manual setup
 
 1. Run Jenkins from a pull request
