@@ -15,12 +15,12 @@ import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.StaplerResponse;
 import org.kohsuke.stapler.WebMethod;
 
-public class DarkThemeManagerFactory extends ThemeManagerFactory {
+public class DarkThemeSystemManagerFactory extends ThemeManagerFactory {
 
-    public static final String THEME_CSS = "theme.css";
+    private static final String THEME_SYSTEM_CSS = "theme-system.css";
 
     @DataBoundConstructor
-    public DarkThemeManagerFactory() {
+    public DarkThemeSystemManagerFactory() {
     }
 
     @Override
@@ -29,13 +29,23 @@ public class DarkThemeManagerFactory extends ThemeManagerFactory {
                 .withCssUrl(getCssUrl())
                 .build();
     }
-
+    
     @Extension
-    public static class DarkThemeManagerFactoryDescriptor extends ThemeManagerFactoryDescriptor {
+    public static class DarkThemeSystemManagerFactoryDescriptor extends ThemeManagerFactoryDescriptor {
 
-        @WebMethod(name = THEME_CSS)
+        @WebMethod(name = THEME_SYSTEM_CSS)
+        public void doDarkThemeSystemCss(StaplerRequest req, StaplerResponse res) throws IOException {
+            try (InputStream themeInputStream = getClass().getResourceAsStream(THEME_SYSTEM_CSS)) {
+                res.setContentType("text/css");
+                Objects.requireNonNull(themeInputStream);
+                String s1 = IOUtils.toString(themeInputStream, StandardCharsets.UTF_8);
+                res.getWriter().print(s1);
+            }
+        }
+
+        @WebMethod(name = DarkThemeManagerFactory.THEME_CSS)
         public void doDarkThemeCss(StaplerRequest req, StaplerResponse res) throws IOException {
-            try (InputStream themeInputStream = getClass().getResourceAsStream(THEME_CSS)) {
+            try (InputStream themeInputStream = getClass().getResourceAsStream(DarkThemeManagerFactory.THEME_CSS)) {
                 res.setContentType("text/css");
                 Objects.requireNonNull(themeInputStream);
                 String s1 = IOUtils.toString(themeInputStream, StandardCharsets.UTF_8);
@@ -46,12 +56,17 @@ public class DarkThemeManagerFactory extends ThemeManagerFactory {
         @NonNull
         @Override
         public String getDisplayName() {
-            return "Dark";
+            return "Dark (Respect OS/Browser system setting)";
+        }
+
+        @Override
+        public String getThemeCssSuffix() {
+            return "theme-system.css";
         }
 
         @Override
         public ThemeManagerFactory getInstance() {
-            return new DarkThemeManagerFactory();
+            return new DarkThemeSystemManagerFactory();
         }
     }
 }

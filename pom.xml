@@ -13,9 +13,9 @@
   <version>${revision}${changelist}</version>
   <packaging>hpi</packaging>
   <properties>
-    <revision>1.0</revision>
+    <revision>0.1</revision>
     <changelist>-SNAPSHOT</changelist>
-    <jenkins.version>2.239-SNAPSHOT</jenkins.version>
+    <jenkins.version>2.240</jenkins.version>
     <java.level>8</java.level>
   </properties>
   <name>Dark theme</name>
