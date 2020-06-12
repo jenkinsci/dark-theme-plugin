@@ -5,19 +5,14 @@ import hudson.Extension;
 import io.jenkins.plugins.thememanager.Theme;
 import io.jenkins.plugins.thememanager.ThemeManagerFactory;
 import io.jenkins.plugins.thememanager.ThemeManagerFactoryDescriptor;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
-import java.util.Objects;
-import org.apache.commons.io.IOUtils;
+import jenkins.model.Jenkins;
+import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
-import org.kohsuke.stapler.StaplerRequest;
-import org.kohsuke.stapler.StaplerResponse;
-import org.kohsuke.stapler.WebMethod;
 
 public class DarkThemeManagerFactory extends ThemeManagerFactory {
 
     public static final String THEME_CSS = "theme.css";
+    public static final String THEME_URL_NAME = "theme-dark";
 
     @DataBoundConstructor
     public DarkThemeManagerFactory() {
@@ -26,22 +21,13 @@ public class DarkThemeManagerFactory extends ThemeManagerFactory {
     @Override
     public Theme getTheme() {
         return Theme.builder()
-                .withCssUrl(getCssUrl())
+                .withCssUrl(Jenkins.get().getRootUrl() + THEME_URL_NAME + "/" + getDescriptor().getThemeCssSuffix())
                 .build();
     }
-
+    
     @Extension
+    @Symbol("dark")
     public static class DarkThemeManagerFactoryDescriptor extends ThemeManagerFactoryDescriptor {
-
-        @WebMethod(name = THEME_CSS)
-        public void doDarkThemeCss(StaplerRequest req, StaplerResponse res) throws IOException {
-            try (InputStream themeInputStream = getClass().getResourceAsStream(THEME_CSS)) {
-                res.setContentType("text/css");
-                Objects.requireNonNull(themeInputStream);
-                String s1 = IOUtils.toString(themeInputStream, StandardCharsets.UTF_8);
-                res.getWriter().print(s1);
-            }
-        }
 
         @NonNull
         @Override

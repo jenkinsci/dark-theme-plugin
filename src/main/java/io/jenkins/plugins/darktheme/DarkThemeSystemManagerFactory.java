@@ -9,15 +9,19 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
+import jenkins.model.Jenkins;
 import org.apache.commons.io.IOUtils;
+import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.StaplerResponse;
 import org.kohsuke.stapler.WebMethod;
 
+import static io.jenkins.plugins.darktheme.DarkThemeManagerFactory.THEME_URL_NAME;
+
 public class DarkThemeSystemManagerFactory extends ThemeManagerFactory {
 
-    private static final String THEME_SYSTEM_CSS = "theme-system.css";
+    public static final String THEME_SYSTEM_CSS = "theme-system.css";
 
     @DataBoundConstructor
     public DarkThemeSystemManagerFactory() {
@@ -26,33 +30,14 @@ public class DarkThemeSystemManagerFactory extends ThemeManagerFactory {
     @Override
     public Theme getTheme() {
         return Theme.builder()
-                .withCssUrl(getCssUrl())
+                .withCssUrl(Jenkins.get().getRootUrl() + THEME_URL_NAME + "/" + getDescriptor().getThemeCssSuffix())
                 .build();
     }
     
     @Extension
+    @Symbol("darkSystem")
     public static class DarkThemeSystemManagerFactoryDescriptor extends ThemeManagerFactoryDescriptor {
-
-        @WebMethod(name = THEME_SYSTEM_CSS)
-        public void doDarkThemeSystemCss(StaplerRequest req, StaplerResponse res) throws IOException {
-            try (InputStream themeInputStream = getClass().getResourceAsStream(THEME_SYSTEM_CSS)) {
-                res.setContentType("text/css");
-                Objects.requireNonNull(themeInputStream);
-                String s1 = IOUtils.toString(themeInputStream, StandardCharsets.UTF_8);
-                res.getWriter().print(s1);
-            }
-        }
-
-        @WebMethod(name = DarkThemeManagerFactory.THEME_CSS)
-        public void doDarkThemeCss(StaplerRequest req, StaplerResponse res) throws IOException {
-            try (InputStream themeInputStream = getClass().getResourceAsStream(DarkThemeManagerFactory.THEME_CSS)) {
-                res.setContentType("text/css");
-                Objects.requireNonNull(themeInputStream);
-                String s1 = IOUtils.toString(themeInputStream, StandardCharsets.UTF_8);
-                res.getWriter().print(s1);
-            }
-        }
-
+        
         @NonNull
         @Override
         public String getDisplayName() {
