@@ -30,7 +30,7 @@ public class DarkThemeSystemManagerFactory extends ThemeManagerFactory {
     @Override
     public Theme getTheme() {
         return Theme.builder()
-                .withCssUrl(Jenkins.get().getRootUrl() + THEME_URL_NAME + "/" + getDescriptor().getThemeCssSuffix())
+                .withCssUrl(getCssUrl())
                 .build();
     }
     
@@ -48,10 +48,16 @@ public class DarkThemeSystemManagerFactory extends ThemeManagerFactory {
         public String getThemeCssSuffix() {
             return "theme-system.css";
         }
-
+        
         @Override
         public ThemeManagerFactory getInstance() {
             return new DarkThemeSystemManagerFactory();
+        }
+
+        @NonNull
+        @Override
+        public String getThemeId() {
+            return "dark";
         }
     }
 }
