@@ -15,12 +15,13 @@ or with the [configuration-as-code](https://github.com/jenkinsci/configuration-a
 
 ```yaml
 unclassified:
-  simple-theme-plugin:
-    elements:
-      - cssUrl:
-          url: "https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/theme-system.css"
-          #url: "https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/theme.css"
+  themeManager:
+    disableUserThemes: true
+    theme: "darkSystem" # use 'dark' for forcing the dark theme regardless of OS settings
 ```
+
+Users can configure the theme from their user profile page, see the [theme-manager documentation](https://github.com/jenkinsci/theme-manager-plugin#configuring-the-plugin),
+for more information.
 
 ## Screenshots
 
@@ -40,7 +41,7 @@ No version of IE will be supported.
 
 ## Jenkins compatibility
 
-This project is in active development and needs a recent version of Jenkins, at least v2.239.
+This project is in active development and needs a recent version of Jenkins, at least v2.240.
 
 We will do our best to not break new versions of the theme against older supported versions of Jenkins.
 
