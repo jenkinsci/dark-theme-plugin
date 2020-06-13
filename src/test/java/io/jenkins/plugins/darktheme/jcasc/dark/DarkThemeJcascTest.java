@@ -8,7 +8,6 @@ import io.jenkins.plugins.casc.model.CNode;
 import io.jenkins.plugins.darktheme.DarkThemeManagerFactory;
 import io.jenkins.plugins.thememanager.ThemeManagerFactory;
 import io.jenkins.plugins.thememanager.ThemeManagerPageDecorator;
-import io.jenkins.plugins.thememanager.none.NoOpThemeManagerFactory;
 import org.junit.ClassRule;
 import org.junit.Test;
 

@@ -5,7 +5,6 @@ import hudson.Extension;
 import io.jenkins.plugins.thememanager.Theme;
 import io.jenkins.plugins.thememanager.ThemeManagerFactory;
 import io.jenkins.plugins.thememanager.ThemeManagerFactoryDescriptor;
-import jenkins.model.Jenkins;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
 
