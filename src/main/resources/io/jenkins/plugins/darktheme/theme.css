@@ -53,7 +53,6 @@
   --pane-text-color: var(--primary);
   --pane-link-color: var(--primary);
   --pane-link-color--visited: var(--primary);
-  
 
   /* Tab bar widget */
   --tab-bar-border-color: var(--background-333);
