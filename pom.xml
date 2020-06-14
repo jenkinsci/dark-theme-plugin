@@ -13,13 +13,14 @@
   <version>${revision}${changelist}</version>
   <packaging>hpi</packaging>
   <properties>
-    <revision>0.1</revision>
+    <revision>0.0.3</revision>
     <changelist>-SNAPSHOT</changelist>
     <jenkins.version>2.240</jenkins.version>
     <java.level>8</java.level>
     <tagNameFormat>@{project.version}</tagNameFormat>
+    <useBeta>true</useBeta>
   </properties>
-  <name>Dark theme</name>
+  <name>Dark Theme</name>
   <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
   <dependencyManagement>
     <dependencies>
@@ -37,7 +38,7 @@
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>theme-manager</artifactId>
-      <version>1.0-rc16.64070c07f65f</version>
+      <version>1.0-rc18.6e3cdcafbda5</version>
     </dependency>
 
     <dependency>

@@ -7,6 +7,8 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 import org.apache.commons.io.IOUtils;
+import org.kohsuke.accmod.Restricted;
+import org.kohsuke.accmod.restrictions.NoExternalUse;
 import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.StaplerResponse;
 import org.kohsuke.stapler.WebMethod;
@@ -17,6 +19,7 @@ import static io.jenkins.plugins.darktheme.DarkThemeSystemManagerFactory.THEME_S
 import static java.util.Objects.requireNonNull;
 
 @Extension
+@Restricted(NoExternalUse.class)
 public class DarkThemeRootAction implements UnprotectedRootAction {
 
     @Override
