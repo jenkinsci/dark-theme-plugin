@@ -1,4 +1,7 @@
-name: Release Drafter
+# Automates creation of Release Drafts using Release Drafter
+# More Info: https://github.com/jenkinsci/.github/blob/master/.github/release-drafter.adoc
+
+name: Release notes
 
 on:
   push:
@@ -11,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Drafts your next Release notes as Pull Requests are merged into "master"
-      - uses: release-drafter/release-drafter@v5.11.0
+      - uses: release-drafter/release-drafter@v5
         with:
           publish: ${{ contains(github.ref, "ref/tags") }}
         env:
