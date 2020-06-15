@@ -9,7 +9,27 @@ This repository contains a dark theme for Jenkins.
 
 ## Usage
 
-To install this theme use the [Simple Theme Plugin](https://plugins.jenkins.io/simple-theme-plugin/).
+### Installing via Jenkins update center
+
+To install this theme search for 'Dark theme' in your Jenkins update center.
+
+Then go to the "Configure System" page, search for 'Built-in Themes' and select 'Dark (Respect OS/Browser system setting)'
+
+or with the [configuration-as-code](https://github.com/jenkinsci/configuration-as-code-plugin) plugin:
+
+```yaml
+unclassified:
+  themeManager:
+    disableUserThemes: true
+    theme: "darkSystem" # use 'dark' for forcing the dark theme regardless of OS settings
+```
+
+Users can configure the theme from their user profile page, see the [theme-manager documentation](https://github.com/jenkinsci/theme-manager-plugin#configuring-the-plugin),
+for more information.
+
+### Simple theme plugin
+
+If you can't install this plugin for some reason you can use the [Simple Theme Plugin](https://plugins.jenkins.io/simple-theme-plugin/).
 
 See the plugin documentation for theme installation guidelines.
 
@@ -19,8 +39,8 @@ _Note: replace 'tag-name' with the latest released version:_
 The CSS URLs are:
 
 ```text
-https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/theme.css
-https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/theme-system.css
+https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/src/main/resources/io/jenkins/plugins/dark/theme/theme.css
+https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/src/main/resources/io/jenkins/plugins/dark/theme/theme-system.css
 ```
 
 * theme.css - forces dark theme for all users
@@ -55,7 +75,7 @@ No version of IE will be supported.
 
 ## Jenkins compatibility
 
-This project is in active development and needs a recent version of Jenkins, at least v2.239.
+This project is in active development and needs a recent version of Jenkins, at least v2.240.
 
 We will do our best to not break new versions of the theme against older supported versions of Jenkins.
 

@@ -12,13 +12,21 @@ We are also looking for early adopters and testers who are interested to try out
 We have a demo with a pre-configured Docker image you can use for trying out the Dark theme.
 You can find it [here](./demo/README.md).
 
+## Developing
+
+Start the theme plugin with `mvn hpi:run`
+
+You will get a development instance of Jenkins running on port 8080
+
+Any changes you make to the theme CSS file will be reflected after refreshing the page, no need to restart Jenkins.
+
 ### Manual setup
 
 1. Run Jenkins from a pull request
   *  ```docker run --rm -ti -p 8080:8080 -e ID=4752 jenkins/core-pr-tester```
 2. Install the Simple Theme Plugin
 3. Add the theme CSS from this repository to the instance
-  * You can use the jsdeliver CDN to pull it directly from GitHub: https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@master/theme.css
+  * You can use the jsdeliver CDN to pull it directly from GitHub: https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@master/src/main/resources/io/jenkins/plugins/darktheme/theme.css
 
 More detailed testing guidelines are coming soon!
 
