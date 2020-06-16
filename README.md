@@ -39,8 +39,8 @@ _Note: replace 'tag-name' with the latest released version:_
 The CSS URLs are:
 
 ```text
-https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/src/main/resources/io/jenkins/plugins/dark/theme/theme.css
-https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/src/main/resources/io/jenkins/plugins/dark/theme/theme-system.css
+https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/src/main/resources/io/jenkins/plugins/darktheme/theme.css
+https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/src/main/resources/io/jenkins/plugins/darktheme/theme-system.css
 ```
 
 * theme.css - forces dark theme for all users
