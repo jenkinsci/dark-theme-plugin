@@ -18,12 +18,6 @@ if [[ "$DEVEL" ]] ; then
   static-file-server --config /usr/share/jenkins/ref/static-file-server.yml &
 fi
 
-if [[ "$DARK_LOGIN" ]] ; then
-  extra_java_opts+=( \
-    '-Dio.jenkins.themes.dark.login=true' \
-  )
-fi
-
 if [[ "$EXPERIMENTAL_UI" ]] ; then
   extra_java_opts+=( \
     '-Djenkins.ui.refresh=true' \

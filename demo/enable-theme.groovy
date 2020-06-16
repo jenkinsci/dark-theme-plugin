@@ -24,31 +24,11 @@ if (!darkLogin) {
 
 // Login Theme
 def loginThemeConfig = Jenkins.instance.getExtensionList(SimplePageDecorator.class).get(LoginTheme.class)
-loginThemeConfig.useDefaultTheme = false
-loginThemeConfig.header = '''
-<div id="loginIntroDefault">
-<div class="logo"> </div>
-  <h1>Welcome to Jenkins</h1>
-</div>
-'''
-if (developerMode) {
-    loginThemeConfig.head = '''
-        <link rel="stylesheet" href="http://localhost:8081/login-theme/simple-page.css" type="text/css" />
-        <link rel="stylesheet" href="http://localhost:8081/login-theme/simple-page.theme.css" type="text/css" />
-        <link rel="stylesheet" href="http://localhost:8081/login-theme/simple-page-forms.css" type="text/css" />
-    '''
-} else {
-    loginThemeConfig.head = '''
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@master/login-theme/simple-page.css" type="text/css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@master/login-theme/simple-page.theme.css" type="text/css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@master/login-theme/simple-page-forms.css" type="text/css" />
-    '''
-}
-
+loginThemeConfig.useDefaultTheme = true
 if (!disabled) {
     if (developerMode) {
-        loginThemeConfig.head += '<link rel="stylesheet" href="http://localhost:8081/theme.css" type="text/css" />'
+        loginThemeConfig.head = '<link rel="stylesheet" href="http://localhost:8081/theme.css" type="text/css" />'
     } else {
-        loginThemeConfig.head += '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@master/src/main/resources/io/jenkins/plugins/darktheme/theme.css" type="text/css" />'
+        loginThemeConfig.head = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@master/src/main/resources/io/jenkins/plugins/darktheme/theme.css" type="text/css" />'
     }
 }

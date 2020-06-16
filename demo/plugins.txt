@@ -1,2 +1,6 @@
+# Development mode
 simple-theme-plugin:0.6
 login-theme:1.1
+# Common mode
+dark-theme:0.0.3
+theme-manager:0.1
