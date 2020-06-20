@@ -1,5 +1,5 @@
 # https://github.com/oleg-nenashev/demo-jenkins-config-as-code/releases
-FROM onenashev/demo-jenkins-config-as-code:v1.3.0
+FROM onenashev/demo-jenkins-config-as-code:v1.4.0
 
 # For prototyping Override the Jenkins core by the incrementals or SNAPSHOT version
 # ARG JENKINS_INCREMENTALS_VERSION=2.239-rc29973.611f6ad476ff
@@ -16,7 +16,6 @@ RUN wget https://github.com/halverneus/static-file-server/releases/download/v1.8
 USER jenkins
 COPY static-file-server.yml /usr/share/jenkins/ref/static-file-server.yml
 RUN mkdir -p /usr/share/jenkins/ref/userContent/images
-RUN wget https://raw.githubusercontent.com/jenkinsci/jenkins/master/war/src/main/webapp/images/jenkins.svg -O /usr/share/jenkins/ref/userContent/images/jenkins.svg
 
 # Install extra plugins
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
