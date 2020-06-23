@@ -14,6 +14,7 @@
   --btn-secondary-bg: var(--background-dark);
   --btn-secondary-color: var(--btn-primary-color);
   --btn-link-bg--hover: var(--background-333);
+  --btn-link-bg--active: var(--background-333);
 
   /* Help area */
   --help-area-bg-color: var(--background-333);
