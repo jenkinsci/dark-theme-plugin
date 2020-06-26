@@ -87,6 +87,8 @@
 
   /* Manage component */
   --manage-option-bg-color--hover: var(--background-333);
+  --manage-option-bg-color--active: var(--background-333);
+  --manage-option-border-color: var(--background-333);
 
   /* Add form widget */
   --light-bg-color: var(--background-medium);
