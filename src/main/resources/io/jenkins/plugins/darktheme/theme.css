@@ -11,13 +11,16 @@
   --text-color-call-to-action: var(--background-medium);
 
   /* Alerts */
+  --alert-success-text-color: #023802;
+  --alert-success-bg-color: #007e33;
+  --alert-success-border-color: var(--alert-success-bg-color);
   --alert-info-text-color: #095683;
   --alert-info-bg-color: #0099cc;
   --alert-info-border-color: var(--alert-info-bg-color);
   --alert-warning-text-color: #795548;
   --alert-warning-bg-color: #ff8800;
   --alert-warning-border-color: var(--alert-warning-bg-color);
-  --alert-danger-text-color: #f8d7da;
+  --alert-danger-text-color: #310105;
   --alert-danger-bg-color: #cc0000;
   --alert-danger-border-color: var(--alert-danger-bg-color);
 
