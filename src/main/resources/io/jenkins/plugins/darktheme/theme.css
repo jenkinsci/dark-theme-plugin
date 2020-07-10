@@ -10,6 +10,17 @@
   --text-color: #c0c0c0;
   --text-color-call-to-action: var(--background-medium);
 
+  /* Alerts */
+  --alert-info-text-color: #095683;
+  --alert-info-bg-color: #0099cc;
+  --alert-info-border-color: var(--alert-info-bg-color);
+  --alert-warning-text-color: #795548;
+  --alert-warning-bg-color: #ff8800;
+  --alert-warning-border-color: var(--alert-warning-bg-color);
+  --alert-danger-text-color: #f8d7da;
+  --alert-danger-bg-color: #cc0000;
+  --alert-danger-border-color: var(--alert-danger-bg-color);
+
   /* Buttons */
   --btn-secondary-bg: var(--background-dark);
   --btn-secondary-color: var(--btn-primary-color);
