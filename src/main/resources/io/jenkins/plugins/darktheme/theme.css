@@ -79,6 +79,10 @@
   --header-search-border: var(--background-333);
   --input-hidden-password-bg-color: var(--input-color);
 
+  /* Text area handle */
+  --text-area-handle-border: var(--background-333);
+  --text-area-handle-bg-color: var(--text-area-handle-border);
+
   /* Pop out menus */
   --menu-bg-color: var(--background-333);
   --menu-text-color: var(--primary);
