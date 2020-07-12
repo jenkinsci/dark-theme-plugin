@@ -73,9 +73,18 @@
       "contributions": [
         "test"
       ]
+    },
+    {
+      "login": "daniel-beck",
+      "name": "Daniel Beck",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1831569?v=4",
+      "profile": "https://github.com/daniel-beck",
+      "contributions": [
+        "test"
+      ]
     }
   ],
-  "projectName": "dark-theme",
+  "projectName": "dark-theme-plugin",
   "projectOwner": "jenkinsci",
   "repoType": "github",
   "repoHost": "https://github.com"

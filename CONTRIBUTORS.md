@@ -1,7 +1,7 @@
 # Contributors
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
@@ -16,6 +16,9 @@
     <td align="center"><a href="https://github.com/res0nance"><img src="https://avatars3.githubusercontent.com/u/31362124?v=4" width="100px;" alt=""/><br /><sub><b>Raihaan Shouhell</b></sub></a></td>
     <td align="center"><a href="https://github.com/EstherAF"><img src="https://avatars2.githubusercontent.com/u/5547479?v=4" width="100px;" alt=""/><br /><sub><b>Esther Álvarez Feijoo</b></sub></a></td>
     <td align="center"><a href="https://nimishbongale.github.io"><img src="https://avatars1.githubusercontent.com/u/43414361?v=4" width="100px;" alt=""/><br /><sub><b>Nimish Bongale</b></sub></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/daniel-beck"><img src="https://avatars3.githubusercontent.com/u/1831569?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Beck</b></sub></a></td>
   </tr>
 </table>
 
