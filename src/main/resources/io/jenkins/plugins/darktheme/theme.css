@@ -39,7 +39,6 @@
   /* Links */
   --link-color: var(--primary);
   --link-visited-color: var(--primary);
-  --link-dark-color: var(--primary);
 
   /* Table */
   --bigtable-header-color: var(--background-black);
