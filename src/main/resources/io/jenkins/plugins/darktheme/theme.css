@@ -41,11 +41,11 @@
   --link-visited-color: var(--primary);
 
   /* Table */
-  --bigtable-header-color: var(--background-black);
+  --bigtable-header-bg: var(--background-black);
+  --bigtable-header-border-color: var(--background-333);
+  --bigtable-row-border-color: var(--background-333);
   --even-row-color: #020202;
-  --project-status-border-bottom-color: var(--background-333);
-  --table-parameters-bg-color--hover: var(--background-333);
-  --table-stripped-bg-color--hover: var(--background-333);
+  --table-striped-bg--hover: var(--background-333);
 
   /* Pane widget */
   --pane-border-color: var(--background-333);
@@ -56,15 +56,11 @@
   --pane-link-color--visited: var(--primary);
 
   /* Tab bar widget */
-  --tab-bar-border-color: var(--background-333);
-  --tab-bar-text-color: #999;
-  --tab-bar-bg--checked: var(--background-black);
-  --tab-bar-border-color--checked: var(--background-333);
-  --tab-bar-text-color--checked: var(--primary);
-  --tab-bar-bg-color--hover: var(--background-333);
-  --tab-bar-add-bg-color--hover: var(--background-333);
-  --tab-bar-add-text-color: var(--primary);
-  --tab-bar-add-border-color: var(--background-333);
+  --tab-link-border-color: var(--background-333);
+  --tab-link-text-color: #999;
+  --tab-link-checked-bg: var(--background-black);
+  --tab-link-checked-text-color: var(--primary);
+  --tab-link-bg--hover: var(--background-333);
 
   /* Side panel */
   --panel-header-bg-color: var(--background-black);
