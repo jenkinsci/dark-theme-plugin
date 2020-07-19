@@ -8,7 +8,22 @@
 
   /* Text */
   --text-color: #c0c0c0;
-  --text-color-call-to-action: var(--background-medium);
+  --call-to-action-text-color: var(--background-medium);
+  --call-to-action-link-color: var(--call-to-action-text-color);
+
+  /* Alerts */
+  --alert-success-text-color: #fff;
+  --alert-success-bg-color: #00bc8c;
+  --alert-success-border-color: var(--alert-success-bg-color);
+  --alert-info-text-color: #fff;
+  --alert-info-bg-color: #3498db;
+  --alert-info-border-color: var(--alert-info-bg-color);
+  --alert-warning-text-color: #fff;
+  --alert-warning-bg-color: #f39c12;
+  --alert-warning-border-color: var(--alert-warning-bg-color);
+  --alert-danger-text-color: #fff;
+  --alert-danger-bg-color: #e74c3c;
+  --alert-danger-border-color: var(--alert-danger-bg-color);
 
   /* Buttons */
   --btn-secondary-bg: var(--background-dark);
