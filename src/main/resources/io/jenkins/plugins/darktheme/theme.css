@@ -76,6 +76,7 @@
   --tab-link-checked-bg: var(--background-black);
   --tab-link-checked-text-color: var(--primary);
   --tab-link-bg--hover: var(--background-333);
+  --tab-link-bg--active: var(--background-333);
 
   /* Side panel */
   --panel-header-bg-color: var(--background-black);
