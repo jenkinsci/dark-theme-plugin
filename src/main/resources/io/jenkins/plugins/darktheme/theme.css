@@ -13,16 +13,16 @@
 
   /* Alerts */
   --alert-success-text-color: #fff;
-  --alert-success-bg-color: #00bc8c;
+  --alert-success-bg-color: #007e33;
   --alert-success-border-color: var(--alert-success-bg-color);
   --alert-info-text-color: #fff;
-  --alert-info-bg-color: #3498db;
+  --alert-info-bg-color: #0099cc;
   --alert-info-border-color: var(--alert-info-bg-color);
   --alert-warning-text-color: #fff;
-  --alert-warning-bg-color: #f39c12;
+  --alert-warning-bg-color: #ff8800;
   --alert-warning-border-color: var(--alert-warning-bg-color);
   --alert-danger-text-color: #fff;
-  --alert-danger-bg-color: #e74c3c;
+  --alert-danger-bg-color: #cc0000;
   --alert-danger-border-color: var(--alert-danger-bg-color);
 
   /* Buttons */
