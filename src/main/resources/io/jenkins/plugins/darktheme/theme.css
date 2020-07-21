@@ -1,14 +1,16 @@
 :root {
-  --background-black: #111;
-  --background-dark: #222;
-  --background-medium: #2d2b2b;
-  --background-333: #333;
-  --background: var(--background-dark);
-  --very-light-grey: var(--background-dark);
+  --dark-theme-bg-black: #111;
+  --dark-theme-bg-dark: #222;
+  --dark-theme-bg-medium: #2d2b2b;
+  --dark-theme-bg-333: #333;
+  --background: var(--dark-theme-bg-dark);
+  --very-light-grey: var(--dark-theme-bg-dark);
+  --light-grey: var(--dark-theme-bg-333);
+  --medium-grey: var(--dark-theme-bg-333);
 
   /* Text */
   --text-color: #c0c0c0;
-  --call-to-action-text-color: var(--background-medium);
+  --call-to-action-text-color: var(--dark-theme-bg-medium);
   --call-to-action-link-color: var(--call-to-action-text-color);
 
   /* Alerts */
@@ -26,102 +28,102 @@
   --alert-danger-border-color: var(--alert-danger-bg-color);
 
   /* Buttons */
-  --btn-secondary-bg: var(--background-dark);
+  --btn-secondary-bg: var(--dark-theme-bg-dark);
   --btn-secondary-color: var(--btn-primary-color);
-  --btn-link-bg--hover: var(--background-333);
-  --btn-link-bg--active: var(--background-333);
+  --btn-link-bg--hover: var(--dark-theme-bg-333);
+  --btn-link-bg--active: var(--dark-theme-bg-333);
 
   /* Help area */
-  --help-area-bg-color: var(--background-333);
-  --configure-job-help-area-bg-color: var(--background-dark);
+  --help-area-bg-color: var(--dark-theme-bg-333);
+  --configure-job-help-area-bg-color: var(--dark-theme-bg-dark);
 
   /* Header */
-  --logo-bg: var(--background-dark);
+  --logo-bg: var(--dark-theme-bg-dark);
   --brand-link-color: var(--primary);
-  --header-bg-v2: var(--background-medium);
+  --header-bg-v2: var(--dark-theme-bg-medium);
   --header-link-color: var(--primary);
   --header-link-color-active: var(--primary-active);
   --search-bg: #4d545d;
   --search-input-color: var(--text-color);
 
   /* Breadcrumbs */
-  --breadcrumbs-bg: var(--background-black);
-  --breadcrumbs-bg-color--hover: var(--background-dark);
+  --breadcrumbs-bg: var(--dark-theme-bg-black);
+  --breadcrumbs-bg-color--hover: var(--dark-theme-bg-dark);
   --breadcrumbs-text-color: var(--text-color);
-  --breadcrumbs-item-bg-color--hover: var(--background-dark);
-  --breadcrumbs-border: var(--background-333);
+  --breadcrumbs-item-bg-color--hover: var(--dark-theme-bg-dark);
+  --breadcrumbs-border: var(--dark-theme-bg-333);
 
   /* Links */
   --link-color: var(--primary);
   --link-visited-color: var(--primary);
 
   /* Table */
-  --bigtable-header-bg: var(--background-black);
-  --bigtable-header-border-color: var(--background-333);
-  --bigtable-row-border-color: var(--background-333);
+  --bigtable-header-bg: var(--dark-theme-bg-black);
+  --bigtable-header-border-color: var(--dark-theme-bg-333);
+  --bigtable-row-border-color: var(--dark-theme-bg-333);
   --even-row-color: #020202;
-  --table-striped-bg--hover: var(--background-333);
+  --table-striped-bg--hover: var(--dark-theme-bg-333);
 
   /* Pane widget */
-  --pane-border-color: var(--background-333);
-  --pane-header-border-color: var(--background-333);
-  --pane-header-color: var(--background-black);
+  --pane-border-color: var(--dark-theme-bg-333);
+  --pane-header-border-color: var(--dark-theme-bg-333);
+  --pane-header-color: var(--dark-theme-bg-black);
   --pane-text-color: var(--primary);
   --pane-link-color: var(--primary);
   --pane-link-color--visited: var(--primary);
 
   /* Tab bar widget */
-  --tab-link-border-color: var(--background-333);
+  --tab-link-border-color: var(--dark-theme-bg-333);
   --tab-link-text-color: #999;
-  --tab-link-checked-bg: var(--background-black);
+  --tab-link-checked-bg: var(--dark-theme-bg-black);
   --tab-link-checked-text-color: var(--primary);
-  --tab-link-bg--hover: var(--background-333);
-  --tab-link-bg--active: var(--background-333);
+  --tab-link-bg--hover: var(--dark-theme-bg-333);
+  --tab-link-bg--active: var(--dark-theme-bg-333);
 
   /* Side panel */
-  --panel-header-bg-color: var(--background-black);
-  --panel-border-color: var(--background-333);
-  --panel-border-color--hover: var(--background-black);
-  --task-link-bg-color--hover: var(--background-black);
+  --panel-header-bg-color: var(--dark-theme-bg-black);
+  --panel-border-color: var(--dark-theme-bg-333);
+  --panel-border-color--hover: var(--dark-theme-bg-black);
+  --task-link-bg-color--hover: var(--dark-theme-bg-black);
 
   /* Form */
   --input-color: #3a3a3a;
-  --input-border: var(--background-dark);
-  --header-search-border: var(--background-333);
+  --input-border: var(--dark-theme-bg-dark);
+  --header-search-border: var(--dark-theme-bg-333);
   --input-hidden-password-bg-color: var(--input-color);
 
   /* Text area handle */
-  --text-area-handle-border: var(--background-333);
+  --text-area-handle-border: var(--dark-theme-bg-333);
   --text-area-handle-bg-color: var(--text-area-handle-border);
 
   /* Pop out menus */
-  --menu-bg-color: var(--background-333);
+  --menu-bg-color: var(--dark-theme-bg-333);
   --menu-text-color: var(--primary);
-  --menu-selected-color: var(--background-dark);
+  --menu-selected-color: var(--dark-theme-bg-dark);
   --menu-box-shadow: none;
 
   /* Manage component */
-  --manage-option-bg-color--hover: var(--background-333);
-  --manage-option-bg-color--active: var(--background-333);
-  --manage-option-border-color: var(--background-333);
+  --manage-option-bg-color--hover: var(--dark-theme-bg-333);
+  --manage-option-bg-color--active: var(--dark-theme-bg-333);
+  --manage-option-border-color: var(--dark-theme-bg-333);
 
   /* Add form widget */
-  --light-bg-color: var(--background-medium);
-  --light-bg-color--hover: var(--background-dark);
-  --bright-bg-color: var(--background-333);
+  --light-bg-color: var(--dark-theme-bg-medium);
+  --light-bg-color--hover: var(--dark-theme-bg-dark);
+  --bright-bg-color: var(--dark-theme-bg-333);
   --brightest-bg-color: var(--input-color);
-  --add-item-btn-decorator-border-color: var(--background-333);
-  --add-item-categories-bg-color--hover: var(--background-333);
-  --add-item-btn-decorator-bg-color: var(--background-333);
-  --configure-job-bottom-sticker-bg-color: var(--background-333);
-  --configure-job-bottom-sticker-border-color: var(--background-333);
+  --add-item-btn-decorator-border-color: var(--dark-theme-bg-333);
+  --add-item-categories-bg-color--hover: var(--dark-theme-bg-333);
+  --add-item-btn-decorator-bg-color: var(--dark-theme-bg-333);
+  --configure-job-bottom-sticker-bg-color: var(--dark-theme-bg-333);
+  --configure-job-bottom-sticker-border-color: var(--dark-theme-bg-333);
 
   /* Plugin manager */
-  --plugin-manager-bg-color-already-upgraded: var(--background-medium);
+  --plugin-manager-bg-color-already-upgraded: var(--dark-theme-bg-medium);
   --plugin-manager-category-link-bg-color: #5d5b5b;
-  --plugin-manager-category-link-bg-color--hover: var(--background-333);
-  --plugin-manager-category-link-border-color--hover: var(--background-black);
-  --plugin-manager-category-text-color: var(--background-black);
+  --plugin-manager-category-link-bg-color--hover: var(--dark-theme-bg-333);
+  --plugin-manager-category-link-border-color--hover: var(--dark-theme-bg-black);
+  --plugin-manager-category-text-color: var(--dark-theme-bg-black);
   --plugin-manager-category-link-color--hover: #a5a3a3;
 
   /* Auto complete */
