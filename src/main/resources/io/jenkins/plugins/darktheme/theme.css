@@ -60,6 +60,7 @@
   /* Table */
   --bigtable-header-bg: var(--dark-theme-bg-black);
   --bigtable-header-border-color: var(--dark-theme-bg-333);
+  --bigtable-header-text-color: var(--text-color);
   --bigtable-row-border-color: var(--dark-theme-bg-333);
   --even-row-color: #020202;
   --table-striped-bg--hover: var(--dark-theme-bg-333);
