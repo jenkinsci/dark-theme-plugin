@@ -1,3 +1,4 @@
 _extends: .github
 name-template: v$NEXT_PATCH_VERSION 🌈
+tag-template: $NEXT_PATCH_VERSION
 version-template: $MAJOR.$MINOR.$PATCH
