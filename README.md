@@ -5,7 +5,7 @@
 
 This repository contains a dark theme for Jenkins.
 
-*Requires Jenkins >= 2.239*
+*Requires Jenkins >= 2.248*
 
 ## Usage
 
