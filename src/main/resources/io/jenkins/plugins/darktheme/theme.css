@@ -69,9 +69,6 @@
   --pane-border-color: var(--dark-theme-bg-333);
   --pane-header-border-color: var(--dark-theme-bg-333);
   --pane-header-color: var(--dark-theme-bg-black);
-  --pane-text-color: var(--primary);
-  --pane-link-color: var(--primary);
-  --pane-link-color--visited: var(--primary);
 
   /* Tab bar widget */
   --tab-link-border-color: var(--dark-theme-bg-333);
