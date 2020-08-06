@@ -42,8 +42,8 @@
   --logo-bg: var(--dark-theme-bg-dark);
   --brand-link-color: var(--primary);
   --header-bg-v2: var(--dark-theme-bg-medium);
-  --header-link-color: var(--primary);
-  --header-link-color-active: var(--primary-active);
+  --header-link-color: var(--text-color);
+  --header-link-color-active: var(--text-color);
   --search-bg: #4d545d;
   --search-input-color: var(--text-color);
 
