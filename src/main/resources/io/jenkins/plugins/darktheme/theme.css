@@ -10,6 +10,7 @@
 
   /* Text */
   --text-color: #c0c0c0;
+  --text-color-secondary: var(--text-color);
   --call-to-action-text-color: var(--dark-theme-bg-medium);
   --call-to-action-link-color: var(--call-to-action-text-color);
 
@@ -121,8 +122,9 @@
   --plugin-manager-category-link-bg-color: #5d5b5b;
   --plugin-manager-category-link-bg-color--hover: var(--dark-theme-bg-333);
   --plugin-manager-category-link-border-color--hover: var(--dark-theme-bg-black);
-  --plugin-manager-category-text-color: var(--dark-theme-bg-black);
+  --plugin-manager-category-text-color: var(--text-color);
   --plugin-manager-category-link-color--hover: #a5a3a3;
+  --plugin-manager-unavailable-bg-color: var(--dark-theme-bg-medium);
 
   /* Auto complete */
   --auto-complete-bg-color--prehighlight: var(--primary);
