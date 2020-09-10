@@ -1,4 +1,4 @@
-# Dark Theme for Jenkins (Incubated project)
+# Dark Theme for Jenkins
 
 [![Build Status](https://ci.jenkins.io/job/Plugins/job/dark-theme-plugin/job/master/badge/icon)](https://ci.jenkins.io/job/Plugins/job/dark-theme-plugin/job/master/)
 [![Gitter](https://badges.gitter.im/jenkinsci/ux-sig.svg)](https://gitter.im/jenkinsci/ux-sig?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
@@ -8,7 +8,7 @@
 
 This repository contains a dark theme for Jenkins.
 
-*Requires Jenkins >= 2.248*
+*Requires Jenkins >= 2.249.1*
 
 ## Usage
 
