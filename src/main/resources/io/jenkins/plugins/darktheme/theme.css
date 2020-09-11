@@ -55,8 +55,8 @@
   --breadcrumbs-border: var(--dark-theme-bg-333);
 
   /* Links */
-  --link-color: var(--primary);
-  --link-visited-color: var(--primary);
+  --link-color: #18B;
+  --link-visited-color: var(--link-color);
 
   /* Table */
   --bigtable-header-bg: var(--dark-theme-bg-black);
