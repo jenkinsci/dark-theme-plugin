@@ -82,6 +82,15 @@
       "contributions": [
         "test"
       ]
+    },
+    {
+      "login": "VirtualTim",
+      "name": "Tim Lander",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/5424257?v=4",
+      "profile": "https://github.com/VirtualTim",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "projectName": "dark-theme-plugin",
