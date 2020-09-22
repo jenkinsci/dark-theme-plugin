@@ -7,6 +7,7 @@
   --very-light-grey: var(--dark-theme-bg-dark);
   --light-grey: var(--dark-theme-bg-333);
   --medium-grey: var(--dark-theme-bg-333);
+  --white: var(--dark-theme-bg-333);
 
   /* Text */
   --text-color: #c0c0c0;
