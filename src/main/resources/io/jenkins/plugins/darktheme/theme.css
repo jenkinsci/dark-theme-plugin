@@ -11,6 +11,7 @@
   --light-grey: var(--dark-theme-bg-medium);
   --medium-grey: var(--dark-theme-bg-medium-grey);
   --white: var(--dark-theme-bg-dark-grey);
+  --black: var(--dark-theme-bg-light-grey);
 
   /* Text */
   --text-color: #c0c0c0;
