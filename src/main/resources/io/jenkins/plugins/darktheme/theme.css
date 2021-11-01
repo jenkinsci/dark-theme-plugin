@@ -1,12 +1,12 @@
 :root {
-  --dark-theme-bg-black: #111;
+  --dark-theme-bg-black: hsl(240, 6%, 10%);
   --dark-theme-bg-dark: #222;
   --dark-theme-bg-medium: #2d2b2b;
   --dark-theme-bg-dark-grey: #333;
   --dark-theme-bg-medium-grey: #444;
   --dark-theme-bg-light-grey: #555;
   --dark-theme-bg-very-light-grey: #444;
-  --background: rgb(30, 30, 34);
+  --background: hsl(240, 6%, 13%);
   --very-light-grey: var(--dark-theme-bg-very-light-grey);
   --light-grey: var(--dark-theme-bg-medium);
   --medium-grey: var(--dark-theme-bg-medium-grey);
@@ -66,9 +66,9 @@
   --link-visited-color: #53c1ff;
 
   /* Table */
-  --table-background: rgb(26, 26, 28);
+  --table-background: var(--dark-theme-bg-black);
   --table-header-foreground: rgb(240, 240, 245);
-  --table-body-background: rgb(32, 32, 34);
+  --table-body-background: var(--background);
   --table-body-foreground: rgb(240, 240, 245);
 
   /* Deprecated */
@@ -85,7 +85,7 @@
   --pane-header-color: var(--dark-theme-bg-black);
 
   /* Tab bar */
-  --tabs-background: rgb(26, 26, 28);
+  --tabs-background: var(--dark-theme-bg-black);
   --tabs-item-background: transparent;
   --tabs-item-background--hover: rgba(255, 255, 255, 0.05);
   --tabs-item-background--active: rgba(255, 255, 255, 0.1);
