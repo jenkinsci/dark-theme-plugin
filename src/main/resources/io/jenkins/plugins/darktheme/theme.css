@@ -6,7 +6,7 @@
   --dark-theme-bg-medium-grey: #444;
   --dark-theme-bg-light-grey: #555;
   --dark-theme-bg-very-light-grey: #444;
-  --background: rgb(32, 32, 34);
+  --background: rgb(30, 30, 34);
   --very-light-grey: var(--dark-theme-bg-very-light-grey);
   --light-grey: var(--dark-theme-bg-medium);
   --medium-grey: var(--dark-theme-bg-medium-grey);
@@ -16,8 +16,8 @@
   --primary: #53c1ff;
 
   /* Text */
-  --text-color: #fff;
-  --text-color-secondary: var(--text-color);
+  --text-color: rgb(250, 250, 255);
+  --text-color-secondary: rgb(200, 200, 205);
   --call-to-action-text-color: var(--dark-theme-bg-medium);
   --call-to-action-link-color: var(--call-to-action-text-color);
 
@@ -66,6 +66,12 @@
   --link-visited-color: #53c1ff;
 
   /* Table */
+  --table-background: rgb(26, 26, 28);
+  --table-header-foreground: rgb(240, 240, 245);
+  --table-body-background: rgb(32, 32, 34);
+  --table-body-foreground: rgb(240, 240, 245);
+
+  /* Deprecated */
   --bigtable-header-bg: var(--dark-theme-bg-black);
   --bigtable-header-border-color: var(--dark-theme-bg-dark-grey);
   --bigtable-header-text-color: var(--text-color);
@@ -78,7 +84,14 @@
   --pane-header-border-color: var(--dark-theme-bg-dark-grey);
   --pane-header-color: var(--dark-theme-bg-black);
 
-  /* Tab bar widget */
+  /* Tab bar */
+  --tabs-background: rgb(26, 26, 28);
+  --tabs-item-background: transparent;
+  --tabs-item-background--hover: rgba(255, 255, 255, 0.05);
+  --tabs-item-background--active: rgba(255, 255, 255, 0.1);
+  --tabs-item-background--selected: rgba(255, 255, 255, 0.05);
+
+  /* Deprecated */
   --tab-link-border-color: var(--dark-theme-bg-dark-grey);
   --tab-link-text-color: #999;
   --tab-link-checked-bg: var(--dark-theme-bg-black);
@@ -88,7 +101,7 @@
 
   /* Side panel */
   --panel-header-bg-color: var(--dark-theme-bg-black);
-  --panel-border-color: var(--dark-theme-bg-dark-grey);
+  --panel-border-color: rgb(50, 50, 55);
   --panel-border-color--hover: var(--dark-theme-bg-black);
   --task-link-bg-color--hover: var(--dark-theme-bg-medium-grey);
 
