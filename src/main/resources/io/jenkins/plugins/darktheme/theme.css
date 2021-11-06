@@ -36,6 +36,7 @@
   --alert-danger-border-color: var(--alert-danger-bg-color);
 
   /* Buttons */
+  --btn-primary-bg: #53c1ff;
   --btn-secondary-bg: var(--dark-theme-bg-dark);
   --btn-secondary-color: var(--btn-primary-color);
   --btn-link-bg--hover: var(--dark-theme-bg-dark-grey);
