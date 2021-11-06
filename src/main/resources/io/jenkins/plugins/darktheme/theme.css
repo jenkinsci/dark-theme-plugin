@@ -1,21 +1,23 @@
 :root {
-  --dark-theme-bg-black: #111;
+  --dark-theme-bg-black: hsl(240, 6%, 10%);
   --dark-theme-bg-dark: #222;
   --dark-theme-bg-medium: #2d2b2b;
   --dark-theme-bg-dark-grey: #333;
   --dark-theme-bg-medium-grey: #444;
   --dark-theme-bg-light-grey: #555;
   --dark-theme-bg-very-light-grey: #444;
-  --background: var(--dark-theme-bg-dark);
+  --background: hsl(240, 6%, 13%);
   --very-light-grey: var(--dark-theme-bg-very-light-grey);
   --light-grey: var(--dark-theme-bg-medium);
   --medium-grey: var(--dark-theme-bg-medium-grey);
   --white: var(--dark-theme-bg-dark-grey);
   --black: var(--dark-theme-bg-light-grey);
 
+  --primary: #53c1ff;
+
   /* Text */
-  --text-color: #c0c0c0;
-  --text-color-secondary: var(--text-color);
+  --text-color: rgb(250, 250, 255);
+  --text-color-secondary: rgb(200, 200, 205);
   --call-to-action-text-color: var(--dark-theme-bg-medium);
   --call-to-action-link-color: var(--call-to-action-text-color);
 
@@ -34,6 +36,7 @@
   --alert-danger-border-color: var(--alert-danger-bg-color);
 
   /* Buttons */
+  --btn-primary-bg: #53c1ff;
   --btn-secondary-bg: var(--dark-theme-bg-dark);
   --btn-secondary-color: var(--btn-primary-color);
   --btn-link-bg--hover: var(--dark-theme-bg-dark-grey);
@@ -60,10 +63,16 @@
   --breadcrumbs-border: var(--dark-theme-bg-dark-grey);
 
   /* Links */
-  --link-color: #18B;
-  --link-visited-color: var(--link-color);
+  --link-color: #53c1ff;
+  --link-visited-color: #53c1ff;
 
   /* Table */
+  --table-background: var(--dark-theme-bg-black);
+  --table-header-foreground: rgb(240, 240, 245);
+  --table-body-background: var(--background);
+  --table-body-foreground: rgb(240, 240, 245);
+
+  /* Deprecated */
   --bigtable-header-bg: var(--dark-theme-bg-black);
   --bigtable-header-border-color: var(--dark-theme-bg-dark-grey);
   --bigtable-header-text-color: var(--text-color);
@@ -76,7 +85,14 @@
   --pane-header-border-color: var(--dark-theme-bg-dark-grey);
   --pane-header-color: var(--dark-theme-bg-black);
 
-  /* Tab bar widget */
+  /* Tab bar */
+  --tabs-background: var(--dark-theme-bg-black);
+  --tabs-item-background: transparent;
+  --tabs-item-background--hover: rgba(255, 255, 255, 0.05);
+  --tabs-item-background--active: rgba(255, 255, 255, 0.1);
+  --tabs-item-background--selected: rgba(255, 255, 255, 0.05);
+
+  /* Deprecated */
   --tab-link-border-color: var(--dark-theme-bg-dark-grey);
   --tab-link-text-color: #999;
   --tab-link-checked-bg: var(--dark-theme-bg-black);
@@ -86,13 +102,17 @@
 
   /* Side panel */
   --panel-header-bg-color: var(--dark-theme-bg-black);
-  --panel-border-color: var(--dark-theme-bg-dark-grey);
+  --panel-border-color: rgb(50, 50, 55);
   --panel-border-color--hover: var(--dark-theme-bg-black);
   --task-link-bg-color--hover: var(--dark-theme-bg-medium-grey);
 
   /* Form */
-  --input-color: #3a3a3a;
-  --input-border: var(--dark-theme-bg-dark);
+  --input-color: rgb(40, 40, 42);
+  --input-border: rgb(120, 120, 130);
+  --input-border-hover: rgb(140, 140, 150);
+  --focus-input-border: #4bbeff;
+  --focus-input-glow: rgba(43, 116, 160, 0.4);
+
   --header-search-border: var(--dark-theme-bg-dark-grey);
   --input-hidden-password-bg-color: var(--input-color);
 
@@ -133,6 +153,10 @@
 
   /* Auto complete */
   --auto-complete-bg-color--prehighlight: var(--primary);
+
+  /* Colors */
+  --green: #1bc656;
+  --red: #ff0b27;
 }
 
 /**
