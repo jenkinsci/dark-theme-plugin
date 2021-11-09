@@ -9,9 +9,11 @@
   </parent>
   <groupId>io.jenkins.plugins</groupId>
   <artifactId>dark-theme</artifactId>
-  <version>0.0.13-SNAPSHOT</version>
+  <version>${changelist}</version>
   <packaging>hpi</packaging>
   <properties>
+    <changelist>-SNAPSHOT</changelist>
+    <gitHubRepo>jenkinsci/dark-theme-plugin</gitHubRepo>
     <revision>0.0.3</revision>
     <changelist>-SNAPSHOT</changelist>
     <jenkins.version>2.303.3</jenkins.version>
@@ -67,9 +69,9 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
-    <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+    <connection>scm:git:git://github.com/${gitHubRepo}.git</connection>
+    <developerConnection>scm:git:git@github.com:${gitHubRepo}.git</developerConnection>
+    <url>https://github.com/${gitHubRepo}</url>
     <tag>${scmTag}</tag>
   </scm>
 
