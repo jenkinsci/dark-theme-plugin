@@ -113,7 +113,6 @@
   --focus-input-border: #4bbeff;
   --focus-input-glow: rgba(43, 116, 160, 0.4);
   --pre-background: var(--dark-theme-bg-black);
-  --pre-color: var(--text-color);
   --selection-color: rgba(75, 190, 255, 0.5);
 
   --header-search-border: var(--dark-theme-bg-dark-grey);
