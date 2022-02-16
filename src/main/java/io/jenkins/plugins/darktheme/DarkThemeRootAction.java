@@ -1,12 +1,23 @@
 package io.jenkins.plugins.darktheme;
 
 import hudson.Extension;
+import hudson.Main;
+import hudson.Plugin;
+import hudson.PluginWrapper;
 import hudson.model.UnprotectedRootAction;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
+import java.util.concurrent.TimeUnit;
+import javax.servlet.ServletException;
+import jenkins.model.Jenkins;
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang.StringUtils;
 import org.kohsuke.accmod.Restricted;
 import org.kohsuke.accmod.restrictions.NoExternalUse;
 import org.kohsuke.stapler.StaplerRequest;
@@ -15,8 +26,6 @@ import org.kohsuke.stapler.WebMethod;
 
 import static io.jenkins.plugins.darktheme.DarkThemeManagerFactory.THEME_CSS;
 import static io.jenkins.plugins.darktheme.DarkThemeManagerFactory.THEME_URL_NAME;
-import static io.jenkins.plugins.darktheme.DarkThemeSystemManagerFactory.THEME_SYSTEM_CSS;
-import static java.util.Objects.requireNonNull;
 
 @Extension
 @Restricted(NoExternalUse.class)
@@ -37,23 +46,27 @@ public class DarkThemeRootAction implements UnprotectedRootAction {
         return THEME_URL_NAME;
     }
 
-    @WebMethod(name = THEME_CSS)
-    public void doDarkThemeCss(StaplerRequest req, StaplerResponse res) throws IOException {
-        try (InputStream themeInputStream = getClass().getResourceAsStream(THEME_CSS)) {
-            res.setContentType("text/css");
-            requireNonNull(themeInputStream);
-            String s1 = IOUtils.toString(themeInputStream, StandardCharsets.UTF_8);
-            res.getWriter().print(s1);
+    public void doDynamic(StaplerRequest req, StaplerResponse rsp) throws IOException, URISyntaxException, ServletException {
+        String cssFile = req.getRestOfPath();
+        if (cssFile.startsWith("/")) {
+            cssFile = cssFile.substring(1);
         }
-    }
-
-    @WebMethod(name = THEME_SYSTEM_CSS)
-    public void doDarkThemeSystemCss(StaplerRequest req, StaplerResponse res) throws IOException {
-        try (InputStream themeInputStream = getClass().getResourceAsStream(THEME_SYSTEM_CSS)) {
-            res.setContentType("text/css");
-            Objects.requireNonNull(themeInputStream);
-            String s1 = IOUtils.toString(themeInputStream, StandardCharsets.UTF_8);
-            res.getWriter().print(s1);
+        if (!THEME_CSS.equals(cssFile) && !(THEME_CSS + ".map").equals(cssFile)) {
+            rsp.sendError(404);
+            return;
         }
+        final Plugin plugin = Jenkins.get().getPlugin("dark-theme");
+        if (plugin == null) {
+            rsp.sendError(404);
+            return;
+        }
+        String contentType = cssFile.endsWith("map") ? "application/json" : "text/css";
+        rsp.setContentType(contentType);
+        if (Main.isDevelopmentMode) {
+            rsp.addHeader("Cache-Control", "no-cache");
+        } else {
+            rsp.addHeader("Cache-Control", "public");
+        }
+        plugin.doDynamic(req,rsp);
     }
 }

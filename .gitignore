@@ -2,3 +2,6 @@ target/
 work/
 *.iml
 .idea/
+node/
+node_modules/
+src/main/webapp/theme.css*

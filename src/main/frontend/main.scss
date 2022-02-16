@@ -1,4 +1,4 @@
-:root {
+@mixin dark-mode {
   --dark-theme-bg-black: hsl(240, 6%, 10%);
   --dark-theme-bg-dark: #222;
   --dark-theme-bg-medium: #2d2b2b;
@@ -161,59 +161,186 @@
   --red: #ff0b27;
 }
 
-/**
-    Name: IntelliJ IDEA darcula theme
-    From IntelliJ IDEA by JetBrains
-    Source: https://github.com/codemirror/CodeMirror/blob/master/theme/darcula.css
- */
+@mixin codemirror-theme() {
+  #jenkins {
+    .cm-s-default {
+      font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
+    }
 
- #jenkins .cm-s-default  { font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;}
- #jenkins .cm-s-default.CodeMirror { background: #2B2B2B; color: #A9B7C6; }
+    .cm-s-default.CodeMirror {
+      background: #2B2B2B;
+      color: #A9B7C6;
+    }
 
- #jenkins .cm-s-default span.cm-meta { color: #BBB529; }
- #jenkins .cm-s-default span.cm-number { color: #6897BB; }
- #jenkins .cm-s-default span.cm-keyword { color: #CC7832; line-height: 1em; font-weight: bold; }
- #jenkins .cm-s-default span.cm-def { color: #A9B7C6; font-style: italic; }
- #jenkins .cm-s-default span.cm-variable { color: #A9B7C6; }
- #jenkins .cm-s-default span.cm-variable-2 { color: #A9B7C6; }
- #jenkins .cm-s-default span.cm-variable-3 { color: #9876AA; }
- #jenkins .cm-s-default span.cm-type { color: #AABBCC; font-weight: bold; }
- #jenkins .cm-s-default span.cm-property { color: #FFC66D; }
- #jenkins .cm-s-default span.cm-operator { color: #A9B7C6; }
- #jenkins .cm-s-default span#jenkins .cm-string { color: #6A8759; }
- #jenkins .cm-s-default span#jenkins .cm-string-2 { color: #6A8759; }
- #jenkins .cm-s-default span.cm-comment { color: #61A151; font-style: italic; }
- #jenkins .cm-s-default span.cm-link { color: #CC7832; }
- #jenkins .cm-s-default span.cm-atom { color: #CC7832; }
- #jenkins .cm-s-default span.cm-error { color: #BC3F3C; }
- #jenkins .cm-s-default span.cm-tag { color: #629755; font-weight: bold; font-style: italic; text-decoration: underline; }
- #jenkins .cm-s-default span.cm-attribute { color: #6897bb; }
- #jenkins .cm-s-default span.cm-qualifier { color: #6A8759; }
- #jenkins .cm-s-default span.cm-bracket { color: #A9B7C6; }
- #jenkins .cm-s-default span.cm-builtin { color: #FF9E59; }
- #jenkins .cm-s-default span#jenkins .cm-special { color: #FF9E59; }
- #jenkins .cm-s-default span.cm-matchhighlight { color: #FFFFFF; background-color: rgba(50, 89, 48, .7); font-weight: normal;}
- #jenkins .cm-s-default span#jenkins .cm-searching { color: #FFFFFF; background-color: rgba(61, 115, 59, .7); font-weight: normal;}
+    .cm-s-default span.cm-meta {
+      color: #BBB529;
+    }
 
- #jenkins .cm-s-default .CodeMirror-cursor { border-left: 1px solid #A9B7C6; }
- #jenkins .cm-s-default .CodeMirror-activeline-background { background: #323232; }
- #jenkins .cm-s-default .CodeMirror-gutter { background: #313335; border-right: 1px solid #313335; }
- #jenkins .cm-s-default .CodeMirror-guttermarker { color: #FFEE80; }
- #jenkins .cm-s-default .CodeMirror-guttermarker-subtle { color: #D0D0D0; }
- #jenkins .cm-s-default .CodeMirrir-linenumber { color: #606366; }
- #jenkins .cm-s-default .CodeMirror-matchingbracket { background-color: #3B514D; color: #FFEF28 !important; font-weight: bold; }
+    .cm-s-default span.cm-number {
+      color: #6897BB;
+    }
 
- #jenkins .cm-s-default div.CodeMirror-selected { background: #214283; }
+    .cm-s-default span.cm-keyword {
+      color: #CC7832;
+      line-height: 1em;
+      font-weight: bold;
+    }
 
- #jenkins .CodeMirror-hints.default {
-   font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
-   color: #9C9E9E;
-   background-color: #3B3E3F !important;
- }
+    .cm-s-default span.cm-def {
+      color: #A9B7C6;
+      font-style: italic;
+    }
 
- #jenkins .CodeMirror-hints.default .CodeMirror-hint-active {
-   background-color: #494D4E !important;
-   color: #9C9E9E !important;
- }
+    .cm-s-default span.cm-variable {
+      color: #A9B7C6;
+    }
 
- /* End CodeMirror Darcula theme */
+    .cm-s-default span.cm-variable-2 {
+      color: #A9B7C6;
+    }
+
+    .cm-s-default span.cm-variable-3 {
+      color: #9876AA;
+    }
+
+    .cm-s-default span.cm-type {
+      color: #AABBCC;
+      font-weight: bold;
+    }
+
+    .cm-s-default span.cm-property {
+      color: #FFC66D;
+    }
+
+    .cm-s-default span.cm-operator {
+      color: #A9B7C6;
+    }
+
+    .cm-s-default span.cm-string {
+      color: #6A8759;
+    }
+
+    .cm-s-default span.cm-string-2 {
+      color: #6A8759;
+    }
+
+    .cm-s-default span.cm-comment {
+      color: #61A151;
+      font-style: italic;
+    }
+
+    .cm-s-default span.cm-link {
+      color: #CC7832;
+    }
+
+    .cm-s-default span.cm-atom {
+      color: #CC7832;
+    }
+
+    .cm-s-default span.cm-error {
+      color: #BC3F3C;
+    }
+
+    .cm-s-default span.cm-tag {
+      color: #629755;
+      font-weight: bold;
+      font-style: italic;
+      text-decoration: underline;
+    }
+
+    .cm-s-default span.cm-attribute {
+      color: #6897bb;
+    }
+
+    .cm-s-default span.cm-qualifier {
+      color: #6A8759;
+    }
+
+    .cm-s-default span.cm-bracket {
+      color: #A9B7C6;
+    }
+
+    .cm-s-default span.cm-builtin {
+      color: #FF9E59;
+    }
+
+    .cm-s-default span.cm-special {
+      color: #FF9E59;
+    }
+
+    .cm-s-default span.cm-matchhighlight {
+      color: #FFFFFF;
+      background-color: rgba(50, 89, 48, .7);
+      font-weight: normal;
+    }
+
+    .cm-s-default span.cm-searching {
+      color: #FFFFFF;
+      background-color: rgba(61, 115, 59, .7);
+      font-weight: normal;
+    }
+
+    .cm-s-default .CodeMirror-cursor {
+      border-left: 1px solid #A9B7C6;
+    }
+
+    .cm-s-default .CodeMirror-activeline-background {
+      background: #323232;
+    }
+
+    .cm-s-default .CodeMirror-gutter {
+      background: #313335;
+      border-right: 1px solid #313335;
+    }
+
+    .cm-s-default .CodeMirror-guttermarker {
+      color: #FFEE80;
+    }
+
+    .cm-s-default .CodeMirror-guttermarker-subtle {
+      color: #D0D0D0;
+    }
+
+    .cm-s-default .CodeMirrir-linenumber {
+      color: #606366;
+    }
+
+    .cm-s-default .CodeMirror-matchingbracket {
+      background-color: #3B514D;
+      color: #FFEF28 !important;
+      font-weight: bold;
+    }
+
+    .cm-s-default div.CodeMirror-selected {
+      background: #214283;
+    }
+
+    .CodeMirror-hints.default {
+      font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+      color: #9C9E9E;
+      background-color: #3B3E3F !important;
+    }
+
+    .CodeMirror-hints.default .CodeMirror-hint-active {
+      background-color: #494D4E !important;
+      color: #9C9E9E !important;
+    }
+  }
+}
+
+[data-theme=dark], .app-theme-picker__picker[data-theme=dark] {
+  @include dark-mode;
+}
+
+[data-theme=dark] {
+  @include codemirror-theme;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-theme=dark-system], .app-theme-picker__picker[data-theme=dark-system] {
+    @include dark-mode;
+  }
+  [data-theme=dark-system] {
+    @include codemirror-theme;
+  }
+}

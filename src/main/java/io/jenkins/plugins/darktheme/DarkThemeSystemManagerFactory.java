@@ -10,43 +10,39 @@ import org.kohsuke.stapler.DataBoundConstructor;
 
 public class DarkThemeSystemManagerFactory extends ThemeManagerFactory {
 
-    public static final String THEME_SYSTEM_CSS = "theme-system.css";
-
     @DataBoundConstructor
     public DarkThemeSystemManagerFactory() {
     }
 
     @Override
     public Theme getTheme() {
-        return Theme.builder()
-                .withCssUrl(getCssUrl())
-                .build();
+        return Theme.builder().build();
     }
-    
+
     @Extension
     @Symbol("darkSystem")
     public static class DarkThemeSystemManagerFactoryDescriptor extends ThemeManagerFactoryDescriptor {
-        
+
         @NonNull
         @Override
         public String getDisplayName() {
-            return "Dark (Respect OS/Browser system setting)";
-        }
-
-        @Override
-        public String getThemeCssSuffix() {
-            return "theme-system.css";
-        }
-        
-        @Override
-        public ThemeManagerFactory getInstance() {
-            return new DarkThemeSystemManagerFactory();
+            return "Dark (System)";
         }
 
         @NonNull
         @Override
         public String getThemeId() {
             return "dark";
+        }
+
+        @Override
+        public String getThemeKey() {
+            return "dark-system";
+        }
+
+        @Override
+        public boolean isNamespaced() {
+            return true;
         }
     }
 }
