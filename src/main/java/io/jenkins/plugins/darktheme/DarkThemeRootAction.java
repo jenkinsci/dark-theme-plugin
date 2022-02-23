@@ -61,12 +61,6 @@ public class DarkThemeRootAction implements UnprotectedRootAction {
             return;
         }
         String contentType = cssFile.endsWith("map") ? "application/json" : "text/css";
-        rsp.setContentType(contentType);
-        if (Main.isDevelopmentMode) {
-            rsp.addHeader("Cache-Control", "no-cache");
-        } else {
-            rsp.addHeader("Cache-Control", "public");
-        }
         plugin.doDynamic(req,rsp);
     }
 }
