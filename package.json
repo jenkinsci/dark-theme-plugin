@@ -4,7 +4,9 @@
   "scripts": {
     "mvnbuild": "npm run build",
     "build": "sass src/main/frontend/main.scss src/main/webapp/theme.css",
-    "dev": "sass --watch src/main/frontend/main.scss src/main/webapp/theme.css"
+    "dev": "sass --watch src/main/frontend/main.scss src/main/webapp/theme.css",
+    "mvntest": "npm run test",
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
