@@ -60,7 +60,6 @@ public class DarkThemeRootAction implements UnprotectedRootAction {
             rsp.sendError(404);
             return;
         }
-        String contentType = cssFile.endsWith("map") ? "application/json" : "text/css";
         plugin.doDynamic(req,rsp);
     }
 }
