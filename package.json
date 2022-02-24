@@ -1,0 +1,24 @@
+{
+  "name": "dark-theme-plugin",
+  "version": "1.0.0",
+  "scripts": {
+    "mvnbuild": "npm run build",
+    "build": "sass src/main/frontend/main.scss src/main/webapp/theme.css",
+    "dev": "sass --watch src/main/frontend/main.scss src/main/webapp/theme.css",
+    "mvntest": "npm run test",
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenkinsci/dark-theme-plugin.git"
+  },
+  "author": "Tim Jacomb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jenkinsci/dark-theme-plugin/issues"
+  },
+  "homepage": "https://github.com/jenkinsci/dark-theme-plugin#readme",
+  "devDependencies": {
+    "sass": "^1.49.8"
+  }
+}

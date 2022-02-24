@@ -23,7 +23,7 @@ public class DarkThemeManagerFactory extends ThemeManagerFactory {
                 .withCssUrl(getCssUrl())
                 .build();
     }
-    
+
     @Extension
     @Symbol("dark")
     public static class DarkThemeManagerFactoryDescriptor extends ThemeManagerFactoryDescriptor {
@@ -34,15 +34,20 @@ public class DarkThemeManagerFactory extends ThemeManagerFactory {
             return "Dark";
         }
 
-        @Override
-        public ThemeManagerFactory getInstance() {
-            return new DarkThemeManagerFactory();
-        }
-
         @NonNull
         @Override
         public String getThemeId() {
             return "dark";
+        }
+
+        @Override
+        public String getThemeKey() {
+            return "dark";
+        }
+
+        @Override
+        public boolean isNamespaced() {
+            return true;
         }
     }
 }
