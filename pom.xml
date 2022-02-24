@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>4.34</version>
+    <version>4.37</version>
     <relativePath />
   </parent>
   <groupId>io.jenkins.plugins</groupId>
@@ -14,9 +14,8 @@
   <properties>
     <changelist>-SNAPSHOT</changelist>
     <gitHubRepo>jenkinsci/dark-theme-plugin</gitHubRepo>
-    <revision>0.0.3</revision>
     <changelist>9999999-SNAPSHOT</changelist>
-    <jenkins.version>2.336-rc32081.db_eed62c0c0e</jenkins.version>
+    <jenkins.version>2.336</jenkins.version>
     <java.level>8</java.level>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
@@ -29,8 +28,8 @@
     <dependencies>
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
-        <artifactId>bom-2.319.x</artifactId>
-        <version>1148.v7261f385f859</version>
+        <artifactId>bom-2.332.x</artifactId>
+        <version>1155.v77b_fd92a_26fc</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
@@ -41,7 +40,7 @@
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>theme-manager</artifactId>
-      <version>0.7-rc94.26a_5398f092d</version>
+      <version>1.0</version>
     </dependency>
 
     <dependency>
