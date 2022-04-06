@@ -63,6 +63,12 @@
   --breadcrumbs-item-bg-color--hover: var(--dark-theme-bg-dark);
   --breadcrumbs-border: var(--dark-theme-bg-dark-grey);
 
+  /* Tooltips */
+  --tooltip-background: hsl(240, 6%, 22%);
+  --tooltip-box-shadow: inset 0 0 1px rgba(240, 240, 255, 0.1),
+                        0 10px 25px rgba(15, 15, 20, 0.5),
+                        0 7.5px 15px -15px rgba(0, 0, 0, 1);
+
   /* Links */
   --link-color: #53c1ff;
   --link-visited-color: #53c1ff;
