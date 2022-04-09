@@ -8,8 +8,6 @@
 
 This repository contains a dark theme for Jenkins.
 
-*Requires Jenkins >= 2.249.1*
-
 ## Usage
 
 ### Installing via Jenkins update center
