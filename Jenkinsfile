@@ -1,9 +1,5 @@
-/*
- See the documentation for more options:
- https://github.com/jenkins-infra/pipeline-library/
-*/
-
-buildPlugin(useAci: true, configurations: [
-        [ platform: "linux", jdk: "8", jenkins: null ],
-        [ platform: "linux", jdk: "11", jenkins: null, javaLevel: "8" ]
+buildPlugin(useContainerAgent: true, configurations: [
+        [ platform: "linux", jdk: "8" ],
+        [ platform: "linux", jdk: "11" ],
+        [ platform: 'linux', jdk: '17', jenkins: '2.342' ],
 ])
