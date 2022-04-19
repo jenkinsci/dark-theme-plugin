@@ -76,7 +76,7 @@ No version of IE will be supported.
 
 ## Jenkins compatibility
 
-This project is in active development and needs a recent version of Jenkins, at least v2.240.
+This project is in active development and needs a recent version of Jenkins.
 
 We will do our best to not break new versions of the theme against older supported versions of Jenkins.
 
