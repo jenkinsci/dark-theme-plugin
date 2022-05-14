@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @mixin dark-mode {
   --dark-theme-bg-black: hsl(240, 6%, 10%);
   --dark-theme-bg-dark: #222;
@@ -162,10 +164,6 @@
 
   /* Auto complete */
   --auto-complete-bg-color--prehighlight: var(--primary);
-
-  /* Colors */
-  --green: #1bc656;
-  --red: #ff0b27;
 }
 
 @mixin codemirror-theme() {
@@ -332,6 +330,25 @@
       background-color: #494D4E !important;
       color: #9C9E9E !important;
     }
+  }
+
+  $colors: (
+    "blue": hsl(210, 100%, 55%),
+    "brown": hsl(30, 35%, 45%),
+    "cyan": hsl(200, 100%, 70%),
+    "green": hsl(135, 75%, 55%),
+    "indigo": hsl(250, 75%, 60%),
+    "orange": hsl(35, 100%, 50%),
+    "pink": hsl(350, 100%, 60%),
+    "purple": hsl(280, 85%, 60%),
+    "red": hsl(5, 100%, 60%),
+    "yellow": hsl(50, 100%, 55%)
+  );
+
+  @each $name, $value in $colors {
+    --light-#{$name}: #{color.scale($value, $lightness: 50%)};
+    --#{$name}: #{$value};
+    --dark-#{$name}: #{color.scale($value, $lightness: -40%)};
   }
 }
 
