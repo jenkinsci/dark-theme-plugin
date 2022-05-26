@@ -8,6 +8,8 @@ import io.jenkins.plugins.thememanager.ThemeManagerFactoryDescriptor;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
 
+import static io.jenkins.plugins.darktheme.DarkThemeManagerFactory.*;
+
 public class DarkThemeSystemManagerFactory extends ThemeManagerFactory {
 
     @DataBoundConstructor
@@ -16,7 +18,9 @@ public class DarkThemeSystemManagerFactory extends ThemeManagerFactory {
 
     @Override
     public Theme getTheme() {
-        return Theme.builder().build();
+        return Theme.builder()
+            .withProperty("prism-api", "theme", PRISM_THEME)
+            .build();
     }
 
     @Extension
