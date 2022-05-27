@@ -164,6 +164,11 @@
 
   /* Auto complete */
   --auto-complete-bg-color--prehighlight: var(--primary);
+
+  body {
+    // Render native browser elements in dark mode
+    color-scheme: dark;
+  }
 }
 
 @mixin codemirror-theme() {
