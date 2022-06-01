@@ -12,6 +12,7 @@ public class DarkThemeManagerFactory extends ThemeManagerFactory {
 
     public static final String THEME_CSS = "theme.css";
     public static final String THEME_URL_NAME = "theme-dark";
+    public static final String PRISM_THEME = "tomorrow";
 
     @DataBoundConstructor
     public DarkThemeManagerFactory() {
@@ -21,6 +22,7 @@ public class DarkThemeManagerFactory extends ThemeManagerFactory {
     public Theme getTheme() {
         return Theme.builder()
                 .withCssUrl(getCssUrl())
+                .withProperty("prism-api", "theme", PRISM_THEME)
                 .build();
     }
 
