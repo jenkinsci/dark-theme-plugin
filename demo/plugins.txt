@@ -2,5 +2,5 @@
 simple-theme-plugin:0.7
 login-theme:1.1
 # Common mode
-dark-theme:0.0.12
+dark-theme:185.v276b_5a_8966a_e
 theme-manager:1.4
