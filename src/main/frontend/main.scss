@@ -19,7 +19,7 @@
 
   /* Text */
   --text-color: rgb(250, 250, 255);
-  --text-color-secondary: rgb(200, 200, 205);
+  --text-color-secondary: rgb(160, 160, 165);
   --call-to-action-text-color: var(--dark-theme-bg-medium);
   --call-to-action-link-color: var(--call-to-action-text-color);
 
@@ -58,11 +58,12 @@
   --search-input-color: var(--text-color);
 
   /* Breadcrumbs */
-  --breadcrumbs-bg: var(--dark-theme-bg-black);
-  --breadcrumbs-bg-color--hover: var(--dark-theme-bg-dark);
-  --breadcrumbs-text-color: var(--text-color);
-  --breadcrumbs-item-bg-color--hover: var(--dark-theme-bg-dark);
-  --breadcrumbs-border: var(--dark-theme-bg-dark-grey);
+  --breadcrumbs-bar-background: hsl(240, 6%, 9%, 0.8);
+  --breadcrumbs-bg: hsl(240, 6%, 9%, 0.8); // Deprecated
+  --breadcrumbs-border: var(--dark-theme-bg-dark-grey); // Deprecated
+
+  /* Footer */
+  --footer-background: hsl(240, 6%, 9%, 0.8);
 
   /* Tooltips */
   --tooltip-background: hsl(240, 6%, 23%);
