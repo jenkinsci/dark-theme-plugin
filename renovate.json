@@ -27,7 +27,7 @@
     {
       "fileMatch": ["pom.xml"],
       "matchStrings": ["<npm.version>(?<currentValue>.*?)<\/npm.version>"],
-      "depNameTemplate": "node",
+      "depNameTemplate": "npm",
       "datasourceTemplate": "npm"
     }
   ],
