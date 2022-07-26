@@ -32,8 +32,7 @@
     }
   ],
   "labels": [
-    "dependencies",
-    "skip-changelog"
+    "dependencies"
   ],
   "rebaseWhen": "conflicted"
 }
