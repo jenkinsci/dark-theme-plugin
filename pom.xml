@@ -18,7 +18,7 @@
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
     <node.version>16.16.0</node.version>
-    <npm.version>8.15.0</npm.version>
+    <npm.version>8.15.1</npm.version>
   </properties>
   <name>Dark Theme</name>
   <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
