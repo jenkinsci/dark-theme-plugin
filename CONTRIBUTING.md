@@ -1,7 +1,7 @@
 # Contributing
 
 Any contributions to the dark theme and compatibility are welcome!
-And thanks to all [contributors](./CONTRIBUTORS.md)!
+And thanks to all [contributors](https://github.com/jenkinsci/dark-theme-plugin/graphs/contributors)!
 
 ## Testing
 
