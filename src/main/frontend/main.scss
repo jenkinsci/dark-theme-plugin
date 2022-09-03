@@ -58,6 +58,11 @@
   --search-input-color: var(--text-color);
 
   /* Breadcrumbs */
+  --breadcrumbs-bg: var(--dark-theme-bg-black);
+  --breadcrumbs-bg-color--hover: var(--dark-theme-bg-dark);
+  --breadcrumbs-text-color: var(--text-color);
+  --breadcrumbs-item-bg-color--hover: var(--dark-theme-bg-dark);
+  --breadcrumbs-border: var(--dark-theme-bg-dark-grey);
   --breadcrumbs-bar-background: hsl(240, 6%, 9%, 0.8);
 
   /* Footer */
