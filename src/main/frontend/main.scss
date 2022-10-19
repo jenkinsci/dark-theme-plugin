@@ -70,9 +70,11 @@
 
   /* Tooltips */
   --tooltip-background: hsl(240, 6%, 23%);
-  --tooltip-box-shadow: inset 0 0 1px rgba(240, 240, 255, 0.1),
-                        0 10px 25px rgba(15, 15, 20, 0.5),
-                        0 7.5px 15px -15px rgba(0, 0, 0, 1);
+  --tooltip-backdrop-filter: contrast(0.6) saturate(4) brightness(0.4) blur(15px);
+  --tooltip-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05), 
+                        0 0 8px 2px rgba(0, 0, 30, 0.05), 
+                        0 0 1px 1px rgba(0, 0, 20, 0.025), 
+                        0 10px 20px rgba(0, 0, 20, 0.15);
 
   /* Links */
   --link-color: #53c1ff;
