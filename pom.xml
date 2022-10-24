@@ -17,8 +17,8 @@
     <jenkins.version>2.344</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
-    <node.version>16.18.0</node.version>
-    <npm.version>8.19.2</npm.version>
+    <node.version>18.11.0</node.version>
+    <npm.version>9.0.0</npm.version>
   </properties>
   <name>Dark Theme</name>
   <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
