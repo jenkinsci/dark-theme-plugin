@@ -3,4 +3,4 @@ simple-theme-plugin:136.v23a_15f86c53d
 login-theme:1.1
 # Common mode
 dark-theme:262.v0202a_4c8fb_6a
-theme-manager:1.5
+theme-manager:1.6
