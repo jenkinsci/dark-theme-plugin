@@ -2,16 +2,17 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
-    ":semanticCommitsDisabled"
+    ":semanticCommitsDisabled",
+    "schedule:earlyMondays"
   ],
+  "automerge": true,
   "reviewers": [
     "team:dark-theme-developers"
   ],
   "packageRules": [
     {
       "matchDatasources": ["npm"],
-      "addLabels": ["javascript"],
-      "stabilityDays": 3
+      "addLabels": ["javascript"]
     },
     {
       "matchPackageNames": ["node"],
