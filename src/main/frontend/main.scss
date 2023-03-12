@@ -378,7 +378,7 @@
   }
 }
 
-[data-theme=dark], .app-theme-picker__picker[data-theme=dark] {
+[data-theme=dark], .app-theme-picker__picker[data-theme=dark], ::backdrop {
   @include dark-mode;
 }
 
@@ -387,7 +387,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  [data-theme=dark-system], .app-theme-picker__picker[data-theme=dark-system] {
+  [data-theme=dark-system], .app-theme-picker__picker[data-theme=dark-system], ::backdrop {
     @include dark-mode;
   }
   [data-theme=dark-system] {
