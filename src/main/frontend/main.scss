@@ -84,13 +84,15 @@
                          0 10px 20px rgba(0, 0, 20, 0.3);
 
   /* Modals */
-  --modal-backdrop-background: hsla(240, 6%, 3%, 0.9);
+  ::backdrop {
+    --modal-backdrop-background: hsla(240, 6%, 3%, 0.9);
+  }
   --modal-backdrop-filter: contrast(0.85) saturate(2) brightness(0.7) blur(20px);
   --modal-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
                       0 0 8px 2px rgba(0, 0, 30, 0.05),
                       0 0 1px 1px rgba(0, 0, 20, 0.025),
                       0 10px 20px rgba(0, 0, 20, 0.3);
-  
+
   /* Links */
   --link-color: #53c1ff;
   --link-visited-color: #53c1ff;
@@ -378,7 +380,7 @@
   }
 }
 
-[data-theme=dark], .app-theme-picker__picker[data-theme=dark], ::backdrop {
+[data-theme=dark], .app-theme-picker__picker[data-theme=dark] {
   @include dark-mode;
 }
 
@@ -387,7 +389,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  [data-theme=dark-system], .app-theme-picker__picker[data-theme=dark-system], ::backdrop {
+  [data-theme=dark-system], .app-theme-picker__picker[data-theme=dark-system] {
     @include dark-mode;
   }
   [data-theme=dark-system] {
