@@ -71,11 +71,11 @@
   /* Tooltips */
   --tooltip-background: hsl(240, 6%, 23%);
   --tooltip-backdrop-filter: contrast(0.6) saturate(4) brightness(0.4) blur(15px);
-  --tooltip-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05), 
-                        0 0 8px 2px rgba(0, 0, 30, 0.05), 
-                        0 0 1px 1px rgba(0, 0, 20, 0.025), 
+  --tooltip-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+                        0 0 8px 2px rgba(0, 0, 30, 0.05),
+                        0 0 1px 1px rgba(0, 0, 20, 0.025),
                         0 10px 20px rgba(0, 0, 20, 0.15);
-  
+
   /* Dropdowns */
   --dropdown-backdrop-filter: contrast(0.85) saturate(2) brightness(0.7) blur(20px);
   --dropdown-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
@@ -83,7 +83,17 @@
                          0 0 1px 1px rgba(0, 0, 20, 0.025),
                          0 10px 20px rgba(0, 0, 20, 0.3);
 
-  /* Modals */
+  /* Dialogs */
+  ::backdrop {
+    --dialog-backdrop-background: hsla(240, 6%, 3%, 0.9);
+  }
+  --dialog-backdrop-filter: contrast(0.85) saturate(2) brightness(0.7) blur(20px);
+  --dialog-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+                      0 0 8px 2px rgba(0, 0, 30, 0.05),
+                      0 0 1px 1px rgba(0, 0, 20, 0.025),
+                      0 10px 20px rgba(0, 0, 20, 0.3);
+
+/* Modals - for backwards compatibility only */
   ::backdrop {
     --modal-backdrop-background: hsla(240, 6%, 3%, 0.9);
   }
