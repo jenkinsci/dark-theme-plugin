@@ -1,5 +1,5 @@
 # Development mode
-simple-theme-plugin:146.v0e67db_a_9052e
+simple-theme-plugin:160.vb_76454b_67900
 login-theme:46.v36f624efb_23d
 # Common mode
 dark-theme:336.v02165cd8c2ee
