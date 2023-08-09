@@ -12,10 +12,8 @@
   --very-light-grey: var(--dark-theme-bg-very-light-grey);
   --light-grey: var(--dark-theme-bg-medium);
   --medium-grey: var(--dark-theme-bg-medium-grey);
-  --white: var(--dark-theme-bg-dark-grey);
-  --black: var(--dark-theme-bg-light-grey);
 
-  --primary: #53c1ff;
+  --accent-color: color(display-p3 0.43 0.757 1);
 
   /* Text */
   --text-color: rgb(250, 250, 255);
@@ -44,13 +42,8 @@
   --btn-link-bg--hover: var(--dark-theme-bg-dark-grey);
   --btn-link-bg--active: var(--dark-theme-bg-dark-grey);
 
-  /* Help area */
-  --help-area-bg-color: var(--dark-theme-bg-dark-grey);
-  --configure-job-help-area-bg-color: var(--dark-theme-bg-dark);
-
   /* Header */
-  --logo-bg: var(--dark-theme-bg-dark);
-  --brand-link-color: var(--primary);
+  --brand-link-color: var(--accent-color);
   --header-link-color: var(--text-color);
   --header-link-color-active: var(--text-color);
   --header-bg-classic: #000;
@@ -58,15 +51,7 @@
   --search-input-color: var(--text-color);
 
   /* Breadcrumbs */
-  --breadcrumbs-bg: var(--dark-theme-bg-black);
-  --breadcrumbs-bg-color--hover: var(--dark-theme-bg-dark);
-  --breadcrumbs-text-color: var(--text-color);
-  --breadcrumbs-item-bg-color--hover: var(--dark-theme-bg-dark);
-  --breadcrumbs-border: var(--dark-theme-bg-dark-grey);
   --breadcrumbs-bar-background: hsl(240, 6%, 9%, 0.8);
-
-  /* Footer */
-  --footer-background: hsl(240, 6%, 9%, 0.8);
 
   /* Tooltips */
   --tooltip-background: hsl(240, 6%, 23%);
@@ -103,10 +88,6 @@
                       0 0 1px 1px rgba(0, 0, 20, 0.025),
                       0 10px 20px rgba(0, 0, 20, 0.3);
 
-  /* Links */
-  --link-color: #53c1ff;
-  --link-visited-color: #53c1ff;
-
   /* Table */
   --table-background: var(--dark-theme-bg-black);
   --table-header-foreground: rgb(240, 240, 245);
@@ -133,14 +114,6 @@
   --tabs-item-background--active: rgba(255, 255, 255, 0.1);
   --tabs-item-background--selected: rgba(255, 255, 255, 0.05);
 
-  /* Deprecated */
-  --tab-link-border-color: var(--dark-theme-bg-dark-grey);
-  --tab-link-text-color: #999;
-  --tab-link-checked-bg: var(--dark-theme-bg-black);
-  --tab-link-checked-text-color: var(--primary);
-  --tab-link-bg--hover: var(--dark-theme-bg-dark-grey);
-  --tab-link-bg--active: var(--dark-theme-bg-dark-grey);
-
   /* Side panel */
   --panel-header-bg-color: var(--dark-theme-bg-black);
   --panel-border-color: rgb(50, 50, 55);
@@ -148,31 +121,22 @@
   --task-link-bg-color--hover: var(--dark-theme-bg-medium-grey);
 
   /* Form */
-  --input-color: rgb(40, 40, 42);
-  --input-border: rgb(120, 120, 130);
-  --input-border-hover: rgb(140, 140, 150);
-  --focus-input-border: #4bbeff;
-  --focus-input-glow: rgba(43, 116, 160, 0.4);
+  --input-color: hsl(240, 6%, 20%);
+  --input-border: hsl(240, 6%, 40%);
+  --input-border-hover: hsl(240, 6%, 50%);
+  --focus-input-border: var(--accent-color);
+  --focus-input-glow: color-mix(in srgb, var(--focus-input-border) 20%, transparent);
   --pre-background: var(--dark-theme-bg-black);
-  --selection-color: rgba(75, 190, 255, 0.5);
+  --selection-color: color-mix(in srgb, var(--focus-input-border) 40%, transparent);
 
   --header-search-border: var(--dark-theme-bg-dark-grey);
   --input-hidden-password-bg-color: var(--input-color);
-
-  /* Text area handle */
-  --text-area-handle-border: var(--dark-theme-bg-dark-grey);
-  --text-area-handle-bg-color: var(--text-area-handle-border);
 
   /* Pop out menus */
   --menu-bg-color: var(--dark-theme-bg-medium);
   --menu-text-color: var(--text-color);
   --menu-selected-color: var(--dark-theme-bg-dark);
   --menu-box-shadow: none;
-
-  /* Manage component */
-  --manage-option-bg-color--hover: var(--dark-theme-bg-light-grey);
-  --manage-option-bg-color--active: var(--dark-theme-bg-light-grey);
-  --manage-option-border-color: var(--dark-theme-bg-light-grey);
 
   /* Add form widget */
   --light-bg-color: var(--dark-theme-bg-medium);
@@ -196,7 +160,7 @@
   --plugin-manager-unavailable-label-color: var(--text-color);
 
   /* Auto complete */
-  --auto-complete-bg-color--prehighlight: var(--primary);
+  --auto-complete-bg-color--prehighlight: var(--accent-color);
 
   body {
     // Render native browser elements in dark mode
@@ -380,13 +344,18 @@
     "pink": hsl(350, 100%, 60%),
     "purple": hsl(280, 85%, 60%),
     "red": hsl(5, 100%, 60%),
-    "yellow": hsl(50, 100%, 55%)
+    "yellow": hsl(50, 100%, 55%),
+    "white": hsl(0, 0%, 100%),
+    "black": hsl(240, 22%, 10%),
   );
 
   @each $name, $value in $colors {
-    --light-#{$name}: #{color.scale($value, $lightness: 50%)};
     --#{$name}: #{$value};
-    --dark-#{$name}: #{color.scale($value, $lightness: -40%)};
+
+    @if $name != "black" and $name != "white" {
+      --light-#{$name}: #{color.scale($value, $lightness: 50%)};
+      --dark-#{$name}: #{color.scale($value, $lightness: -40%)};
+    }
   }
 }
 
