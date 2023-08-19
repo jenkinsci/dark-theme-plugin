@@ -26,8 +26,8 @@
     <dependencies>
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
-        <artifactId>bom-2.332.x</artifactId>
-        <version>1763.v092b_8980a_f5e</version>
+        <artifactId>bom-2.414.x</artifactId>
+        <version>2329.v078520e55c19</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
@@ -38,7 +38,7 @@
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>theme-manager</artifactId>
-      <version>193.vcef22f6c5f2b_</version>
+      <version>209.va_da_1152274b_e</version>
     </dependency>
 
     <dependency>

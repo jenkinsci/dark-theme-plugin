@@ -18,7 +18,11 @@ public class DarkThemeSystemManagerFactory extends ThemeManagerFactory {
 
     @Override
     public Theme getTheme() {
-        return Theme.builder().build();
+        return Theme.builder()
+            .respectSystemAppearance()
+            .withProperty("ace-editor", "theme-dark", ACE_EDITOR_THEME)
+            .withProperty("prism-api", "theme-dark", PRISM_THEME)
+            .build();
     }
 
     @Extension
