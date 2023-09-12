@@ -54,7 +54,7 @@ public class DarkThemeJcascTest {
     assertThat(exported, is(expected));
   }
 
-  static Mapping getAppearanceRoot(ConfigurationContext context) throws Exception {
+  public static Mapping getAppearanceRoot(ConfigurationContext context) throws Exception {
     GlobalConfigurationCategory category =
             ExtensionList.lookup(AppearanceCategory.class).get(0);
     GlobalConfigurationCategoryConfigurator configurator = new GlobalConfigurationCategoryConfigurator(category);
