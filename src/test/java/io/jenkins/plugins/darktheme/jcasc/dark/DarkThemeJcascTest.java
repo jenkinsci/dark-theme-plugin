@@ -1,10 +1,16 @@
 package io.jenkins.plugins.darktheme.jcasc.dark;
 
+import hudson.ExtensionList;
 import io.jenkins.plugins.casc.ConfigurationContext;
 import io.jenkins.plugins.casc.ConfiguratorRegistry;
+import io.jenkins.plugins.casc.impl.configurators.GlobalConfigurationCategoryConfigurator;
 import io.jenkins.plugins.casc.misc.ConfiguredWithCode;
 import io.jenkins.plugins.casc.misc.JenkinsConfiguredWithCodeRule;
 import io.jenkins.plugins.casc.model.CNode;
+import io.jenkins.plugins.casc.model.Mapping;
+import java.util.Objects;
+import jenkins.appearance.AppearanceCategory;
+import jenkins.model.GlobalConfigurationCategory;
 import io.jenkins.plugins.darktheme.DarkThemeManagerFactory;
 import io.jenkins.plugins.thememanager.ThemeManagerFactory;
 import io.jenkins.plugins.thememanager.ThemeManagerPageDecorator;
@@ -39,12 +45,20 @@ public class DarkThemeJcascTest {
   @Test
   public void testExport() throws Exception {
     ConfigurationContext context = new ConfigurationContext(ConfiguratorRegistry.get());
-    CNode yourAttribute = getUnclassifiedRoot(context).get("themeManager");
+    CNode yourAttribute = getAppearanceRoot(context).get("themeManager");
 
     String exported = toYamlString(yourAttribute);
 
     String expected = toStringFromYamlFile(this, "ConfigurationAsCodeExport.yml");
 
     assertThat(exported, is(expected));
+  }
+
+  static Mapping getAppearanceRoot(ConfigurationContext context) throws Exception {
+    GlobalConfigurationCategory category =
+            ExtensionList.lookup(AppearanceCategory.class).get(0);
+    GlobalConfigurationCategoryConfigurator configurator = new GlobalConfigurationCategoryConfigurator(category);
+    return Objects.requireNonNull(configurator.describe(configurator.getTargetComponent(context), context))
+            .asMapping();
   }
 }

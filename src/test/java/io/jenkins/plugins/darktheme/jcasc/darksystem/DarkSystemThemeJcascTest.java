@@ -14,6 +14,7 @@ import org.junit.Test;
 import static io.jenkins.plugins.casc.misc.Util.getUnclassifiedRoot;
 import static io.jenkins.plugins.casc.misc.Util.toStringFromYamlFile;
 import static io.jenkins.plugins.casc.misc.Util.toYamlString;
+import static io.jenkins.plugins.darktheme.jcasc.dark.DarkThemeJcascTest.getAppearanceRoot;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.is;
@@ -39,7 +40,7 @@ public class DarkSystemThemeJcascTest {
   @Test
   public void testExport() throws Exception {
     ConfigurationContext context = new ConfigurationContext(ConfiguratorRegistry.get());
-    CNode yourAttribute = getUnclassifiedRoot(context).get("themeManager");
+    CNode yourAttribute = getAppearanceRoot(context).get("themeManager");
 
     String exported = toYamlString(yourAttribute);
 
