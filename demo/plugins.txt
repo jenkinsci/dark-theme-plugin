@@ -1,6 +1,6 @@
 # Development mode
 simple-theme-plugin:160.vb_76454b_67900
-login-theme:46.v36f624efb_23d
+login-theme:82.v6f8cc54f93c5
 # Common mode
 dark-theme:372.v79b_02c754b_29
 theme-manager:215.vc1ff18d67920
