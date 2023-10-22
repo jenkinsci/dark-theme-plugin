@@ -28,36 +28,6 @@ unclassified:
 Users can configure the theme from their user profile page, see the [theme-manager documentation](https://github.com/jenkinsci/theme-manager-plugin#configuring-the-plugin),
 for more information.
 
-### Simple theme plugin
-
-If you can't install this plugin for some reason you can use the [Simple Theme Plugin](https://plugins.jenkins.io/simple-theme-plugin/).
-
-See the plugin documentation for theme installation guidelines.
-
-_Note: replace 'tag-name' with the latest released version:_
-[![GitHub release](https://img.shields.io/github/release/jenkinsci/dark-theme.svg?label=latest)](https://github.com/jenkinsci/dark-theme/releases/latest)
-
-The CSS URLs are:
-
-```text
-https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/src/main/resources/io/jenkins/plugins/darktheme/theme.css
-https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/src/main/resources/io/jenkins/plugins/darktheme/theme-system.css
-```
-
-* theme.css - forces dark theme for all users
-* theme-system.css - respects users system setting for dark / light mode, in most cases this is the theme you should be using
-
-or with the [configuration-as-code](https://github.com/jenkinsci/configuration-as-code-plugin) plugin:
-
-```yaml
-unclassified:
-  simple-theme-plugin:
-    elements:
-      - cssUrl:
-          url: "https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/theme-system.css"
-          #url: "https://cdn.jsdelivr.net/gh/jenkinsci/dark-theme@<tag-name>/theme.css"
-```
-
 ## Screenshots
 
 Main screen:
