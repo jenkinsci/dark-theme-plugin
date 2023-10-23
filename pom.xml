@@ -17,7 +17,7 @@
     <jenkins.version>2.421</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
-    <node.version>18.18.0</node.version>
+    <node.version>18.18.2</node.version>
     <npm.version>10.2.0</npm.version>
   </properties>
   <name>Dark Theme</name>
