@@ -22,6 +22,7 @@ public class DarkThemeSystemManagerFactory extends ThemeManagerFactory {
             .respectSystemAppearance()
             .withProperty("ace-editor", "theme-dark", ACE_EDITOR_THEME)
             .withProperty("prism-api", "theme-dark", PRISM_THEME)
+            .withProperty("bootstrap", "theme-dark", BOOTSTRAP_THEME)
             .build();
     }
 
