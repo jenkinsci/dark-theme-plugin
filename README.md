@@ -18,6 +18,15 @@ Then go to the "Configure System" page, search for 'Built-in Themes' and select 
 
 or with the [configuration-as-code](https://github.com/jenkinsci/configuration-as-code-plugin) plugin:
 
+From Jenkins 2.421:
+```yaml
+appearance:
+  themeManager:
+    disableUserThemes: true
+    theme: "darkSystem" # use 'dark' for forcing the dark theme regardless of OS settings
+```
+
+Previously:
 ```yaml
 unclassified:
   themeManager:
