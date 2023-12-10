@@ -163,6 +163,14 @@
   /* Auto complete */
   --auto-complete-bg-color--prehighlight: var(--accent-color);
 
+  /* Card */
+  --card-background: hsla(240, 25%, 75%, 0.04);
+  --card-background--hover: hsla(240, 25%, 75%, 0.06);
+  --card-background--active: hsla(240, 25%, 75%, 0.08);
+  --card-border-color: hsla(240, 25%, 75%, 0.04);
+  --card-border-color--hover: var(--card-border-color);
+  --card-border-color--active: var(--card-border-color);
+
   body {
     // Render native browser elements in dark mode
     color-scheme: dark;
