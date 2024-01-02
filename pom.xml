@@ -14,7 +14,7 @@
   <properties>
     <gitHubRepo>jenkinsci/dark-theme-plugin</gitHubRepo>
     <changelist>9999999-SNAPSHOT</changelist>
-    <jenkins.version>2.421</jenkins.version>
+    <jenkins.version>2.426.1</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
     <node.version>18.18.2</node.version>
@@ -26,7 +26,7 @@
     <dependencies>
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
-        <artifactId>bom-2.414.x</artifactId>
+        <artifactId>bom-2.426.x</artifactId>
         <version>2675.v1515e14da_7a_6</version>
         <scope>import</scope>
         <type>pom</type>
