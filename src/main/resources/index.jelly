@@ -1,4 +1,4 @@
 <?jelly escape-by-default='true'?>
 <div>
-  Dark theme
+  Adds a dark theme to Jenkins, respecting browser and OS themes if configured.
 </div>
