@@ -49,7 +49,9 @@
   --header-bg-classic: #000;
   --search-bg: #4d545d;
   --search-input-color: rgb(200, 200, 204);
-  --header-link-bg-classic-hover: var(--text-color);
+  .main-search__icon-trailing {
+    --header-link-bg-classic-hover: var(--text-color);
+  }
 
   /* Breadcrumbs */
   --breadcrumbs-bar-background: hsl(240, 6%, 9%, 0.8);
