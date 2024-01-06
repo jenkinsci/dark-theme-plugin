@@ -12,9 +12,9 @@ This repository contains a dark theme for Jenkins.
 
 ### Installing via Jenkins update center
 
-To install this theme search for 'Dark theme' in your Jenkins update center.
+Search for 'Dark theme' in your Jenkins update center and install it.
 
-Then go to the "Configure System" page, search for 'Built-in Themes' and select 'Dark (Respect OS/Browser system setting)'
+Then go to "Manage Jenkins" and click "Appearance", search for 'Themes' and select 'Dark (System)'
 
 or with the [configuration-as-code](https://github.com/jenkinsci/configuration-as-code-plugin) plugin:
 
@@ -52,14 +52,6 @@ Build console:
 The theme should be compatible with all modern browsers.
 
 No version of IE will be supported.
-
-## Jenkins compatibility
-
-This project is in active development and needs a recent version of Jenkins.
-
-We will do our best to not break new versions of the theme against older supported versions of Jenkins.
-
-To be safe you should use our published releases instead of relying on the master branch
 
 ## References
 
