@@ -1,5 +1,7 @@
 package io.jenkins.plugins.darktheme;
 
+import static io.jenkins.plugins.darktheme.DarkThemeManagerFactory.*;
+
 import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.Extension;
 import io.jenkins.plugins.thememanager.Theme;
@@ -8,23 +10,20 @@ import io.jenkins.plugins.thememanager.ThemeManagerFactoryDescriptor;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
 
-import static io.jenkins.plugins.darktheme.DarkThemeManagerFactory.*;
-
 public class DarkThemeSystemManagerFactory extends ThemeManagerFactory {
 
     @DataBoundConstructor
-    public DarkThemeSystemManagerFactory() {
-    }
+    public DarkThemeSystemManagerFactory() {}
 
     @Override
     public Theme getTheme() {
         return Theme.builder()
-            .respectSystemAppearance()
-            .withProperty("ace-editor", "theme-dark", ACE_EDITOR_THEME)
-            .withProperty("entra-id", "theme-dark", ENTRA_ID_THEME)
-            .withProperty("prism-api", "theme-dark", PRISM_THEME)
-            .withProperty("bootstrap", "theme-dark", BOOTSTRAP_THEME)
-            .build();
+                .respectSystemAppearance()
+                .withProperty("ace-editor", "theme-dark", ACE_EDITOR_THEME)
+                .withProperty("entra-id", "theme-dark", ENTRA_ID_THEME)
+                .withProperty("prism-api", "theme-dark", PRISM_THEME)
+                .withProperty("bootstrap", "theme-dark", BOOTSTRAP_THEME)
+                .build();
     }
 
     @Extension
