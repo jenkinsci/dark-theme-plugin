@@ -92,10 +92,8 @@
                       0 10px 20px rgba(0, 0, 20, 0.3);
 
   /* Table */
-  --table-background: var(--dark-theme-bg-black);
-  --table-header-foreground: rgb(240, 240, 245);
-  --table-body-background: var(--background);
-  --table-body-foreground: rgb(240, 240, 245);
+  --table-background: hsla(240, 25%, 75%, 0.04);
+  --table-border-color: hsla(240, 25%, 75%, 0.02);
 
   /* Deprecated */
   --bigtable-header-bg: var(--dark-theme-bg-black);
@@ -111,11 +109,12 @@
   --pane-header-color: var(--dark-theme-bg-black);
 
   /* Tab bar */
-  --tabs-background: var(--dark-theme-bg-black);
+  --tabs-background: hsla(240, 25%, 75%, 0.04);
   --tabs-item-background: transparent;
   --tabs-item-background--hover: rgba(255, 255, 255, 0.05);
   --tabs-item-background--active: rgba(255, 255, 255, 0.1);
   --tabs-item-background--selected: rgba(255, 255, 255, 0.05);
+  --tabs-border-color: hsla(240, 25%, 75%, 0.02);
 
   /* Side panel */
   --panel-header-bg-color: var(--dark-theme-bg-black);
