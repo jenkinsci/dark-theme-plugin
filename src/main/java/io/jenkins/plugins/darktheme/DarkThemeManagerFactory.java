@@ -18,8 +18,7 @@ public class DarkThemeManagerFactory extends ThemeManagerFactory {
     public static final String ENTRA_ID_THEME = "dark";
 
     @DataBoundConstructor
-    public DarkThemeManagerFactory() {
-    }
+    public DarkThemeManagerFactory() {}
 
     @Override
     public Theme getTheme() {

@@ -1,5 +1,8 @@
 package io.jenkins.plugins.darktheme;
 
+import static io.jenkins.plugins.darktheme.DarkThemeManagerFactory.THEME_CSS;
+import static io.jenkins.plugins.darktheme.DarkThemeManagerFactory.THEME_URL_NAME;
+
 import hudson.Extension;
 import hudson.Plugin;
 import hudson.model.UnprotectedRootAction;
@@ -11,9 +14,6 @@ import org.kohsuke.accmod.Restricted;
 import org.kohsuke.accmod.restrictions.NoExternalUse;
 import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.StaplerResponse;
-
-import static io.jenkins.plugins.darktheme.DarkThemeManagerFactory.THEME_CSS;
-import static io.jenkins.plugins.darktheme.DarkThemeManagerFactory.THEME_URL_NAME;
 
 @Extension
 @Restricted(NoExternalUse.class)
@@ -34,7 +34,8 @@ public class DarkThemeRootAction implements UnprotectedRootAction {
         return THEME_URL_NAME;
     }
 
-    public void doDynamic(StaplerRequest req, StaplerResponse rsp) throws IOException, URISyntaxException, ServletException {
+    public void doDynamic(StaplerRequest req, StaplerResponse rsp)
+            throws IOException, URISyntaxException, ServletException {
         String cssFile = req.getRestOfPath();
         if (cssFile.startsWith("/")) {
             cssFile = cssFile.substring(1);
@@ -48,6 +49,6 @@ public class DarkThemeRootAction implements UnprotectedRootAction {
             rsp.sendError(404);
             return;
         }
-        plugin.doDynamic(req,rsp);
+        plugin.doDynamic(req, rsp);
     }
 }
