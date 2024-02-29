@@ -95,6 +95,10 @@
   --table-background: hsla(240, 25%, 75%, 0.04);
   --table-border-color: hsla(240, 25%, 75%, 0.02);
 
+  table {
+    background-clip: padding-box;
+  }
+
   /* Deprecated */
   --bigtable-header-bg: var(--dark-theme-bg-black);
   --bigtable-header-border-color: var(--dark-theme-bg-dark-grey);
