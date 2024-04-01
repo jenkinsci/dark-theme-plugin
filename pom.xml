@@ -40,7 +40,7 @@
     <jenkins.version>2.426.3</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
-    <node.version>18.19.1</node.version>
+    <node.version>18.20.0</node.version>
     <npm.version>10.5.0</npm.version>
     <spotless.check.skip>false</spotless.check.skip>
   </properties>
