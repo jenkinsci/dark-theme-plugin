@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>4.78</version>
+    <version>4.80</version>
     <relativePath />
   </parent>
   <groupId>io.jenkins.plugins</groupId>
@@ -40,8 +40,8 @@
     <jenkins.version>2.426.3</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
-    <node.version>18.19.1</node.version>
-    <npm.version>10.4.0</npm.version>
+    <node.version>18.20.0</node.version>
+    <npm.version>10.5.0</npm.version>
     <spotless.check.skip>false</spotless.check.skip>
   </properties>
   <dependencyManagement>
@@ -49,7 +49,7 @@
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
         <artifactId>bom-2.426.x</artifactId>
-        <version>2839.v003b_4d9d24fd</version>
+        <version>2950.va_633b_f42f759</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
