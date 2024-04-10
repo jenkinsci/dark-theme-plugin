@@ -37,7 +37,7 @@
   <properties>
     <gitHubRepo>jenkinsci/dark-theme-plugin</gitHubRepo>
     <changelist>9999999-SNAPSHOT</changelist>
-    <jenkins.version>2.426.3</jenkins.version>
+    <jenkins.version>2.453</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
     <node.version>18.20.0</node.version>
