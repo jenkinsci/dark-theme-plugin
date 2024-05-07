@@ -13,7 +13,6 @@ public class DarkThemeManagerFactory extends ThemeManagerFactory {
     public static final String THEME_CSS = "theme.css";
     public static final String THEME_URL_NAME = "theme-dark";
     public static final String ACE_EDITOR_THEME = "tomorrow_night";
-    public static final String PRISM_THEME = "tomorrow";
     public static final String BOOTSTRAP_THEME = "dark";
     public static final String ENTRA_ID_THEME = "dark";
 
@@ -26,7 +25,6 @@ public class DarkThemeManagerFactory extends ThemeManagerFactory {
                 .withCssUrl(getCssUrl())
                 .withProperty("ace-editor", "theme", ACE_EDITOR_THEME)
                 .withProperty("entra-id", "theme", ENTRA_ID_THEME)
-                .withProperty("prism-api", "theme", PRISM_THEME)
                 .withProperty("bootstrap", "theme", BOOTSTRAP_THEME)
                 .build();
     }
