@@ -174,10 +174,8 @@
   --card-border-color--hover: var(--card-border-color);
   --card-border-color--active: var(--card-border-color);
 
-  body {
-    // Render native browser elements in dark mode
-    color-scheme: dark;
-  }
+  // Render native browser elements in dark mode
+  color-scheme: dark;
 }
 
 @mixin codemirror-theme() {
