@@ -3,4 +3,4 @@ simple-theme-plugin:176.v39740c03a_a_f5
 login-theme:146.v64a_da_cf70ea_6
 # Common mode
 dark-theme:479.v661b_1b_911c01
-theme-manager:215.vc1ff18d67920
+theme-manager:262.vc57ee4a_eda_5d
