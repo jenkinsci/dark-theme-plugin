@@ -342,6 +342,11 @@
       background-color: #494D4E !important;
       color: #9C9E9E !important;
     }
+    
+    .icon-disabled .svg-icon {
+      color: white;
+      fill: white;
+    }
   }
 
   $colors: (
