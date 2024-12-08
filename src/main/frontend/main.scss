@@ -90,12 +90,8 @@
                       0 10px 20px rgba(0, 0, 20, 0.3);
 
   /* Table */
-  --table-background: hsla(240, 25%, 75%, 0.04);
-  --table-border-color: hsla(240, 25%, 75%, 0.02);
-
-  table {
-    background-clip: padding-box;
-  }
+  --table-background: var(--card-background);
+  --table-border-color: var(--card-border-color);
 
   /* Deprecated */
   --bigtable-header-bg: var(--dark-theme-bg-black);
@@ -111,12 +107,12 @@
   --pane-header-color: var(--dark-theme-bg-black);
 
   /* Tab bar */
-  --tabs-background: hsla(240, 25%, 75%, 0.04);
+  --tabs-background: var(--card-background);
   --tabs-item-background: transparent;
   --tabs-item-background--hover: rgba(255, 255, 255, 0.05);
   --tabs-item-background--active: rgba(255, 255, 255, 0.1);
   --tabs-item-background--selected: rgba(255, 255, 255, 0.05);
-  --tabs-border-color: hsla(240, 25%, 75%, 0.02);
+  --tabs-border-color: var(--card-border-color);
 
   /* Side panel */
   --panel-header-bg-color: var(--dark-theme-bg-black);
@@ -167,10 +163,10 @@
   --auto-complete-bg-color--prehighlight: var(--accent-color);
 
   /* Card */
-  --card-background: hsla(240, 25%, 75%, 0.04);
-  --card-background--hover: hsla(240, 25%, 75%, 0.06);
-  --card-background--active: hsla(240, 25%, 75%, 0.08);
-  --card-border-color: hsla(240, 25%, 75%, 0.02);
+  --card-background: hsl(240, 6%, 15%);
+  --card-background--hover: hsl(240, 6%, 17.5%);
+  --card-background--active: hsl(240, 6%, 20%);
+  --card-border-color: hsl(240, 6%, 16.5%);
   --card-border-color--hover: var(--card-border-color);
   --card-border-color--active: var(--card-border-color);
 
