@@ -341,26 +341,25 @@
   }
 
   $colors: (
-    "blue": hsl(210, 100%, 55%),
-    "brown": hsl(30, 35%, 45%),
-    "cyan": hsl(200, 100%, 70%),
-    "green": hsl(135, 75%, 55%),
-    "indigo": hsl(250, 75%, 60%),
-    "orange": hsl(35, 100%, 50%),
-    "pink": hsl(350, 100%, 60%),
-    "purple": hsl(280, 85%, 60%),
-    "red": hsl(5, 100%, 60%),
-    "yellow": hsl(50, 100%, 55%),
-    "white": hsl(0, 0%, 100%),
-    "black": hsl(240, 22%, 10%),
+    "blue": oklch(64.23% 0.2115 252.93),
+    "brown": oklch(63.14% 0.1 65.44),
+    "cyan": oklch(80.37% 0.1296 232.62),
+    "green": oklch(80.25% 0.2197 147.09),
+    "indigo": oklch(57.48% 0.25857789238440737 281.952808049943),
+    "orange": oklch(79.58% 0.1862 62.09),
+    "pink": oklch(70.1% 0.24745476538887096 13.880054625027709),
+    "purple": oklch(62.75% 0.2634 311.52),
+    "red": oklch(66.82% 0.2393 29.84),
+    "yellow": oklch(90.35% 0.1872 95.31),
+    "teal": oklch(73.05% 0.1217 216.13),
   );
 
   @each $name, $value in $colors {
     --#{$name}: #{$value};
 
     @if $name != "black" and $name != "white" {
-      --light-#{$name}: #{color.scale($value, $lightness: 50%)};
-      --dark-#{$name}: #{color.scale($value, $lightness: -40%)};
+      --light-#{$name}: #{color.adjust($value, $lightness: 45%)};
+      --dark-#{$name}: #{color.adjust($value, $lightness: -40%)};
     }
   }
 }
