@@ -345,9 +345,9 @@
     "brown": oklch(63.14% 0.1 65.44),
     "cyan": oklch(80.37% 0.1296 232.62),
     "green": oklch(80.25% 0.2197 147.09),
-    "indigo": oklch(57.48% 0.25857789238440737 281.952808049943),
+    "indigo": oklch(57.48% 0.26 281.95),
     "orange": oklch(79.58% 0.1862 62.09),
-    "pink": oklch(70.1% 0.24745476538887096 13.880054625027709),
+    "pink": oklch(70.1% 0.25 13.88),
     "purple": oklch(62.75% 0.2634 311.52),
     "red": oklch(66.82% 0.2393 29.84),
     "yellow": oklch(90.35% 0.1872 95.31),
@@ -358,8 +358,8 @@
     --#{$name}: #{$value};
 
     @if $name != "black" and $name != "white" {
-      --light-#{$name}: #{color.adjust($value, $lightness: 45%)};
-      --dark-#{$name}: #{color.adjust($value, $lightness: -40%)};
+      --light-#{$name}: #{color.scale($value, $lightness: 50%)};
+      --dark-#{$name}: #{color.scale($value, $lightness: -50%)};
     }
   }
 }
