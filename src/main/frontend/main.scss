@@ -3,11 +3,11 @@
 @mixin dark-mode {
   --accent-color: oklch(65.13% 0.1987 262.54344590547373);
 
-  --background: oklch(from var(--white) 17.5% 0.0075 h);
+  --background: oklch(from var(--white) 20% 0.0075 h);
 
   /* Text */
   --text-color: var(--white);
-  --text-color-secondary: oklch(from var(--white) 65% 15% h);
+  --text-color-secondary: oklch(from var(--white) 70% 15% h);
 
   /* Breadcrumbs */
   --breadcrumbs-bar-background: rgb(0 0 0 / 0.2);
