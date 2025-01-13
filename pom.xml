@@ -41,7 +41,7 @@
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
     <node.version>18.20.5</node.version>
-    <npm.version>10.9.2</npm.version>
+    <npm.version>11.0.0</npm.version>
     <spotless.check.skip>false</spotless.check.skip>
   </properties>
   <dependencyManagement>
