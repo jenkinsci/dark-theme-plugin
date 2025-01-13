@@ -6,9 +6,9 @@ import static io.jenkins.plugins.darktheme.DarkThemeManagerFactory.THEME_URL_NAM
 import hudson.Extension;
 import hudson.Plugin;
 import hudson.model.UnprotectedRootAction;
+import jakarta.servlet.ServletException;
 import java.io.IOException;
 import java.net.URISyntaxException;
-import jakarta.servlet.ServletException;
 import jenkins.model.Jenkins;
 import org.kohsuke.accmod.Restricted;
 import org.kohsuke.accmod.restrictions.NoExternalUse;
