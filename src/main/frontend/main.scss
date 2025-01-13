@@ -1,46 +1,51 @@
 @use "sass:color";
 
 @mixin dark-mode {
-  --dark-theme-bg-black: hsl(240, 6%, 10%);
-  --dark-theme-bg-dark: #222;
-  --dark-theme-bg-medium: #2d2b2b;
-  --dark-theme-bg-dark-grey: #333;
-  --dark-theme-bg-medium-grey: #444;
-  --dark-theme-bg-light-grey: #555;
-  --dark-theme-bg-very-light-grey: #444;
-  --background: hsl(240, 15%, 10%);
-  --very-light-grey: var(--dark-theme-bg-very-light-grey);
-  --light-grey: var(--dark-theme-bg-medium);
-  --medium-grey: var(--dark-theme-bg-medium-grey);
+  //--dark-theme-bg-black: hsl(240, 6%, 10%);
+  //--dark-theme-bg-dark: #222;
+  //--dark-theme-bg-medium: #2d2b2b;
+  //--dark-theme-bg-dark-grey: #333;
+  //--dark-theme-bg-medium-grey: #444;
+  //--dark-theme-bg-light-grey: #555;
+  //--dark-theme-bg-very-light-grey: #444;
 
-  //--accent-color: color(display-p3 0.43 0.757 1);
+  --accent-color: oklch(65.13% 0.1987 262.54344590547373);
+  //--accent-color: pink;
+
+  --background: oklch(from var(--white) 16.5% c h);
+
+  //--very-light-grey: var(--dark-theme-bg-very-light-grey);
+  //--light-grey: var(--dark-theme-bg-medium);
+  //--medium-grey: var(--dark-theme-bg-medium-grey);
+
+  //--accent-color: var(--cyan);
 
   /* Text */
-  --text-color: hsl(240, 15%, 95%);
-  --text-color-secondary: hsl(240, 20%, 70%);
-  --call-to-action-text-color: var(--dark-theme-bg-medium);
-  --call-to-action-link-color: var(--call-to-action-text-color);
+  --text-color: var(--white);
+  --text-color-secondary: oklch(from var(--white) 60% 10% h);
+  //--call-to-action-text-color: var(--dark-theme-bg-medium);
+  //--call-to-action-link-color: var(--call-to-action-text-color);
 
   /* Buttons */
-  --btn-primary-bg: #53c1ff;
-  --btn-secondary-bg: var(--dark-theme-bg-dark);
-  --btn-secondary-color: var(--btn-primary-color);
-  --btn-link-bg--hover: var(--dark-theme-bg-dark-grey);
-  --btn-link-bg--active: var(--dark-theme-bg-dark-grey);
+  //--btn-primary-bg: #53c1ff;
+  //--btn-secondary-bg: var(--dark-theme-bg-dark);
+  //--btn-secondary-color: var(--btn-primary-color);
+  //--btn-link-bg--hover: var(--dark-theme-bg-dark-grey);
+  //--btn-link-bg--active: var(--dark-theme-bg-dark-grey);
 
   /* Header */
-  --brand-link-color: var(--accent-color);
-  --header-link-color: var(--text-color);
-  --header-link-color-active: var(--text-color);
-  --header-bg-classic: #000;
-  --search-bg: #4d545d;
-  --search-input-color: rgb(200, 200, 204);
-  .main-search__icon-trailing {
-    --header-link-bg-classic-hover: var(--text-color);
-  }
+  //--brand-link-color: var(--accent-color);
+  //--header-link-color: var(--text-color);
+  //--header-link-color-active: var(--text-color);
+  //--header-bg-classic: #000;
+  //--search-bg: #4d545d;
+  //--search-input-color: rgb(200, 200, 204);
+  //.main-search__icon-trailing {
+  //  --header-link-bg-classic-hover: var(--text-color);
+  //}
 
   /* Breadcrumbs */
-  --breadcrumbs-bar-background: hsl(240, 6%, 9%, 0.8);
+  --breadcrumbs-bar-background: rgb(0 0 0 / 0.2);
 
   /* Command Palette */
   --command-palette-results-backdrop-filter: contrast(0.95) brightness(1.3) saturate(2) blur(30px);
@@ -79,32 +84,32 @@
                       0 0 1px 1px rgba(0, 0, 20, 0.025),
                       0 10px 20px rgba(0, 0, 20, 0.3);
 
-/* Modals - for backwards compatibility only */
-  ::backdrop {
-    --modal-backdrop-background: hsla(240, 6%, 3%, 0.9);
-  }
-  --modal-backdrop-filter: contrast(0.85) saturate(2) brightness(0.7) blur(20px);
-  --modal-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
-                      0 0 8px 2px rgba(0, 0, 30, 0.05),
-                      0 0 1px 1px rgba(0, 0, 20, 0.025),
-                      0 10px 20px rgba(0, 0, 20, 0.3);
+  /* Modals - for backwards compatibility only */
+  //::backdrop {
+  //  --modal-backdrop-background: hsla(240, 6%, 3%, 0.9);
+  //}
+  //--modal-backdrop-filter: contrast(0.85) saturate(2) brightness(0.7) blur(20px);
+  //--modal-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+  //                    0 0 8px 2px rgba(0, 0, 30, 0.05),
+  //                    0 0 1px 1px rgba(0, 0, 20, 0.025),
+  //                    0 10px 20px rgba(0, 0, 20, 0.3);
 
   /* Table */
   --table-background: var(--card-background);
   --table-border-color: var(--card-border-color);
 
   /* Deprecated */
-  --bigtable-header-bg: var(--dark-theme-bg-black);
-  --bigtable-header-border-color: var(--dark-theme-bg-dark-grey);
-  --bigtable-header-text-color: var(--text-color);
-  --bigtable-row-border-color: var(--dark-theme-bg-dark-grey);
-  --even-row-color: #020202;
-  --table-striped-bg--hover: var(--dark-theme-bg-dark-grey);
+  //--bigtable-header-bg: var(--dark-theme-bg-black);
+  //--bigtable-header-border-color: var(--dark-theme-bg-dark-grey);
+  //--bigtable-header-text-color: var(--text-color);
+  //--bigtable-row-border-color: var(--dark-theme-bg-dark-grey);
+  //--even-row-color: #020202;
+  //--table-striped-bg--hover: var(--dark-theme-bg-dark-grey);
 
   /* Pane widget */
-  --pane-border-color: var(--dark-theme-bg-dark-grey);
-  --pane-header-border-color: var(--dark-theme-bg-dark-grey);
-  --pane-header-color: var(--dark-theme-bg-black);
+  //--pane-border-color: var(--dark-theme-bg-dark-grey);
+  //--pane-header-border-color: var(--dark-theme-bg-dark-grey);
+  //--pane-header-color: var(--dark-theme-bg-black);
 
   /* Tab bar */
   --tabs-background: var(--card-background);
@@ -115,39 +120,39 @@
   --tabs-border-color: var(--card-border-color);
 
   /* Side panel */
-  --panel-header-bg-color: var(--dark-theme-bg-black);
-  --panel-border-color: rgb(50, 50, 55);
-  --panel-border-color--hover: var(--dark-theme-bg-black);
-  --task-link-bg-color--hover: var(--dark-theme-bg-medium-grey);
+  //--panel-header-bg-color: var(--dark-theme-bg-black);
+  --panel-border-color: color-mix(in oklch, var(--text-color-secondary) 15%, var(--background));
+  //--panel-border-color--hover: var(--dark-theme-bg-black);
+  //--task-link-bg-color--hover: var(--dark-theme-bg-medium-grey);
 
   /* Form */
-  --input-color: hsl(240, 6%, 20%);
-  --input-border: hsl(240, 6%, 40%);
-  --input-border-hover: hsl(240, 6%, 50%);
-  --focus-input-border: var(--accent-color);
+  //--input-color: hsl(240, 6%, 20%);
+  //--input-border: hsl(240, 6%, 40%);
+  //--input-border-hover: hsl(240, 6%, 50%);
+  //--focus-input-border: var(--accent-color);
   --focus-input-glow: color-mix(in srgb, var(--focus-input-border) 20%, transparent);
-  --pre-background: var(--dark-theme-bg-black);
-  --selection-color: color-mix(in srgb, var(--focus-input-border) 40%, transparent);
+  //--pre-background: var(--dark-theme-bg-black);
+  //--selection-color: color-mix(in srgb, var(--focus-input-border) 40%, transparent);
 
-  --header-search-border: var(--dark-theme-bg-dark-grey);
-  --input-hidden-password-bg-color: var(--input-color);
+  //--header-search-border: var(--dark-theme-bg-dark-grey);
+  //--input-hidden-password-bg-color: var(--input-color);
 
   /* Pop out menus */
-  --menu-bg-color: var(--dark-theme-bg-medium);
-  --menu-text-color: var(--text-color);
-  --menu-selected-color: var(--dark-theme-bg-dark);
-  --menu-box-shadow: none;
+  //--menu-bg-color: var(--dark-theme-bg-medium);
+  //--menu-text-color: var(--text-color);
+  //--menu-selected-color: var(--dark-theme-bg-dark);
+  //--menu-box-shadow: none;
 
   /* Add form widget */
-  --light-bg-color: var(--dark-theme-bg-medium);
-  --light-bg-color--hover: var(--dark-theme-bg-dark);
-  --bright-bg-color: var(--dark-theme-bg-dark-grey);
-  --brightest-bg-color: var(--input-color);
-  --add-item-btn-decorator-border-color: var(--dark-theme-bg-dark-grey);
-  --add-item-categories-bg-color--hover: var(--dark-theme-bg-dark-grey);
-  --add-item-btn-decorator-bg-color: var(--dark-theme-bg-dark-grey);
-  --configure-job-bottom-sticker-bg-color: var(--dark-theme-bg-dark-grey);
-  --configure-job-bottom-sticker-border-color: var(--dark-theme-bg-dark-grey);
+  //--light-bg-color: var(--dark-theme-bg-medium);
+  //--light-bg-color--hover: var(--dark-theme-bg-dark);
+  //--bright-bg-color: var(--dark-theme-bg-dark-grey);
+  //--brightest-bg-color: var(--input-color);
+  //--add-item-btn-decorator-border-color: var(--dark-theme-bg-dark-grey);
+  //--add-item-categories-bg-color--hover: var(--dark-theme-bg-dark-grey);
+  //--add-item-btn-decorator-bg-color: var(--dark-theme-bg-dark-grey);
+  //--configure-job-bottom-sticker-bg-color: var(--dark-theme-bg-dark-grey);
+  //--configure-job-bottom-sticker-border-color: var(--dark-theme-bg-dark-grey);
 
   /* Plugin manager */
   --plugin-manager-bg-color-already-upgraded: var(--dark-theme-bg-medium);
@@ -159,16 +164,35 @@
   --plugin-manager-unavailable-bg-color: var(--dark-theme-bg-medium);
   --plugin-manager-unavailable-label-color: var(--text-color);
 
+  // Default button
+  --button-background: oklch(from var(--text-color-secondary) l c h / 0.075);
+  --button-background--hover: oklch(
+      from var(--text-color-secondary) l c h / 0.125
+  );
+  --button-background--active: oklch(
+      from var(--text-color-secondary) l c h / 0.175
+  );
+  --button-box-shadow--focus: oklch(
+      from var(--text-color-secondary) l c h / 0.1
+  );
+
+  // Variables for sidebar items, card items
+  --item-background--hover: oklch(from var(--text-color-secondary) l c h / 0.1);
+  --item-background--active: oklch(
+      from var(--text-color-secondary) l c h / 0.15
+  );
+  --item-box-shadow--focus: oklch(from var(--text-color-secondary) l c h / 0.1);
+
   /* Auto complete */
-  --auto-complete-bg-color--prehighlight: var(--accent-color);
+  //--auto-complete-bg-color--prehighlight: var(--accent-color);
 
   /* Card */
-  --card-background: hsl(240, 6%, 15%);
-  --card-background--hover: hsl(240, 6%, 17.5%);
-  --card-background--active: hsl(240, 6%, 20%);
-  --card-border-color: hsl(240, 6%, 16.5%);
-  --card-border-color--hover: var(--card-border-color);
-  --card-border-color--active: var(--card-border-color);
+  --card-background: color-mix(in oklch, var(--text-color-secondary) 5%, var(--background));
+  //--card-background--hover: hsl(240, 6%, 17.5%);
+  //--card-background--active: hsl(240, 6%, 20%);
+  --card-border-color: color-mix(in oklch, var(--text-color-secondary) 7.5%, var(--background));
+  //--card-border-color--hover: var(--card-border-color);
+  //--card-border-color--active: var(--card-border-color);
 
   // Render native browser elements in dark mode
   color-scheme: dark;
@@ -176,10 +200,6 @@
 
 @mixin codemirror-theme() {
   #jenkins {
-    .cm-s-default {
-      font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
-    }
-
     .cm-s-default.CodeMirror {
       background: #2B2B2B;
       color: #A9B7C6;
@@ -341,7 +361,7 @@
   }
 
   $colors: (
-    "blue": oklch(64.23% 0.2115 252.93),
+    "blue": oklch(64.23% 0.3 252.93),
     "brown": oklch(63.14% 0.1 65.44),
     "cyan": oklch(80.37% 0.1296 232.62),
     "green": oklch(80.25% 0.2197 147.09),
@@ -352,6 +372,7 @@
     "red": oklch(66.82% 0.2393 29.84),
     "yellow": oklch(90.35% 0.1872 95.31),
     "teal": oklch(73.05% 0.1217 216.13),
+    "white": oklch(from var(--accent-color) 99.5% 0.015 h),
   );
 
   @each $name, $value in $colors {
