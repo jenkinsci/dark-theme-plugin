@@ -38,9 +38,8 @@
     <gitHubRepo>jenkinsci/dark-theme-plugin</gitHubRepo>
     <changelist>9999999-SNAPSHOT</changelist>
     <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
-    <jenkins.baseline>2.426</jenkins.baseline>
-    <!-- TODO: should depend on baseline -->
-    <jenkins.version>2.453</jenkins.version>
+    <jenkins.baseline>2.462</jenkins.baseline>
+    <jenkins.version>${jenkins.baseline}.1</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
     <node.version>18.20.5</node.version>
