@@ -6,14 +6,14 @@ import static io.jenkins.plugins.darktheme.DarkThemeManagerFactory.THEME_URL_NAM
 import hudson.Extension;
 import hudson.Plugin;
 import hudson.model.UnprotectedRootAction;
+import jakarta.servlet.ServletException;
 import java.io.IOException;
 import java.net.URISyntaxException;
-import javax.servlet.ServletException;
 import jenkins.model.Jenkins;
 import org.kohsuke.accmod.Restricted;
 import org.kohsuke.accmod.restrictions.NoExternalUse;
-import org.kohsuke.stapler.StaplerRequest;
-import org.kohsuke.stapler.StaplerResponse;
+import org.kohsuke.stapler.StaplerRequest2;
+import org.kohsuke.stapler.StaplerResponse2;
 
 @Extension
 @Restricted(NoExternalUse.class)
@@ -34,7 +34,7 @@ public class DarkThemeRootAction implements UnprotectedRootAction {
         return THEME_URL_NAME;
     }
 
-    public void doDynamic(StaplerRequest req, StaplerResponse rsp)
+    public void doDynamic(StaplerRequest2 req, StaplerResponse2 rsp)
             throws IOException, URISyntaxException, ServletException {
         String cssFile = req.getRestOfPath();
         if (cssFile.startsWith("/")) {
