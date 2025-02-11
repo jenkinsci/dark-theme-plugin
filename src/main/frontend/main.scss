@@ -50,7 +50,6 @@
   --table-border-color: var(--card-border-color);
 
   /* Tab bar */
-  --tabs-background: var(--card-background);
   --tabs-item-background--selected: oklch(
       from var(--text-color-secondary) l c h / 0.175
   );
