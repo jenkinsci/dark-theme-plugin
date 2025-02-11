@@ -51,11 +51,9 @@
 
   /* Tab bar */
   --tabs-background: var(--card-background);
-  //--tabs-item-background: transparent;
-  //--tabs-item-background--hover: rgba(255, 255, 255, 0.05);
-  //--tabs-item-background--active: rgba(255, 255, 255, 0.1);
-  --tabs-item-background--selected: color-mix(in oklch, var(--text-color-secondary) 20%, var(--background));
-  --tabs-border-color: var(--card-border-color);
+  --tabs-item-background--selected: oklch(
+      from var(--text-color-secondary) l c h / 0.175
+  );
 
   /* Side panel */
   --panel-border-color: color-mix(in oklch, var(--text-color-secondary) 15%, var(--background));
