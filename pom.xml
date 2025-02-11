@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>5.5</version>
+    <version>5.6</version>
     <relativePath />
   </parent>
   <groupId>io.jenkins.plugins</groupId>
@@ -37,18 +37,20 @@
   <properties>
     <gitHubRepo>jenkinsci/dark-theme-plugin</gitHubRepo>
     <changelist>9999999-SNAPSHOT</changelist>
-    <jenkins.version>2.493-rc35839.cb_5b_279ee48d</jenkins.version>
+    <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
+    <jenkins.baseline>2.479</jenkins.baseline>
+    <jenkins.version>${jenkins.baseline}.1</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
-    <node.version>18.20.5</node.version>
-    <npm.version>11.0.0</npm.version>
+    <node.version>18.20.6</node.version>
+    <npm.version>11.1.0</npm.version>
     <spotless.check.skip>false</spotless.check.skip>
   </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
-        <artifactId>bom-2.479.x</artifactId>
+        <artifactId>bom-${jenkins.baseline}.x</artifactId>
         <version>3893.v213a_42768d35</version>
         <type>pom</type>
         <scope>import</scope>
