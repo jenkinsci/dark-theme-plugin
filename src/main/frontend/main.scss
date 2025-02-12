@@ -50,13 +50,14 @@
   );
 
   /* Side panel */
-  --panel-border-color: color-mix(in oklch, var(--text-color-secondary) 15%, var(--background));
+  // TODO - Validate we need this
+  //--panel-border-color: color-mix(in oklch, var(--text-color-secondary) 15%, var(--background));
 
   /* Form */
-  --input-color: color-mix(in oklch, var(--text-color-secondary) 2.5%, var(--background));
-  --input-border: color-mix(in oklch, var(--text-color-secondary) 30%, var(--background));
-  --input-border-hover: color-mix(in oklch, var(--text-color-secondary) 40%, var(--background));
-  --focus-input-glow: color-mix(in srgb, var(--focus-input-border) 20%, transparent);
+  --input-color: oklch(from var(--text-color-secondary) l c h / 0.03);
+  --input-border: oklch(from var(--text-color-secondary) l c h / 0.3);
+  --input-border-hover: oklch(from var(--text-color-secondary) l c h / 0.4);
+  --focus-input-glow: oklch(from var(--focus-input-border) l c h / 0.2);
 
   /* Plugin manager */
   --plugin-manager-bg-color-already-upgraded: var(--dark-theme-bg-medium);
