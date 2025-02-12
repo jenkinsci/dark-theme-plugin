@@ -1,21 +1,16 @@
 @use "sass:color";
 
 @mixin dark-mode {
-  --accent-color: oklch(65.13% 0.1987 262.54344590547373);
-
-  --background: oklch(from var(--white) 17.5% 0.0075 h);
+  --background: oklch(from var(--white) 0.165 0.013 h);
+  --accent-color: oklch(65.13% 0.1987 265);
 
   /* Text */
   --text-color: var(--white);
-  --text-color-secondary: oklch(from var(--white) 70% 15% h);
-
-  /* Breadcrumbs */
-  --breadcrumbs-bar-background: rgb(0 0 0 / 0.2);
+  --text-color-secondary: oklch(from var(--white) 0.6 0.038 h);
 
   /* Command Palette */
   --command-palette-results-backdrop-filter: contrast(0.95) brightness(1.3) saturate(2) blur(30px);
   --command-palette-inset-shadow: inset 0 0 0 1px hsla(250, 10%, 90%, 0.035);
-
   ::backdrop {
     --command-palette-backdrop-background: rgba(0, 0, 0, 0.5);
   }
@@ -36,14 +31,14 @@
                          0 10px 20px rgba(0, 0, 20, 0.3);
 
   /* Dialogs */
-  ::backdrop {
-    --dialog-backdrop-background: hsla(240, 6%, 3%, 0.9);
-  }
   --dialog-backdrop-filter: contrast(0.85) saturate(2) brightness(0.7) blur(20px);
   --dialog-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
                       0 0 8px 2px rgba(0, 0, 30, 0.05),
                       0 0 1px 1px rgba(0, 0, 20, 0.025),
                       0 10px 20px rgba(0, 0, 20, 0.3);
+  ::backdrop {
+    --dialog-backdrop-background: hsla(240, 6%, 3%, 0.9);
+  }
 
   /* Table */
   --table-background: var(--card-background);
@@ -58,11 +53,10 @@
   --panel-border-color: color-mix(in oklch, var(--text-color-secondary) 15%, var(--background));
 
   /* Form */
-  --input-color: color-mix(in oklch, var(--text-color-secondary) 7.5%, var(--background));
-  --input-border: color-mix(in oklch, var(--text-color-secondary) 20%, var(--background));
-  --input-border-hover: color-mix(in oklch, var(--text-color-secondary) 30%, var(--background));
+  --input-color: color-mix(in oklch, var(--text-color-secondary) 2.5%, var(--background));
+  --input-border: color-mix(in oklch, var(--text-color-secondary) 30%, var(--background));
+  --input-border-hover: color-mix(in oklch, var(--text-color-secondary) 40%, var(--background));
   --focus-input-glow: color-mix(in srgb, var(--focus-input-border) 20%, transparent);
-  //--pre-background: var(--dark-theme-bg-black);
 
   /* Plugin manager */
   --plugin-manager-bg-color-already-upgraded: var(--dark-theme-bg-medium);
@@ -95,11 +89,7 @@
 
   /* Card */
   --card-background: color-mix(in oklch, var(--text-color-secondary) 7.5%, var(--background));
-  //--card-background--hover: hsl(240, 6%, 17.5%);
-  //--card-background--active: hsl(240, 6%, 20%);
   --card-border-color: color-mix(in oklch, var(--text-color-secondary) 10%, var(--background));
-  //--card-border-color--hover: var(--card-border-color);
-  //--card-border-color--active: var(--card-border-color);
 
   // Render native browser elements in dark mode
   color-scheme: dark;
