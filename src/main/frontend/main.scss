@@ -13,7 +13,10 @@
   --light-grey: var(--dark-theme-bg-medium);
   --medium-grey: var(--dark-theme-bg-medium-grey);
 
-  --accent-color: color(display-p3 0.43 0.757 1);
+  --accent-color: #53c1ff;
+  @supports (color: color(display-p3 0 0 0)) {
+    --accent-color: color(display-p3 0.43 0.757 1);
+  }
 
   /* Text */
   --text-color: rgb(250, 250, 255);
