@@ -32,7 +32,7 @@
     <changelist>9999999-SNAPSHOT</changelist>
     <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
     <jenkins.baseline>2.479</jenkins.baseline>
-    <jenkins.version>2.498-rc36129.ddc968a_82758</jenkins.version>
+    <jenkins.version>2.507-rc36850.8f81ff734088</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
     <node.version>18.20.8</node.version>
