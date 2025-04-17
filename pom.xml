@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>5.7</version>
+    <version>5.10</version>
     <relativePath />
   </parent>
   <groupId>io.jenkins.plugins</groupId>
@@ -21,13 +21,6 @@
     </license>
   </licenses>
 
-  <developers>
-    <developer>
-      <id>timja</id>
-      <name>Tim Jacomb</name>
-    </developer>
-  </developers>
-
   <scm>
     <connection>scm:git:https://github.com/${gitHubRepo}.git</connection>
     <developerConnection>scm:git:git@github.com:${gitHubRepo}.git</developerConnection>
@@ -42,8 +35,8 @@
     <jenkins.version>2.498-rc36129.ddc968a_82758</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
-    <node.version>18.20.6</node.version>
-    <npm.version>11.1.0</npm.version>
+    <node.version>18.20.8</node.version>
+    <npm.version>11.3.0</npm.version>
     <spotless.check.skip>false</spotless.check.skip>
   </properties>
   <dependencyManagement>
@@ -51,7 +44,7 @@
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
         <artifactId>bom-${jenkins.baseline}.x</artifactId>
-        <version>3893.v213a_42768d35</version>
+        <version>4570.v1b_c718dd3b_1e</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -62,7 +55,7 @@
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>theme-manager</artifactId>
-      <version>262.vc57ee4a_eda_5d</version>
+      <version>278.v2e3c063e42cc</version>
     </dependency>
 
     <dependency>
