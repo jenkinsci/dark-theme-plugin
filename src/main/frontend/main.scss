@@ -66,7 +66,11 @@
 
   /* Card */
   --card-background: color-mix(in oklch, var(--text-color-secondary) 7.5%, var(--background));
-  --card-border-color: color-mix(in oklch, var(--text-color-secondary) 10%, var(--background));
+  --card-border-color: var(--prefers-contrast, color-mix(in oklch, var(--text-color-secondary) 10%, var(--background)));
+
+  @media (prefers-contrast: more) {
+    --prefers-contrast: var(--text-color);
+  }
 
   // Render native browser elements in dark mode
   color-scheme: dark;
