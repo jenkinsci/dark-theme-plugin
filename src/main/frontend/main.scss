@@ -1,7 +1,7 @@
 @use "sass:color";
 
 @mixin dark-mode {
-  --background: oklch(from var(--white) 0.165 0.013 h);
+  --background: oklch(from var(--white) 0.17 0.013 h);
   --accent-color: oklch(65.13% 0.1987 265);
 
   /* Text */
@@ -246,7 +246,7 @@
     "red": oklch(66.82% 0.2393 29.84),
     "yellow": oklch(90.35% 0.1872 95.31),
     "teal": oklch(73.05% 0.1217 216.13),
-    "white": oklch(from var(--accent-color) 99% 0.015 h),
+    "white": oklch(from var(--accent-color) 97% 0.015 h),
   );
 
   @each $name, $value in $colors {
