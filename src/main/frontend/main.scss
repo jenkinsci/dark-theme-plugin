@@ -37,9 +37,9 @@
   --panel-border-color: color-mix(in oklch, var(--text-color-secondary) 15%, var(--background));
 
   /* Form */
-  --input-color: oklch(from var(--text-color-secondary) l c h / 0.03);
-  --input-border: oklch(from var(--text-color-secondary) l c h / 0.3);
-  --input-border-hover: oklch(from var(--text-color-secondary) l c h / 0.4);
+  --input-color: oklch(from var(--text-color-secondary) l c h / 0.04);
+  --input-border: oklch(from var(--text-color-secondary) l c h / 0.25);
+  --input-border-hover: oklch(from var(--text-color-secondary) l c h / 0.35);
   --focus-input-glow: oklch(from var(--focus-input-border) l c h / 0.2);
 
   /* Plugin manager */
