@@ -1,4 +1,4 @@
-# Dark Theme for Jenkins
+# Dark Theme Plugin
 
 [![Build Status](https://ci.jenkins.io/job/Plugins/job/dark-theme-plugin/job/master/badge/icon)](https://ci.jenkins.io/job/Plugins/job/dark-theme-plugin/job/master/)
 [![Gitter](https://badges.gitter.im/jenkinsci/ux-sig.svg)](https://gitter.im/jenkinsci/ux-sig?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
@@ -6,17 +6,17 @@
 [![Jenkins Plugin](https://img.shields.io/jenkins/plugin/v/dark-theme.svg)](https://plugins.jenkins.io/dark-theme)
 [![Jenkins Plugin Installs](https://img.shields.io/jenkins/plugin/i/dark-theme.svg?color=blue)](https://plugins.jenkins.io/dark-theme)
 
-This repository contains a dark theme for Jenkins.
+![preview.png](docs/images/preview.png)
 
-## Usage
+## Introduction
 
-### Installing via Jenkins update center
+This plugin provides the dark theme for Jenkins.
+
+### Usage
 
 Search for 'Dark theme' in your Jenkins update center and install it.
 
-Then go to "Manage Jenkins" and click "Appearance", search for 'Themes' and select 'Dark (System)'
-
-or with the [configuration-as-code](https://github.com/jenkinsci/configuration-as-code-plugin) plugin:
+Then go to "Manage Jenkins" and click "Appearance", search for 'Themes' and select 'Dark (System)' or with the [configuration-as-code](https://github.com/jenkinsci/configuration-as-code-plugin) plugin:
 
 From Jenkins 2.421:
 ```yaml
@@ -46,12 +46,6 @@ Main screen:
 Build console:
 
 ![Build console log](./docs/images/screenshot_build_console.PNG)
-
-## Browser compatibility
-
-The theme should be compatible with all modern browsers.
-
-No version of IE will be supported.
 
 ## References
 
