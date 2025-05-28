@@ -10,7 +10,7 @@
 
 ## Introduction
 
-This plugin provides the dark theme for Jenkins.
+This plugin provides the Dark theme for Jenkins.
 
 ### Usage
 
@@ -26,26 +26,8 @@ appearance:
     theme: "darkSystem" # use 'dark' for forcing the dark theme regardless of OS settings
 ```
 
-Previously:
-```yaml
-unclassified:
-  themeManager:
-    disableUserThemes: true
-    theme: "darkSystem" # use 'dark' for forcing the dark theme regardless of OS settings
-```
-
 Users can configure the theme from their user profile page, see the [theme-manager documentation](https://github.com/jenkinsci/theme-manager-plugin#configuring-the-plugin),
 for more information.
-
-## Screenshots
-
-Main screen:
-
-![Main screen](./docs/images/screenshot_main.png)
-
-Build console:
-
-![Build console log](./docs/images/screenshot_build_console.PNG)
 
 ## References
 
