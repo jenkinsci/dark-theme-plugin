@@ -1,7 +1,7 @@
 @use "sass:color";
 
 @mixin dark-mode {
-  --background: oklch(from var(--white) 0.17 0.013 h);
+  --background: oklch(from var(--white) 0.175 0.013 h);
   --accent-color: oklch(65.13% 0.1987 265);
 
   /* Text */
