@@ -1,7 +1,8 @@
 target/
 work/
 *.iml
-.idea/
+.idea/*
+!.idea/icon.svg
 node/
 node_modules/
 src/main/webapp/theme.css*
