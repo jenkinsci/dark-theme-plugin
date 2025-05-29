@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:recommended",
     ":semanticCommitsDisabled",
     "schedule:earlyMondays"
   ],
@@ -11,24 +11,34 @@
   ],
   "packageRules": [
     {
-      "matchDatasources": ["npm"],
-      "addLabels": ["javascript"]
-    },
-    {
-      "matchPackageNames": ["node"],
-      "allowedVersions": "/18.[0-9]+.[0-9]+(.[0-9]+)?$/"
+      "matchDatasources": [
+        "npm"
+      ],
+      "addLabels": [
+        "javascript"
+      ]
     }
   ],
-  "regexManagers": [
+  "customManagers": [
     {
-      "fileMatch": ["pom.xml"],
-      "matchStrings": ["<node.version>(?<currentValue>.*?)<\/node.version>"],
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/pom.xml/"
+      ],
+      "matchStrings": [
+        "<node.version>(?<currentValue>.*?)</node.version>"
+      ],
       "depNameTemplate": "node",
-      "datasourceTemplate": "npm"
+      "datasourceTemplate": "node-version"
     },
     {
-      "fileMatch": ["pom.xml"],
-      "matchStrings": ["<npm.version>(?<currentValue>.*?)<\/npm.version>"],
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/pom.xml/"
+      ],
+      "matchStrings": [
+        "<npm.version>(?<currentValue>.*?)</npm.version>"
+      ],
       "depNameTemplate": "npm",
       "datasourceTemplate": "npm"
     }
