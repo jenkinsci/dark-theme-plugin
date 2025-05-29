@@ -18,7 +18,6 @@ Search for 'Dark theme' in your Jenkins update center and install it.
 
 Then go to "Manage Jenkins" and click "Appearance", search for 'Themes' and select 'Dark (System)' or with the [configuration-as-code](https://github.com/jenkinsci/configuration-as-code-plugin) plugin:
 
-From Jenkins 2.421:
 ```yaml
 appearance:
   themeManager:
