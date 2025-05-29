@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:recommended",
     ":semanticCommitsDisabled",
     "schedule:earlyMondays"
   ],
@@ -11,22 +11,34 @@
   ],
   "packageRules": [
     {
-      "matchDatasources": ["npm"],
-      "addLabels": ["javascript"]
+      "matchDatasources": [
+        "npm"
+      ],
+      "addLabels": [
+        "javascript"
+      ]
     }
   ],
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["pom.xml"],
-      "matchStrings": ["<node.version>(?<currentValue>.*?)</node.version>"],
+      "managerFilePatterns": [
+        "/pom.xml/"
+      ],
+      "matchStrings": [
+        "<node.version>(?<currentValue>.*?)</node.version>"
+      ],
       "depNameTemplate": "node",
       "datasourceTemplate": "node-version"
     },
     {
       "customType": "regex",
-      "fileMatch": ["pom.xml"],
-      "matchStrings": ["<npm.version>(?<currentValue>.*?)</npm.version>"],
+      "managerFilePatterns": [
+        "/pom.xml/"
+      ],
+      "matchStrings": [
+        "<npm.version>(?<currentValue>.*?)</npm.version>"
+      ],
       "depNameTemplate": "npm",
       "datasourceTemplate": "npm"
     }
