@@ -13,22 +13,20 @@
     {
       "matchDatasources": ["npm"],
       "addLabels": ["javascript"]
-    },
-    {
-      "matchPackageNames": ["node"],
-      "allowedVersions": "/18.[0-9]+.[0-9]+(.[0-9]+)?$/"
     }
   ],
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "fileMatch": ["pom.xml"],
-      "matchStrings": ["<node.version>(?<currentValue>.*?)<\/node.version>"],
+      "matchStrings": ["<node.version>(?<currentValue>.*?)</node.version>"],
       "depNameTemplate": "node",
-      "datasourceTemplate": "npm"
+      "datasourceTemplate": "node-version"
     },
     {
+      "customType": "regex",
       "fileMatch": ["pom.xml"],
-      "matchStrings": ["<npm.version>(?<currentValue>.*?)<\/npm.version>"],
+      "matchStrings": ["<npm.version>(?<currentValue>.*?)</npm.version>"],
       "depNameTemplate": "npm",
       "datasourceTemplate": "npm"
     }
