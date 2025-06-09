@@ -26,7 +26,6 @@
 
   /* Table */
   --table-background: var(--card-background);
-  --table-border-color: var(--card-border-color);
 
   /* Tab bar */
   --tabs-item-background--selected: oklch(
@@ -37,9 +36,9 @@
   --panel-border-color: color-mix(in oklch, var(--text-color-secondary) 15%, var(--background));
 
   /* Form */
-  --input-color: oklch(from var(--text-color-secondary) l c h / 0.04);
-  --input-border: oklch(from var(--text-color-secondary) l c h / 0.25);
-  --input-border-hover: oklch(from var(--text-color-secondary) l c h / 0.35);
+  --input-color: color-mix(in oklch, var(--text-color-secondary) 5%, var(--background));
+  --input-border: color-mix(in oklch, var(--text-color-secondary) 30%, var(--background));
+  --input-border-hover: color-mix(in oklch, var(--text-color-secondary) 40%, var(--background));
   --focus-input-glow: oklch(from var(--focus-input-border) l c h / 0.2);
 
   /* Plugin manager */
@@ -66,7 +65,7 @@
 
   /* Card */
   --card-background: color-mix(in oklch, var(--text-color-secondary) 7.5%, var(--background));
-  --card-border-color: var(--prefers-contrast, color-mix(in oklch, var(--text-color-secondary) 10%, var(--background)));
+  --card-border-color: var(--prefers-contrast, color-mix(in oklch, var(--text-color-secondary) 10%, var(--card-background)));
 
   @media (prefers-contrast: more) {
     --prefers-contrast: var(--text-color);
@@ -74,6 +73,22 @@
 
   // Render native browser elements in dark mode
   color-scheme: dark;
+
+  // This should be removed when core usees '--card-border-color' for tabs
+  .tabBar {
+    &::before {
+      border: var(--jenkins-border-width) solid var(--card-border-color);
+    }
+  }
+
+  // This should be removed when core usees '--card-border-color' for tables
+  .jenkins-table {
+    @supports (not (-moz-appearance: none)) {
+      &::before {
+        border: var(--jenkins-border-width) solid var(--card-border-color);
+      }
+    }
+  }
 
   $colors: (
     "blue": oklch(64.23% 0.3 252.93),
