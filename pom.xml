@@ -29,7 +29,7 @@
   </scm>
   <properties>
     <gitHubRepo>jenkinsci/dark-theme-plugin</gitHubRepo>
-    <changelist>999999-SNAPSHOT</changelist>
+    <changelist>9999999-SNAPSHOT</changelist>
     <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
     <jenkins.baseline>2.504</jenkins.baseline>
     <jenkins.version>2.513</jenkins.version>
