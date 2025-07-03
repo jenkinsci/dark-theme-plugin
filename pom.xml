@@ -29,7 +29,7 @@
   </scm>
   <properties>
     <gitHubRepo>jenkinsci/dark-theme-plugin</gitHubRepo>
-    <changelist>310.v234c7de84f9c</changelist>
+    <changelist>999999-SNAPSHOT</changelist>
     <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
     <jenkins.baseline>2.504</jenkins.baseline>
     <jenkins.version>2.513</jenkins.version>
@@ -55,7 +55,7 @@
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>theme-manager</artifactId>
-      <version>999999-SNAPSHOT</version>
+      <version>310.v234c7de84f9c</version>
     </dependency>
 
     <dependency>
