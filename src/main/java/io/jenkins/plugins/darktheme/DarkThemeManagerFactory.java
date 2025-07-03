@@ -39,6 +39,11 @@ public class DarkThemeManagerFactory extends ThemeManagerFactory {
             return "Dark";
         }
 
+        @Override
+        public String getIconClassName() {
+            return "symbol-moon-outline plugin-ionicons-api";
+        }
+
         @NonNull
         @Override
         public String getThemeId() {
