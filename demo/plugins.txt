@@ -2,5 +2,5 @@
 simple-theme-plugin:211.v5424a_5510e47
 login-theme:262.vb_4ce39d5279f
 # Common mode
-dark-theme:567.v9d3ca_a_3142f5
+dark-theme:574.va_19f05d54df5
 theme-manager:262.vc57ee4a_eda_5d
