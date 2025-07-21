@@ -35,7 +35,7 @@
     <jenkins.version>2.513</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
-    <node.version>18.20.8</node.version>
+    <node.version>22.17.1</node.version>
     <npm.version>11.4.2</npm.version>
     <spotless.check.skip>false</spotless.check.skip>
   </properties>
