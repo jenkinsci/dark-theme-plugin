@@ -22,7 +22,7 @@ public class DarkThemeManagerFactory extends ThemeManagerFactory {
     @Override
     public Theme getTheme() {
         return Theme.builder()
-                .withCssUrl(getCssUrl())
+                .withCssUrl("/" + THEME_URL_NAME + "/" + THEME_CSS)
                 .withProperty("ace-editor", "theme", ACE_EDITOR_THEME)
                 .withProperty("entra-id", "theme", ENTRA_ID_THEME)
                 .withProperty("bootstrap", "theme", BOOTSTRAP_THEME)
