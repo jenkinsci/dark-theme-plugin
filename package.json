@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/jenkinsci/dark-theme-plugin#readme",
   "devDependencies": {
-    "sass": "1.90.0"
+    "sass": "1.92.1"
   }
 }
