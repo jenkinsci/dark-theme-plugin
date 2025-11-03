@@ -34,7 +34,7 @@
     <jenkins.baseline>2.504</jenkins.baseline>
     <jenkins.version>2.513</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
-    <node.version>22.21.0</node.version>
+    <node.version>22.21.1</node.version>
     <npm.version>11.6.2</npm.version>
     <spotless.check.skip>false</spotless.check.skip>
     <ban-junit4-imports.skip>false</ban-junit4-imports.skip>
