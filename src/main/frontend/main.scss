@@ -74,22 +74,6 @@
   // Render native browser elements in dark mode
   color-scheme: dark;
 
-  // This should be removed when core usees '--card-border-color' for tabs
-  .tabBar {
-    &::before {
-      border: var(--jenkins-border-width) solid var(--card-border-color);
-    }
-  }
-
-  // This should be removed when core usees '--card-border-color' for tables
-  .jenkins-table {
-    @supports (not (-moz-appearance: none)) {
-      &::before {
-        border: var(--jenkins-border-width) solid var(--card-border-color);
-      }
-    }
-  }
-
   $colors: (
     "blue": oklch(64.23% 0.3 252.93),
     "brown": oklch(63.14% 0.1 65.44),
