@@ -7,6 +7,8 @@ import io.jenkins.plugins.thememanager.ThemeManagerFactory;
 import io.jenkins.plugins.thememanager.ThemeManagerFactoryDescriptor;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
+import org.kohsuke.stapler.Stapler;
+import org.kohsuke.stapler.StaplerRequest2;
 
 public class DarkThemeManagerFactory extends ThemeManagerFactory {
 
@@ -18,6 +20,21 @@ public class DarkThemeManagerFactory extends ThemeManagerFactory {
 
     @DataBoundConstructor
     public DarkThemeManagerFactory() {}
+
+    /**
+     * Returns a context-path-relative CSS URL so the theme works regardless of
+     * which host/port the user accesses Jenkins through (e.g. bypassing a
+     * reverse proxy). The parent implementation uses {@code Jenkins.get().getRootUrl()}
+     * which always returns the globally configured URL.
+     */
+    @Override
+    public String getCssUrl() {
+        StaplerRequest2 req = Stapler.getCurrentRequest2();
+        if (req != null) {
+            return req.getContextPath() + "/" + THEME_URL_NAME + "/" + THEME_CSS;
+        }
+        return super.getCssUrl();
+    }
 
     @Override
     public Theme getTheme() {
