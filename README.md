@@ -1,6 +1,6 @@
 # Dark Theme Plugin
 
-[![Build Status](https://ci.jenkins.io/job/Plugins/job/dark-theme-plugin/job/master/badge/icon)](https://ci.jenkins.io/job/Plugins/job/dark-theme-plugin/job/master/)
+[![Build Status](https://ci.jenkins.io/buildStatus/icon?job=Plugins%2Fdark-theme-plugin%2Fmaster)](https://ci.jenkins.io/job/Plugins/job/dark-theme-plugin/job/master/)
 [![Gitter](https://badges.gitter.im/jenkinsci/ux-sig.svg)](https://gitter.im/jenkinsci/ux-sig?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![Changelog](https://img.shields.io/github/release/jenkinsci/dark-theme.svg?label=changelog)](https://github.com/jenkinsci/dark-theme/releases/)
 [![Jenkins Plugin](https://img.shields.io/jenkins/plugin/v/dark-theme.svg)](https://plugins.jenkins.io/dark-theme)
