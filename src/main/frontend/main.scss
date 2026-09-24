@@ -14,8 +14,19 @@
   --text-color: var(--white);
   --text-color-secondary: oklch(from var(--white) 0.7 0.038 h);
 
+  /* Table - deprecated */
+  --table-background: var(--card-background);
+
+  /* Tab bar - deprecated */
+  --tabs-item-background--selected: oklch(
+          from var(--text-color-secondary) l c h / 0.175
+  );
+
   /* Side panel */
   --panel-border-color: color-mix(in oklch, var(--text-color-secondary) 15%, var(--background));
+
+  /* Form - deprecated */
+  --input-color: var(--elevation-2-background);
 
   /* Plugin manager */
   --plugin-manager-bg-color-already-upgraded: var(--dark-theme-bg-medium);
@@ -39,9 +50,8 @@
   );
   --item-box-shadow--focus: oklch(from var(--text-color-secondary) l c h / 0.1);
 
-  @media (prefers-contrast: more) {
-    --prefers-contrast: var(--text-color);
-  }
+  /* Card - deprecated */
+  --card-background: var(--elevation-2-background);
 
   // Render native browser elements in dark mode
   color-scheme: dark;
