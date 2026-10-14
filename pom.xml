@@ -35,7 +35,7 @@
     <jenkins.version>${jenkins.baseline}.3</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <node.version>24.21.0</node.version>
-    <npm.version>12.0.2</npm.version>
+    <npm.version>12.2.0</npm.version>
     <spotless.check.skip>false</spotless.check.skip>
     <ban-junit4-imports.skip>false</ban-junit4-imports.skip>
   </properties>
@@ -44,7 +44,7 @@
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
         <artifactId>bom-${jenkins.baseline}.x</artifactId>
-        <version>7020.vf38cb_40380d1</version>
+        <version>7169.vb_32a_cfd93fa_6</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
