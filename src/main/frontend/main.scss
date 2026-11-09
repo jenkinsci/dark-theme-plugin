@@ -15,19 +15,13 @@
   --text-color: var(--white);
   --text-color-secondary: oklch(from var(--white) 0.7 0.03 h);
 
-  /* Table - deprecated */
-  --table-background: var(--card-background);
-
-  /* Tab bar - deprecated */
+  /* Tab bar */
   --tabs-item-background--selected: oklch(
-          from var(--text-color-secondary) l c h / 0.175
+    from var(--text-color-secondary) l c h / 0.175
   );
 
   /* Side panel */
   --panel-border-color: color-mix(in oklch, var(--text-color-secondary) 15%, var(--background));
-
-  /* Form - deprecated */
-  --input-color: var(--elevation-2-background);
 
   /* Plugin manager */
   --plugin-manager-bg-color-already-upgraded: var(--dark-theme-bg-medium);
@@ -35,24 +29,21 @@
   // Default button
   --button-background: oklch(from var(--text-color-secondary) l c h / 0.075);
   --button-background--hover: oklch(
-      from var(--text-color-secondary) l c h / 0.125
+    from var(--text-color-secondary) l c h / 0.125
   );
   --button-background--active: oklch(
-      from var(--text-color-secondary) l c h / 0.175
+    from var(--text-color-secondary) l c h / 0.175
   );
   --button-box-shadow--focus: oklch(
-      from var(--text-color-secondary) l c h / 0.1
+    from var(--text-color-secondary) l c h / 0.1
   );
 
   // Variables for sidebar items, card items
   --item-background--hover: oklch(from var(--text-color-secondary) l c h / 0.1);
   --item-background--active: oklch(
-      from var(--text-color-secondary) l c h / 0.15
+    from var(--text-color-secondary) l c h / 0.15
   );
   --item-box-shadow--focus: oklch(from var(--text-color-secondary) l c h / 0.1);
-
-  /* Card - deprecated */
-  --card-background: var(--elevation-2-background);
 
   // Render native browser elements in dark mode
   color-scheme: dark;
@@ -79,6 +70,25 @@
       --light-#{$name}: #{color.scale($value, $lightness: 50%)};
       --dark-#{$name}: #{color.scale($value, $lightness: -50%)};
     }
+  }
+
+  // Backwards compatibility - Jenkins versions without elevation backgrounds
+  --card-background: var(--elevation-2-background);
+  --table-background: var(--elevation-2-background);
+  --input-color: var(--elevation-2-background);
+  --overlay-surface-background: var(--elevation-3-background);
+  --dialog-background: var(--elevation-3-background);
+  --body-background-top: color-mix(in oklch, white 2%, var(--elevation-1-background));
+  --body-background-bottom: color-mix(in oklch, black 0.5%, var(--elevation-1-background));
+
+  .app-page-frame__background::before {
+    --background: var(--body-background-bottom);
+
+    background-color: var(--body-background-bottom);
+  }
+
+  .jenkins-bottom-app-bar__shadow:not(.jenkins-dialog *) {
+    --background: var(--body-background-bottom);
   }
 }
 
