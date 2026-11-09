@@ -4,6 +4,11 @@
   --background: oklch(from var(--white) 0.175 0.013 h);
   --accent-color: oklch(65.13% 0.1987 265);
 
+  /* Legacy greys, still used by core for panes, bigtables and striped rows */
+  --very-light-grey: color-mix(in oklch, var(--text-color-secondary) 5%, var(--background));
+  --light-grey: color-mix(in oklch, var(--text-color-secondary) 10%, var(--background));
+  --medium-grey: color-mix(in oklch, var(--text-color-secondary) 30%, var(--background));
+
   /* Text */
   --text-color: var(--white);
   --text-color-secondary: oklch(from var(--white) 0.7 0.038 h);
@@ -40,9 +45,6 @@
   --input-border: color-mix(in oklch, var(--text-color-secondary) 30%, var(--background));
   --input-border-hover: color-mix(in oklch, var(--text-color-secondary) 40%, var(--background));
   --focus-input-glow: oklch(from var(--focus-input-border) l c h / 0.2);
-
-  /* Plugin manager */
-  --plugin-manager-bg-color-already-upgraded: var(--dark-theme-bg-medium);
 
   // Default button
   --button-background: oklch(from var(--text-color-secondary) l c h / 0.075);
